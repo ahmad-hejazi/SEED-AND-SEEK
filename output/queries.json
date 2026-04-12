@@ -1,0 +1,3334 @@
+{
+  "generated_at": "2026-04-12T17:21:55.348896Z",
+  "mode": "normal",
+  "seed_dataset": "seed.csv",
+  "year_range": [
+    2020,
+    2022
+  ],
+  "concepts": [
+    "demographics",
+    "economic",
+    "education",
+    "environmental",
+    "geospatial",
+    "public_health",
+    "time_series"
+  ],
+  "identifiers": [
+    "country_code",
+    "currency_code"
+  ],
+  "target_connectors": [
+    "CKAN",
+    "Schema.org",
+    "DCAT",
+    "HuggingFace",
+    "Kaggle",
+    "WorldBank",
+    "UNData",
+    "Eurostat",
+    "OWID"
+  ],
+  "total_queries": 346,
+  "queries": [
+    {
+      "query": "CKAN demographics country year dataset",
+      "concept": "demographics",
+      "target_connector": "CKAN",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 1
+    },
+    {
+      "query": "Schema.org dataset demographics by country 2020 2022",
+      "concept": "demographics",
+      "target_connector": "Schema.org",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 2
+    },
+    {
+      "query": "DCAT catalog demographics country panel data",
+      "concept": "demographics",
+      "target_connector": "DCAT",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 3
+    },
+    {
+      "query": "CKAN economic country year dataset",
+      "concept": "economic",
+      "target_connector": "CKAN",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 4
+    },
+    {
+      "query": "Schema.org dataset economic by country 2020 2022",
+      "concept": "economic",
+      "target_connector": "Schema.org",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 5
+    },
+    {
+      "query": "DCAT catalog economic country panel data",
+      "concept": "economic",
+      "target_connector": "DCAT",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 6
+    },
+    {
+      "query": "CKAN education country year dataset",
+      "concept": "education",
+      "target_connector": "CKAN",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 7
+    },
+    {
+      "query": "Schema.org dataset education by country 2020 2022",
+      "concept": "education",
+      "target_connector": "Schema.org",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 8
+    },
+    {
+      "query": "DCAT catalog education country panel data",
+      "concept": "education",
+      "target_connector": "DCAT",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 9
+    },
+    {
+      "query": "CKAN environmental country year dataset",
+      "concept": "environmental",
+      "target_connector": "CKAN",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 10
+    },
+    {
+      "query": "Schema.org dataset environmental by country 2020 2022",
+      "concept": "environmental",
+      "target_connector": "Schema.org",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 11
+    },
+    {
+      "query": "DCAT catalog environmental country panel data",
+      "concept": "environmental",
+      "target_connector": "DCAT",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 12
+    },
+    {
+      "query": "CKAN geospatial country year dataset",
+      "concept": "geospatial",
+      "target_connector": "CKAN",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 13
+    },
+    {
+      "query": "Schema.org dataset geospatial by country 2020 2022",
+      "concept": "geospatial",
+      "target_connector": "Schema.org",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 14
+    },
+    {
+      "query": "DCAT catalog geospatial country panel data",
+      "concept": "geospatial",
+      "target_connector": "DCAT",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 15
+    },
+    {
+      "query": "CKAN public health country year dataset",
+      "concept": "public_health",
+      "target_connector": "CKAN",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 16
+    },
+    {
+      "query": "Schema.org dataset public health by country 2020 2022",
+      "concept": "public_health",
+      "target_connector": "Schema.org",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 17
+    },
+    {
+      "query": "DCAT catalog public health country panel data",
+      "concept": "public_health",
+      "target_connector": "DCAT",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 18
+    },
+    {
+      "query": "CKAN time series country year dataset",
+      "concept": "time_series",
+      "target_connector": "CKAN",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 19
+    },
+    {
+      "query": "Schema.org dataset time series by country 2020 2022",
+      "concept": "time_series",
+      "target_connector": "Schema.org",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 20
+    },
+    {
+      "query": "DCAT catalog time series country panel data",
+      "concept": "time_series",
+      "target_connector": "DCAT",
+      "strategy": "direct_platform",
+      "priority": 1,
+      "id": 21
+    },
+    {
+      "query": "population growth rate CKAN 2020 2022",
+      "concept": "demographics",
+      "topic": "population growth rate",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 22
+    },
+    {
+      "query": "population growth rate Schema.org dataset 2020 2022",
+      "concept": "demographics",
+      "topic": "population growth rate",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 23
+    },
+    {
+      "query": "population growth rate DCAT catalog 2020 2022",
+      "concept": "demographics",
+      "topic": "population growth rate",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 24
+    },
+    {
+      "query": "age distribution CKAN 2020 2022",
+      "concept": "demographics",
+      "topic": "age distribution",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 25
+    },
+    {
+      "query": "age distribution Schema.org dataset 2020 2022",
+      "concept": "demographics",
+      "topic": "age distribution",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 26
+    },
+    {
+      "query": "age distribution DCAT catalog 2020 2022",
+      "concept": "demographics",
+      "topic": "age distribution",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 27
+    },
+    {
+      "query": "fertility rate CKAN 2020 2022",
+      "concept": "demographics",
+      "topic": "fertility rate",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 28
+    },
+    {
+      "query": "fertility rate Schema.org dataset 2020 2022",
+      "concept": "demographics",
+      "topic": "fertility rate",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 29
+    },
+    {
+      "query": "fertility rate DCAT catalog 2020 2022",
+      "concept": "demographics",
+      "topic": "fertility rate",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 30
+    },
+    {
+      "query": "migration rate CKAN 2020 2022",
+      "concept": "demographics",
+      "topic": "migration rate",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 31
+    },
+    {
+      "query": "migration rate Schema.org dataset 2020 2022",
+      "concept": "demographics",
+      "topic": "migration rate",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 32
+    },
+    {
+      "query": "migration rate DCAT catalog 2020 2022",
+      "concept": "demographics",
+      "topic": "migration rate",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 33
+    },
+    {
+      "query": "GDP per capita CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "GDP per capita",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 34
+    },
+    {
+      "query": "GDP per capita Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "GDP per capita",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 35
+    },
+    {
+      "query": "GDP per capita DCAT catalog 2020 2022",
+      "concept": "economic",
+      "topic": "GDP per capita",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 36
+    },
+    {
+      "query": "inflation rate CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "inflation rate",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 37
+    },
+    {
+      "query": "inflation rate Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "inflation rate",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 38
+    },
+    {
+      "query": "inflation rate DCAT catalog 2020 2022",
+      "concept": "economic",
+      "topic": "inflation rate",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 39
+    },
+    {
+      "query": "unemployment rate CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "unemployment rate",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 40
+    },
+    {
+      "query": "unemployment rate Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "unemployment rate",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 41
+    },
+    {
+      "query": "unemployment rate DCAT catalog 2020 2022",
+      "concept": "economic",
+      "topic": "unemployment rate",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 42
+    },
+    {
+      "query": "trade balance CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "trade balance",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 43
+    },
+    {
+      "query": "trade balance Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "trade balance",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 44
+    },
+    {
+      "query": "trade balance DCAT catalog 2020 2022",
+      "concept": "economic",
+      "topic": "trade balance",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 45
+    },
+    {
+      "query": "literacy rate CKAN 2020 2022",
+      "concept": "education",
+      "topic": "literacy rate",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 46
+    },
+    {
+      "query": "literacy rate Schema.org dataset 2020 2022",
+      "concept": "education",
+      "topic": "literacy rate",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 47
+    },
+    {
+      "query": "literacy rate DCAT catalog 2020 2022",
+      "concept": "education",
+      "topic": "literacy rate",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 48
+    },
+    {
+      "query": "school enrollment rate CKAN 2020 2022",
+      "concept": "education",
+      "topic": "school enrollment rate",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 49
+    },
+    {
+      "query": "school enrollment rate Schema.org dataset 2020 2022",
+      "concept": "education",
+      "topic": "school enrollment rate",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 50
+    },
+    {
+      "query": "school enrollment rate DCAT catalog 2020 2022",
+      "concept": "education",
+      "topic": "school enrollment rate",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 51
+    },
+    {
+      "query": "education expenditure CKAN 2020 2022",
+      "concept": "education",
+      "topic": "education expenditure",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 52
+    },
+    {
+      "query": "education expenditure Schema.org dataset 2020 2022",
+      "concept": "education",
+      "topic": "education expenditure",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 53
+    },
+    {
+      "query": "education expenditure DCAT catalog 2020 2022",
+      "concept": "education",
+      "topic": "education expenditure",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 54
+    },
+    {
+      "query": "human development index CKAN 2020 2022",
+      "concept": "education",
+      "topic": "human development index",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 55
+    },
+    {
+      "query": "human development index Schema.org dataset 2020 2022",
+      "concept": "education",
+      "topic": "human development index",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 56
+    },
+    {
+      "query": "human development index DCAT catalog 2020 2022",
+      "concept": "education",
+      "topic": "human development index",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 57
+    },
+    {
+      "query": "CO2 emissions CKAN 2020 2022",
+      "concept": "environmental",
+      "topic": "CO2 emissions",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 58
+    },
+    {
+      "query": "CO2 emissions Schema.org dataset 2020 2022",
+      "concept": "environmental",
+      "topic": "CO2 emissions",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 59
+    },
+    {
+      "query": "CO2 emissions DCAT catalog 2020 2022",
+      "concept": "environmental",
+      "topic": "CO2 emissions",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 60
+    },
+    {
+      "query": "renewable energy share CKAN 2020 2022",
+      "concept": "environmental",
+      "topic": "renewable energy share",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 61
+    },
+    {
+      "query": "renewable energy share Schema.org dataset 2020 2022",
+      "concept": "environmental",
+      "topic": "renewable energy share",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 62
+    },
+    {
+      "query": "renewable energy share DCAT catalog 2020 2022",
+      "concept": "environmental",
+      "topic": "renewable energy share",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 63
+    },
+    {
+      "query": "deforestation rate CKAN 2020 2022",
+      "concept": "environmental",
+      "topic": "deforestation rate",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 64
+    },
+    {
+      "query": "deforestation rate Schema.org dataset 2020 2022",
+      "concept": "environmental",
+      "topic": "deforestation rate",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 65
+    },
+    {
+      "query": "deforestation rate DCAT catalog 2020 2022",
+      "concept": "environmental",
+      "topic": "deforestation rate",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 66
+    },
+    {
+      "query": "access to clean water CKAN 2020 2022",
+      "concept": "environmental",
+      "topic": "access to clean water",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 67
+    },
+    {
+      "query": "access to clean water Schema.org dataset 2020 2022",
+      "concept": "environmental",
+      "topic": "access to clean water",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 68
+    },
+    {
+      "query": "access to clean water DCAT catalog 2020 2022",
+      "concept": "environmental",
+      "topic": "access to clean water",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 69
+    },
+    {
+      "query": "urbanization rate CKAN 2020 2022",
+      "concept": "geospatial",
+      "topic": "urbanization rate",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 70
+    },
+    {
+      "query": "urbanization rate Schema.org dataset 2020 2022",
+      "concept": "geospatial",
+      "topic": "urbanization rate",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 71
+    },
+    {
+      "query": "urbanization rate DCAT catalog 2020 2022",
+      "concept": "geospatial",
+      "topic": "urbanization rate",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 72
+    },
+    {
+      "query": "land area CKAN 2020 2022",
+      "concept": "geospatial",
+      "topic": "land area",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 73
+    },
+    {
+      "query": "land area Schema.org dataset 2020 2022",
+      "concept": "geospatial",
+      "topic": "land area",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 74
+    },
+    {
+      "query": "land area DCAT catalog 2020 2022",
+      "concept": "geospatial",
+      "topic": "land area",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 75
+    },
+    {
+      "query": "population density CKAN 2020 2022",
+      "concept": "geospatial",
+      "topic": "population density",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 76
+    },
+    {
+      "query": "population density Schema.org dataset 2020 2022",
+      "concept": "geospatial",
+      "topic": "population density",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 77
+    },
+    {
+      "query": "population density DCAT catalog 2020 2022",
+      "concept": "geospatial",
+      "topic": "population density",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 78
+    },
+    {
+      "query": "geographic coordinates CKAN 2020 2022",
+      "concept": "geospatial",
+      "topic": "geographic coordinates",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 79
+    },
+    {
+      "query": "geographic coordinates Schema.org dataset 2020 2022",
+      "concept": "geospatial",
+      "topic": "geographic coordinates",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 80
+    },
+    {
+      "query": "geographic coordinates DCAT catalog 2020 2022",
+      "concept": "geospatial",
+      "topic": "geographic coordinates",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 81
+    },
+    {
+      "query": "life expectancy CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "life expectancy",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 82
+    },
+    {
+      "query": "life expectancy Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "life expectancy",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 83
+    },
+    {
+      "query": "life expectancy DCAT catalog 2020 2022",
+      "concept": "public_health",
+      "topic": "life expectancy",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 84
+    },
+    {
+      "query": "mortality rate CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "mortality rate",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 85
+    },
+    {
+      "query": "mortality rate Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "mortality rate",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 86
+    },
+    {
+      "query": "mortality rate DCAT catalog 2020 2022",
+      "concept": "public_health",
+      "topic": "mortality rate",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 87
+    },
+    {
+      "query": "disease prevalence CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "disease prevalence",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 88
+    },
+    {
+      "query": "disease prevalence Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "disease prevalence",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 89
+    },
+    {
+      "query": "disease prevalence DCAT catalog 2020 2022",
+      "concept": "public_health",
+      "topic": "disease prevalence",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 90
+    },
+    {
+      "query": "healthcare expenditure CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "healthcare expenditure",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 91
+    },
+    {
+      "query": "healthcare expenditure Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "healthcare expenditure",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 92
+    },
+    {
+      "query": "healthcare expenditure DCAT catalog 2020 2022",
+      "concept": "public_health",
+      "topic": "healthcare expenditure",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 93
+    },
+    {
+      "query": "annual statistics CKAN 2020 2022",
+      "concept": "time_series",
+      "topic": "annual statistics",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 94
+    },
+    {
+      "query": "annual statistics Schema.org dataset 2020 2022",
+      "concept": "time_series",
+      "topic": "annual statistics",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 95
+    },
+    {
+      "query": "annual statistics DCAT catalog 2020 2022",
+      "concept": "time_series",
+      "topic": "annual statistics",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 96
+    },
+    {
+      "query": "yearly indicators CKAN 2020 2022",
+      "concept": "time_series",
+      "topic": "yearly indicators",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 97
+    },
+    {
+      "query": "yearly indicators Schema.org dataset 2020 2022",
+      "concept": "time_series",
+      "topic": "yearly indicators",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 98
+    },
+    {
+      "query": "yearly indicators DCAT catalog 2020 2022",
+      "concept": "time_series",
+      "topic": "yearly indicators",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 99
+    },
+    {
+      "query": "longitudinal data CKAN 2020 2022",
+      "concept": "time_series",
+      "topic": "longitudinal data",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 100
+    },
+    {
+      "query": "longitudinal data Schema.org dataset 2020 2022",
+      "concept": "time_series",
+      "topic": "longitudinal data",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 101
+    },
+    {
+      "query": "longitudinal data DCAT catalog 2020 2022",
+      "concept": "time_series",
+      "topic": "longitudinal data",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "id": 102
+    },
+    {
+      "query": "country code by country by year CKAN 2020 2022",
+      "identifier": "country_code",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 103
+    },
+    {
+      "query": "country code by country by year Schema.org dataset 2020 2022",
+      "identifier": "country_code",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 104
+    },
+    {
+      "query": "country code by country by year DCAT catalog 2020 2022",
+      "identifier": "country_code",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 105
+    },
+    {
+      "query": "country code country year panel data CKAN 2020 2022",
+      "identifier": "country_code",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 106
+    },
+    {
+      "query": "country code country year panel data Schema.org dataset 2020 2022",
+      "identifier": "country_code",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 107
+    },
+    {
+      "query": "country code country year panel data DCAT catalog 2020 2022",
+      "identifier": "country_code",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 108
+    },
+    {
+      "query": "country code ISO country code dataset CKAN 2020 2022",
+      "identifier": "country_code",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 109
+    },
+    {
+      "query": "country code ISO country code dataset Schema.org dataset 2020 2022",
+      "identifier": "country_code",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 110
+    },
+    {
+      "query": "country code ISO country code dataset DCAT catalog 2020 2022",
+      "identifier": "country_code",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 111
+    },
+    {
+      "query": "country code cross-country dataset CKAN 2020 2022",
+      "identifier": "country_code",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 112
+    },
+    {
+      "query": "country code cross-country dataset Schema.org dataset 2020 2022",
+      "identifier": "country_code",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 113
+    },
+    {
+      "query": "country code cross-country dataset DCAT catalog 2020 2022",
+      "identifier": "country_code",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 114
+    },
+    {
+      "query": "currency code by country by year CKAN 2020 2022",
+      "identifier": "currency_code",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 115
+    },
+    {
+      "query": "currency code by country by year Schema.org dataset 2020 2022",
+      "identifier": "currency_code",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 116
+    },
+    {
+      "query": "currency code by country by year DCAT catalog 2020 2022",
+      "identifier": "currency_code",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 117
+    },
+    {
+      "query": "currency code country year panel data CKAN 2020 2022",
+      "identifier": "currency_code",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 118
+    },
+    {
+      "query": "currency code country year panel data Schema.org dataset 2020 2022",
+      "identifier": "currency_code",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 119
+    },
+    {
+      "query": "currency code country year panel data DCAT catalog 2020 2022",
+      "identifier": "currency_code",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 120
+    },
+    {
+      "query": "currency code ISO country code dataset CKAN 2020 2022",
+      "identifier": "currency_code",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 121
+    },
+    {
+      "query": "currency code ISO country code dataset Schema.org dataset 2020 2022",
+      "identifier": "currency_code",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 122
+    },
+    {
+      "query": "currency code ISO country code dataset DCAT catalog 2020 2022",
+      "identifier": "currency_code",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 123
+    },
+    {
+      "query": "currency code cross-country dataset CKAN 2020 2022",
+      "identifier": "currency_code",
+      "source": "CKAN",
+      "target_connector": "CKAN",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 124
+    },
+    {
+      "query": "currency code cross-country dataset Schema.org dataset 2020 2022",
+      "identifier": "currency_code",
+      "source": "Schema.org dataset",
+      "target_connector": "Schema.org",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 125
+    },
+    {
+      "query": "currency code cross-country dataset DCAT catalog 2020 2022",
+      "identifier": "currency_code",
+      "source": "DCAT catalog",
+      "target_connector": "DCAT",
+      "strategy": "joinability",
+      "priority": 2,
+      "id": 126
+    },
+    {
+      "query": "countries United States, Germany, Brazil cross-country dataset CKAN 2020 2022",
+      "target_connector": "CKAN",
+      "strategy": "joinability_entity_sample",
+      "priority": 2,
+      "id": 127
+    },
+    {
+      "query": "countries United States, Germany, Brazil cross-country dataset Schema.org dataset 2020 2022",
+      "target_connector": "Schema.org",
+      "strategy": "joinability_entity_sample",
+      "priority": 2,
+      "id": 128
+    },
+    {
+      "query": "gross domestic product by country year CKAN 2020 2022",
+      "column": "gdp_usd",
+      "synonym": "gross domestic product",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 129
+    },
+    {
+      "query": "gross domestic product by country year Schema.org dataset 2020 2022",
+      "column": "gdp_usd",
+      "synonym": "gross domestic product",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 130
+    },
+    {
+      "query": "gross domestic product by country year DCAT catalog 2020 2022",
+      "column": "gdp_usd",
+      "synonym": "gross domestic product",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 131
+    },
+    {
+      "query": "national income by country year CKAN 2020 2022",
+      "column": "gdp_usd",
+      "synonym": "national income",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 132
+    },
+    {
+      "query": "national income by country year Schema.org dataset 2020 2022",
+      "column": "gdp_usd",
+      "synonym": "national income",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 133
+    },
+    {
+      "query": "national income by country year DCAT catalog 2020 2022",
+      "column": "gdp_usd",
+      "synonym": "national income",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 134
+    },
+    {
+      "query": "economic output by country year CKAN 2020 2022",
+      "column": "gdp_usd",
+      "synonym": "economic output",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 135
+    },
+    {
+      "query": "economic output by country year Schema.org dataset 2020 2022",
+      "column": "gdp_usd",
+      "synonym": "economic output",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 136
+    },
+    {
+      "query": "economic output by country year DCAT catalog 2020 2022",
+      "column": "gdp_usd",
+      "synonym": "economic output",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 137
+    },
+    {
+      "query": "economic growth rate by country year CKAN 2020 2022",
+      "column": "gdp_growth_pct",
+      "synonym": "economic growth rate",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 138
+    },
+    {
+      "query": "economic growth rate by country year Schema.org dataset 2020 2022",
+      "column": "gdp_growth_pct",
+      "synonym": "economic growth rate",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 139
+    },
+    {
+      "query": "economic growth rate by country year DCAT catalog 2020 2022",
+      "column": "gdp_growth_pct",
+      "synonym": "economic growth rate",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 140
+    },
+    {
+      "query": "GDP growth by country year CKAN 2020 2022",
+      "column": "gdp_growth_pct",
+      "synonym": "GDP growth",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 141
+    },
+    {
+      "query": "GDP growth by country year Schema.org dataset 2020 2022",
+      "column": "gdp_growth_pct",
+      "synonym": "GDP growth",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 142
+    },
+    {
+      "query": "GDP growth by country year DCAT catalog 2020 2022",
+      "column": "gdp_growth_pct",
+      "synonym": "GDP growth",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 143
+    },
+    {
+      "query": "output growth by country year CKAN 2020 2022",
+      "column": "gdp_growth_pct",
+      "synonym": "output growth",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 144
+    },
+    {
+      "query": "output growth by country year Schema.org dataset 2020 2022",
+      "column": "gdp_growth_pct",
+      "synonym": "output growth",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 145
+    },
+    {
+      "query": "output growth by country year DCAT catalog 2020 2022",
+      "column": "gdp_growth_pct",
+      "synonym": "output growth",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 146
+    },
+    {
+      "query": "population count by country year CKAN 2020 2022",
+      "column": "population",
+      "synonym": "population count",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 147
+    },
+    {
+      "query": "population count by country year Schema.org dataset 2020 2022",
+      "column": "population",
+      "synonym": "population count",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 148
+    },
+    {
+      "query": "population count by country year DCAT catalog 2020 2022",
+      "column": "population",
+      "synonym": "population count",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 149
+    },
+    {
+      "query": "demographic size by country year CKAN 2020 2022",
+      "column": "population",
+      "synonym": "demographic size",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 150
+    },
+    {
+      "query": "demographic size by country year Schema.org dataset 2020 2022",
+      "column": "population",
+      "synonym": "demographic size",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 151
+    },
+    {
+      "query": "demographic size by country year DCAT catalog 2020 2022",
+      "column": "population",
+      "synonym": "demographic size",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 152
+    },
+    {
+      "query": "inhabitants by country year CKAN 2020 2022",
+      "column": "population",
+      "synonym": "inhabitants",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 153
+    },
+    {
+      "query": "inhabitants by country year Schema.org dataset 2020 2022",
+      "column": "population",
+      "synonym": "inhabitants",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 154
+    },
+    {
+      "query": "inhabitants by country year DCAT catalog 2020 2022",
+      "column": "population",
+      "synonym": "inhabitants",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 155
+    },
+    {
+      "query": "longevity by country year CKAN 2020 2022",
+      "column": "life_expectancy",
+      "synonym": "longevity",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 156
+    },
+    {
+      "query": "longevity by country year Schema.org dataset 2020 2022",
+      "column": "life_expectancy",
+      "synonym": "longevity",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 157
+    },
+    {
+      "query": "longevity by country year DCAT catalog 2020 2022",
+      "column": "life_expectancy",
+      "synonym": "longevity",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 158
+    },
+    {
+      "query": "health outcomes by country year CKAN 2020 2022",
+      "column": "life_expectancy",
+      "synonym": "health outcomes",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 159
+    },
+    {
+      "query": "health outcomes by country year Schema.org dataset 2020 2022",
+      "column": "life_expectancy",
+      "synonym": "health outcomes",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 160
+    },
+    {
+      "query": "health outcomes by country year DCAT catalog 2020 2022",
+      "column": "life_expectancy",
+      "synonym": "health outcomes",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 161
+    },
+    {
+      "query": "mortality rate by country year CKAN 2020 2022",
+      "column": "life_expectancy",
+      "synonym": "mortality rate",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 162
+    },
+    {
+      "query": "mortality rate by country year Schema.org dataset 2020 2022",
+      "column": "life_expectancy",
+      "synonym": "mortality rate",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 163
+    },
+    {
+      "query": "mortality rate by country year DCAT catalog 2020 2022",
+      "column": "life_expectancy",
+      "synonym": "mortality rate",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 164
+    },
+    {
+      "query": "child mortality by country year CKAN 2020 2022",
+      "column": "infant_mortality_rate",
+      "synonym": "child mortality",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 165
+    },
+    {
+      "query": "child mortality by country year Schema.org dataset 2020 2022",
+      "column": "infant_mortality_rate",
+      "synonym": "child mortality",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 166
+    },
+    {
+      "query": "child mortality by country year DCAT catalog 2020 2022",
+      "column": "infant_mortality_rate",
+      "synonym": "child mortality",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 167
+    },
+    {
+      "query": "under-5 mortality by country year CKAN 2020 2022",
+      "column": "infant_mortality_rate",
+      "synonym": "under-5 mortality",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 168
+    },
+    {
+      "query": "under-5 mortality by country year Schema.org dataset 2020 2022",
+      "column": "infant_mortality_rate",
+      "synonym": "under-5 mortality",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 169
+    },
+    {
+      "query": "under-5 mortality by country year DCAT catalog 2020 2022",
+      "column": "infant_mortality_rate",
+      "synonym": "under-5 mortality",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 170
+    },
+    {
+      "query": "neonatal mortality by country year CKAN 2020 2022",
+      "column": "infant_mortality_rate",
+      "synonym": "neonatal mortality",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 171
+    },
+    {
+      "query": "neonatal mortality by country year Schema.org dataset 2020 2022",
+      "column": "infant_mortality_rate",
+      "synonym": "neonatal mortality",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 172
+    },
+    {
+      "query": "neonatal mortality by country year DCAT catalog 2020 2022",
+      "column": "infant_mortality_rate",
+      "synonym": "neonatal mortality",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 173
+    },
+    {
+      "query": "literacy by country year CKAN 2020 2022",
+      "column": "literacy_rate_pct",
+      "synonym": "literacy",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 174
+    },
+    {
+      "query": "literacy by country year Schema.org dataset 2020 2022",
+      "column": "literacy_rate_pct",
+      "synonym": "literacy",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 175
+    },
+    {
+      "query": "literacy by country year DCAT catalog 2020 2022",
+      "column": "literacy_rate_pct",
+      "synonym": "literacy",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 176
+    },
+    {
+      "query": "education rate by country year CKAN 2020 2022",
+      "column": "literacy_rate_pct",
+      "synonym": "education rate",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 177
+    },
+    {
+      "query": "education rate by country year Schema.org dataset 2020 2022",
+      "column": "literacy_rate_pct",
+      "synonym": "education rate",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 178
+    },
+    {
+      "query": "education rate by country year DCAT catalog 2020 2022",
+      "column": "literacy_rate_pct",
+      "synonym": "education rate",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 179
+    },
+    {
+      "query": "reading ability by country year CKAN 2020 2022",
+      "column": "literacy_rate_pct",
+      "synonym": "reading ability",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 180
+    },
+    {
+      "query": "reading ability by country year Schema.org dataset 2020 2022",
+      "column": "literacy_rate_pct",
+      "synonym": "reading ability",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 181
+    },
+    {
+      "query": "reading ability by country year DCAT catalog 2020 2022",
+      "column": "literacy_rate_pct",
+      "synonym": "reading ability",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 182
+    },
+    {
+      "query": "urbanization rate by country year CKAN 2020 2022",
+      "column": "urban_pop_pct",
+      "synonym": "urbanization rate",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 183
+    },
+    {
+      "query": "urbanization rate by country year Schema.org dataset 2020 2022",
+      "column": "urban_pop_pct",
+      "synonym": "urbanization rate",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 184
+    },
+    {
+      "query": "urbanization rate by country year DCAT catalog 2020 2022",
+      "column": "urban_pop_pct",
+      "synonym": "urbanization rate",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 185
+    },
+    {
+      "query": "urban population share by country year CKAN 2020 2022",
+      "column": "urban_pop_pct",
+      "synonym": "urban population share",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 186
+    },
+    {
+      "query": "urban population share by country year Schema.org dataset 2020 2022",
+      "column": "urban_pop_pct",
+      "synonym": "urban population share",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 187
+    },
+    {
+      "query": "urban population share by country year DCAT catalog 2020 2022",
+      "column": "urban_pop_pct",
+      "synonym": "urban population share",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 188
+    },
+    {
+      "query": "city population by country year CKAN 2020 2022",
+      "column": "urban_pop_pct",
+      "synonym": "city population",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 189
+    },
+    {
+      "query": "city population by country year Schema.org dataset 2020 2022",
+      "column": "urban_pop_pct",
+      "synonym": "city population",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 190
+    },
+    {
+      "query": "city population by country year DCAT catalog 2020 2022",
+      "column": "urban_pop_pct",
+      "synonym": "city population",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 191
+    },
+    {
+      "query": "carbon emissions by country year CKAN 2020 2022",
+      "column": "co2_emissions_kt",
+      "synonym": "carbon emissions",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 192
+    },
+    {
+      "query": "carbon emissions by country year Schema.org dataset 2020 2022",
+      "column": "co2_emissions_kt",
+      "synonym": "carbon emissions",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 193
+    },
+    {
+      "query": "carbon emissions by country year DCAT catalog 2020 2022",
+      "column": "co2_emissions_kt",
+      "synonym": "carbon emissions",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 194
+    },
+    {
+      "query": "greenhouse gas emissions by country year CKAN 2020 2022",
+      "column": "co2_emissions_kt",
+      "synonym": "greenhouse gas emissions",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 195
+    },
+    {
+      "query": "greenhouse gas emissions by country year Schema.org dataset 2020 2022",
+      "column": "co2_emissions_kt",
+      "synonym": "greenhouse gas emissions",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 196
+    },
+    {
+      "query": "greenhouse gas emissions by country year DCAT catalog 2020 2022",
+      "column": "co2_emissions_kt",
+      "synonym": "greenhouse gas emissions",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 197
+    },
+    {
+      "query": "pollution by country year CKAN 2020 2022",
+      "column": "co2_emissions_kt",
+      "synonym": "pollution",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 198
+    },
+    {
+      "query": "pollution by country year Schema.org dataset 2020 2022",
+      "column": "co2_emissions_kt",
+      "synonym": "pollution",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 199
+    },
+    {
+      "query": "pollution by country year DCAT catalog 2020 2022",
+      "column": "co2_emissions_kt",
+      "synonym": "pollution",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 200
+    },
+    {
+      "query": "geographic region by country year CKAN 2020 2022",
+      "column": "region",
+      "synonym": "geographic region",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 201
+    },
+    {
+      "query": "geographic region by country year Schema.org dataset 2020 2022",
+      "column": "region",
+      "synonym": "geographic region",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 202
+    },
+    {
+      "query": "geographic region by country year DCAT catalog 2020 2022",
+      "column": "region",
+      "synonym": "geographic region",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 203
+    },
+    {
+      "query": "world region by country year CKAN 2020 2022",
+      "column": "region",
+      "synonym": "world region",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 204
+    },
+    {
+      "query": "world region by country year Schema.org dataset 2020 2022",
+      "column": "region",
+      "synonym": "world region",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 205
+    },
+    {
+      "query": "world region by country year DCAT catalog 2020 2022",
+      "column": "region",
+      "synonym": "world region",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 206
+    },
+    {
+      "query": "continental area by country year CKAN 2020 2022",
+      "column": "region",
+      "synonym": "continental area",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 207
+    },
+    {
+      "query": "continental area by country year Schema.org dataset 2020 2022",
+      "column": "region",
+      "synonym": "continental area",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 208
+    },
+    {
+      "query": "continental area by country year DCAT catalog 2020 2022",
+      "column": "region",
+      "synonym": "continental area",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 209
+    },
+    {
+      "query": "income classification by country year CKAN 2020 2022",
+      "column": "income_group",
+      "synonym": "income classification",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 210
+    },
+    {
+      "query": "income classification by country year Schema.org dataset 2020 2022",
+      "column": "income_group",
+      "synonym": "income classification",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 211
+    },
+    {
+      "query": "income classification by country year DCAT catalog 2020 2022",
+      "column": "income_group",
+      "synonym": "income classification",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 212
+    },
+    {
+      "query": "development status by country year CKAN 2020 2022",
+      "column": "income_group",
+      "synonym": "development status",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 213
+    },
+    {
+      "query": "development status by country year Schema.org dataset 2020 2022",
+      "column": "income_group",
+      "synonym": "development status",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 214
+    },
+    {
+      "query": "development status by country year DCAT catalog 2020 2022",
+      "column": "income_group",
+      "synonym": "development status",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 215
+    },
+    {
+      "query": "wealth group by country year CKAN 2020 2022",
+      "column": "income_group",
+      "synonym": "wealth group",
+      "target_connector": "CKAN",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 216
+    },
+    {
+      "query": "wealth group by country year Schema.org dataset 2020 2022",
+      "column": "income_group",
+      "synonym": "wealth group",
+      "target_connector": "Schema.org",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 217
+    },
+    {
+      "query": "wealth group by country year DCAT catalog 2020 2022",
+      "column": "income_group",
+      "synonym": "wealth group",
+      "target_connector": "DCAT",
+      "strategy": "synonym",
+      "priority": 2,
+      "id": 218
+    },
+    {
+      "query": "age distribution North America CKAN 2020 2022",
+      "concept": "demographics",
+      "topic": "age distribution",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 219
+    },
+    {
+      "query": "age distribution North America Schema.org dataset 2020 2022",
+      "concept": "demographics",
+      "topic": "age distribution",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 220
+    },
+    {
+      "query": "age distribution Europe CKAN 2020 2022",
+      "concept": "demographics",
+      "topic": "age distribution",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 221
+    },
+    {
+      "query": "age distribution Europe Schema.org dataset 2020 2022",
+      "concept": "demographics",
+      "topic": "age distribution",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 222
+    },
+    {
+      "query": "fertility rate North America CKAN 2020 2022",
+      "concept": "demographics",
+      "topic": "fertility rate",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 223
+    },
+    {
+      "query": "fertility rate North America Schema.org dataset 2020 2022",
+      "concept": "demographics",
+      "topic": "fertility rate",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 224
+    },
+    {
+      "query": "fertility rate Europe CKAN 2020 2022",
+      "concept": "demographics",
+      "topic": "fertility rate",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 225
+    },
+    {
+      "query": "fertility rate Europe Schema.org dataset 2020 2022",
+      "concept": "demographics",
+      "topic": "fertility rate",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 226
+    },
+    {
+      "query": "migration rate North America CKAN 2020 2022",
+      "concept": "demographics",
+      "topic": "migration rate",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 227
+    },
+    {
+      "query": "migration rate North America Schema.org dataset 2020 2022",
+      "concept": "demographics",
+      "topic": "migration rate",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 228
+    },
+    {
+      "query": "migration rate Europe CKAN 2020 2022",
+      "concept": "demographics",
+      "topic": "migration rate",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 229
+    },
+    {
+      "query": "migration rate Europe Schema.org dataset 2020 2022",
+      "concept": "demographics",
+      "topic": "migration rate",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 230
+    },
+    {
+      "query": "gender ratio North America CKAN 2020 2022",
+      "concept": "demographics",
+      "topic": "gender ratio",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 231
+    },
+    {
+      "query": "gender ratio North America Schema.org dataset 2020 2022",
+      "concept": "demographics",
+      "topic": "gender ratio",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 232
+    },
+    {
+      "query": "gender ratio Europe CKAN 2020 2022",
+      "concept": "demographics",
+      "topic": "gender ratio",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 233
+    },
+    {
+      "query": "gender ratio Europe Schema.org dataset 2020 2022",
+      "concept": "demographics",
+      "topic": "gender ratio",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 234
+    },
+    {
+      "query": "median age North America CKAN 2020 2022",
+      "concept": "demographics",
+      "topic": "median age",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 235
+    },
+    {
+      "query": "median age North America Schema.org dataset 2020 2022",
+      "concept": "demographics",
+      "topic": "median age",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 236
+    },
+    {
+      "query": "median age Europe CKAN 2020 2022",
+      "concept": "demographics",
+      "topic": "median age",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 237
+    },
+    {
+      "query": "median age Europe Schema.org dataset 2020 2022",
+      "concept": "demographics",
+      "topic": "median age",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 238
+    },
+    {
+      "query": "inflation rate North America CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "inflation rate",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 239
+    },
+    {
+      "query": "inflation rate North America Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "inflation rate",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 240
+    },
+    {
+      "query": "inflation rate Europe CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "inflation rate",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 241
+    },
+    {
+      "query": "inflation rate Europe Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "inflation rate",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 242
+    },
+    {
+      "query": "unemployment rate North America CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "unemployment rate",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 243
+    },
+    {
+      "query": "unemployment rate North America Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "unemployment rate",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 244
+    },
+    {
+      "query": "unemployment rate Europe CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "unemployment rate",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 245
+    },
+    {
+      "query": "unemployment rate Europe Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "unemployment rate",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 246
+    },
+    {
+      "query": "trade balance North America CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "trade balance",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 247
+    },
+    {
+      "query": "trade balance North America Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "trade balance",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 248
+    },
+    {
+      "query": "trade balance Europe CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "trade balance",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 249
+    },
+    {
+      "query": "trade balance Europe Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "trade balance",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 250
+    },
+    {
+      "query": "foreign direct investment North America CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "foreign direct investment",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 251
+    },
+    {
+      "query": "foreign direct investment North America Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "foreign direct investment",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 252
+    },
+    {
+      "query": "foreign direct investment Europe CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "foreign direct investment",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 253
+    },
+    {
+      "query": "foreign direct investment Europe Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "foreign direct investment",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 254
+    },
+    {
+      "query": "government debt North America CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "government debt",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 255
+    },
+    {
+      "query": "government debt North America Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "government debt",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 256
+    },
+    {
+      "query": "government debt Europe CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "government debt",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 257
+    },
+    {
+      "query": "government debt Europe Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "government debt",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 258
+    },
+    {
+      "query": "interest rate North America CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "interest rate",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 259
+    },
+    {
+      "query": "interest rate North America Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "interest rate",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 260
+    },
+    {
+      "query": "interest rate Europe CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "interest rate",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 261
+    },
+    {
+      "query": "interest rate Europe Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "interest rate",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 262
+    },
+    {
+      "query": "exchange rate North America CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "exchange rate",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 263
+    },
+    {
+      "query": "exchange rate North America Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "exchange rate",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 264
+    },
+    {
+      "query": "exchange rate Europe CKAN 2020 2022",
+      "concept": "economic",
+      "topic": "exchange rate",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 265
+    },
+    {
+      "query": "exchange rate Europe Schema.org dataset 2020 2022",
+      "concept": "economic",
+      "topic": "exchange rate",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 266
+    },
+    {
+      "query": "school enrollment rate North America CKAN 2020 2022",
+      "concept": "education",
+      "topic": "school enrollment rate",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 267
+    },
+    {
+      "query": "school enrollment rate North America Schema.org dataset 2020 2022",
+      "concept": "education",
+      "topic": "school enrollment rate",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 268
+    },
+    {
+      "query": "school enrollment rate Europe CKAN 2020 2022",
+      "concept": "education",
+      "topic": "school enrollment rate",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 269
+    },
+    {
+      "query": "school enrollment rate Europe Schema.org dataset 2020 2022",
+      "concept": "education",
+      "topic": "school enrollment rate",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 270
+    },
+    {
+      "query": "education expenditure North America CKAN 2020 2022",
+      "concept": "education",
+      "topic": "education expenditure",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 271
+    },
+    {
+      "query": "education expenditure North America Schema.org dataset 2020 2022",
+      "concept": "education",
+      "topic": "education expenditure",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 272
+    },
+    {
+      "query": "education expenditure Europe CKAN 2020 2022",
+      "concept": "education",
+      "topic": "education expenditure",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 273
+    },
+    {
+      "query": "education expenditure Europe Schema.org dataset 2020 2022",
+      "concept": "education",
+      "topic": "education expenditure",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 274
+    },
+    {
+      "query": "human development index North America CKAN 2020 2022",
+      "concept": "education",
+      "topic": "human development index",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 275
+    },
+    {
+      "query": "human development index North America Schema.org dataset 2020 2022",
+      "concept": "education",
+      "topic": "human development index",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 276
+    },
+    {
+      "query": "human development index Europe CKAN 2020 2022",
+      "concept": "education",
+      "topic": "human development index",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 277
+    },
+    {
+      "query": "human development index Europe Schema.org dataset 2020 2022",
+      "concept": "education",
+      "topic": "human development index",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 278
+    },
+    {
+      "query": "PISA scores North America CKAN 2020 2022",
+      "concept": "education",
+      "topic": "PISA scores",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 279
+    },
+    {
+      "query": "PISA scores North America Schema.org dataset 2020 2022",
+      "concept": "education",
+      "topic": "PISA scores",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 280
+    },
+    {
+      "query": "PISA scores Europe CKAN 2020 2022",
+      "concept": "education",
+      "topic": "PISA scores",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 281
+    },
+    {
+      "query": "PISA scores Europe Schema.org dataset 2020 2022",
+      "concept": "education",
+      "topic": "PISA scores",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 282
+    },
+    {
+      "query": "renewable energy share North America CKAN 2020 2022",
+      "concept": "environmental",
+      "topic": "renewable energy share",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 283
+    },
+    {
+      "query": "renewable energy share North America Schema.org dataset 2020 2022",
+      "concept": "environmental",
+      "topic": "renewable energy share",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 284
+    },
+    {
+      "query": "renewable energy share Europe CKAN 2020 2022",
+      "concept": "environmental",
+      "topic": "renewable energy share",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 285
+    },
+    {
+      "query": "renewable energy share Europe Schema.org dataset 2020 2022",
+      "concept": "environmental",
+      "topic": "renewable energy share",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 286
+    },
+    {
+      "query": "deforestation rate North America CKAN 2020 2022",
+      "concept": "environmental",
+      "topic": "deforestation rate",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 287
+    },
+    {
+      "query": "deforestation rate North America Schema.org dataset 2020 2022",
+      "concept": "environmental",
+      "topic": "deforestation rate",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 288
+    },
+    {
+      "query": "deforestation rate Europe CKAN 2020 2022",
+      "concept": "environmental",
+      "topic": "deforestation rate",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 289
+    },
+    {
+      "query": "deforestation rate Europe Schema.org dataset 2020 2022",
+      "concept": "environmental",
+      "topic": "deforestation rate",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 290
+    },
+    {
+      "query": "access to clean water North America CKAN 2020 2022",
+      "concept": "environmental",
+      "topic": "access to clean water",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 291
+    },
+    {
+      "query": "access to clean water North America Schema.org dataset 2020 2022",
+      "concept": "environmental",
+      "topic": "access to clean water",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 292
+    },
+    {
+      "query": "access to clean water Europe CKAN 2020 2022",
+      "concept": "environmental",
+      "topic": "access to clean water",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 293
+    },
+    {
+      "query": "access to clean water Europe Schema.org dataset 2020 2022",
+      "concept": "environmental",
+      "topic": "access to clean water",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 294
+    },
+    {
+      "query": "air quality index North America CKAN 2020 2022",
+      "concept": "environmental",
+      "topic": "air quality index",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 295
+    },
+    {
+      "query": "air quality index North America Schema.org dataset 2020 2022",
+      "concept": "environmental",
+      "topic": "air quality index",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 296
+    },
+    {
+      "query": "air quality index Europe CKAN 2020 2022",
+      "concept": "environmental",
+      "topic": "air quality index",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 297
+    },
+    {
+      "query": "air quality index Europe Schema.org dataset 2020 2022",
+      "concept": "environmental",
+      "topic": "air quality index",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 298
+    },
+    {
+      "query": "energy consumption North America CKAN 2020 2022",
+      "concept": "environmental",
+      "topic": "energy consumption",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 299
+    },
+    {
+      "query": "energy consumption North America Schema.org dataset 2020 2022",
+      "concept": "environmental",
+      "topic": "energy consumption",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 300
+    },
+    {
+      "query": "energy consumption Europe CKAN 2020 2022",
+      "concept": "environmental",
+      "topic": "energy consumption",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 301
+    },
+    {
+      "query": "energy consumption Europe Schema.org dataset 2020 2022",
+      "concept": "environmental",
+      "topic": "energy consumption",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 302
+    },
+    {
+      "query": "land area North America CKAN 2020 2022",
+      "concept": "geospatial",
+      "topic": "land area",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 303
+    },
+    {
+      "query": "land area North America Schema.org dataset 2020 2022",
+      "concept": "geospatial",
+      "topic": "land area",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 304
+    },
+    {
+      "query": "land area Europe CKAN 2020 2022",
+      "concept": "geospatial",
+      "topic": "land area",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 305
+    },
+    {
+      "query": "land area Europe Schema.org dataset 2020 2022",
+      "concept": "geospatial",
+      "topic": "land area",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 306
+    },
+    {
+      "query": "geographic coordinates North America CKAN 2020 2022",
+      "concept": "geospatial",
+      "topic": "geographic coordinates",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 307
+    },
+    {
+      "query": "geographic coordinates North America Schema.org dataset 2020 2022",
+      "concept": "geospatial",
+      "topic": "geographic coordinates",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 308
+    },
+    {
+      "query": "geographic coordinates Europe CKAN 2020 2022",
+      "concept": "geospatial",
+      "topic": "geographic coordinates",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 309
+    },
+    {
+      "query": "geographic coordinates Europe Schema.org dataset 2020 2022",
+      "concept": "geospatial",
+      "topic": "geographic coordinates",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 310
+    },
+    {
+      "query": "mortality rate North America CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "mortality rate",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 311
+    },
+    {
+      "query": "mortality rate North America Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "mortality rate",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 312
+    },
+    {
+      "query": "mortality rate Europe CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "mortality rate",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 313
+    },
+    {
+      "query": "mortality rate Europe Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "mortality rate",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 314
+    },
+    {
+      "query": "disease prevalence North America CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "disease prevalence",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 315
+    },
+    {
+      "query": "disease prevalence North America Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "disease prevalence",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 316
+    },
+    {
+      "query": "disease prevalence Europe CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "disease prevalence",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 317
+    },
+    {
+      "query": "disease prevalence Europe Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "disease prevalence",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 318
+    },
+    {
+      "query": "healthcare expenditure North America CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "healthcare expenditure",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 319
+    },
+    {
+      "query": "healthcare expenditure North America Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "healthcare expenditure",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 320
+    },
+    {
+      "query": "healthcare expenditure Europe CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "healthcare expenditure",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 321
+    },
+    {
+      "query": "healthcare expenditure Europe Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "healthcare expenditure",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 322
+    },
+    {
+      "query": "hospital beds per capita North America CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "hospital beds per capita",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 323
+    },
+    {
+      "query": "hospital beds per capita North America Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "hospital beds per capita",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 324
+    },
+    {
+      "query": "hospital beds per capita Europe CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "hospital beds per capita",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 325
+    },
+    {
+      "query": "hospital beds per capita Europe Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "hospital beds per capita",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 326
+    },
+    {
+      "query": "vaccination rate North America CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "vaccination rate",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 327
+    },
+    {
+      "query": "vaccination rate North America Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "vaccination rate",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 328
+    },
+    {
+      "query": "vaccination rate Europe CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "vaccination rate",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 329
+    },
+    {
+      "query": "vaccination rate Europe Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "vaccination rate",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 330
+    },
+    {
+      "query": "malnutrition rate North America CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "malnutrition rate",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 331
+    },
+    {
+      "query": "malnutrition rate North America Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "malnutrition rate",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 332
+    },
+    {
+      "query": "malnutrition rate Europe CKAN 2020 2022",
+      "concept": "public_health",
+      "topic": "malnutrition rate",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 333
+    },
+    {
+      "query": "malnutrition rate Europe Schema.org dataset 2020 2022",
+      "concept": "public_health",
+      "topic": "malnutrition rate",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 334
+    },
+    {
+      "query": "annual statistics North America CKAN 2020 2022",
+      "concept": "time_series",
+      "topic": "annual statistics",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 335
+    },
+    {
+      "query": "annual statistics North America Schema.org dataset 2020 2022",
+      "concept": "time_series",
+      "topic": "annual statistics",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 336
+    },
+    {
+      "query": "annual statistics Europe CKAN 2020 2022",
+      "concept": "time_series",
+      "topic": "annual statistics",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 337
+    },
+    {
+      "query": "annual statistics Europe Schema.org dataset 2020 2022",
+      "concept": "time_series",
+      "topic": "annual statistics",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 338
+    },
+    {
+      "query": "yearly indicators North America CKAN 2020 2022",
+      "concept": "time_series",
+      "topic": "yearly indicators",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 339
+    },
+    {
+      "query": "yearly indicators North America Schema.org dataset 2020 2022",
+      "concept": "time_series",
+      "topic": "yearly indicators",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 340
+    },
+    {
+      "query": "yearly indicators Europe CKAN 2020 2022",
+      "concept": "time_series",
+      "topic": "yearly indicators",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 341
+    },
+    {
+      "query": "yearly indicators Europe Schema.org dataset 2020 2022",
+      "concept": "time_series",
+      "topic": "yearly indicators",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 342
+    },
+    {
+      "query": "longitudinal data North America CKAN 2020 2022",
+      "concept": "time_series",
+      "topic": "longitudinal data",
+      "region": "North America",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 343
+    },
+    {
+      "query": "longitudinal data North America Schema.org dataset 2020 2022",
+      "concept": "time_series",
+      "topic": "longitudinal data",
+      "region": "North America",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 344
+    },
+    {
+      "query": "longitudinal data Europe CKAN 2020 2022",
+      "concept": "time_series",
+      "topic": "longitudinal data",
+      "region": "Europe",
+      "target_connector": "CKAN",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 345
+    },
+    {
+      "query": "longitudinal data Europe Schema.org dataset 2020 2022",
+      "concept": "time_series",
+      "topic": "longitudinal data",
+      "region": "Europe",
+      "target_connector": "Schema.org",
+      "strategy": "augmentation",
+      "priority": 3,
+      "id": 346
+    }
+  ]
+}

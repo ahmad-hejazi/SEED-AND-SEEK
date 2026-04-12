@@ -1,0 +1,437 @@
+{
+  "dataset_name": "seed.csv",
+  "file_path": "data\\seed.csv",
+  "file_size_bytes": 3585,
+  "file_format": "CSV",
+  "profiled_at": "2026-04-12T17:22:12.181713Z",
+  "n_rows": 32,
+  "n_columns": 14,
+  "columns": [
+    {
+      "name": "country_code",
+      "raw_dtype": "str",
+      "semantic_type": "identifier",
+      "null_count": 1,
+      "null_ratio": 0.0312,
+      "unique_count": 11,
+      "unique_ratio": 0.3438,
+      "sample_values": [
+        "USA",
+        "DEU",
+        "BRA",
+        "IND",
+        "NGA"
+      ],
+      "is_candidate_identifier": true,
+      "is_entity_like": false,
+      "is_useful_for_querying": true,
+      "is_useful_for_joining": true
+    },
+    {
+      "name": "country_name",
+      "raw_dtype": "str",
+      "semantic_type": "categorical",
+      "null_count": 0,
+      "null_ratio": 0.0,
+      "unique_count": 11,
+      "unique_ratio": 0.3438,
+      "sample_values": [
+        "United States",
+        "Germany",
+        "Brazil",
+        "India",
+        "Nigeria"
+      ],
+      "top_values": {
+        "United States": 3,
+        "Germany": 3,
+        "Brazil": 3,
+        "India": 3,
+        "Nigeria": 3,
+        "Japan": 3,
+        "South Africa": 3,
+        "Australia": 3,
+        "Mexico": 3,
+        "China": 3
+      },
+      "is_candidate_identifier": false,
+      "is_entity_like": true,
+      "is_useful_for_querying": true,
+      "is_useful_for_joining": true
+    },
+    {
+      "name": "year",
+      "raw_dtype": "int64",
+      "semantic_type": "datetime",
+      "null_count": 0,
+      "null_ratio": 0.0,
+      "unique_count": 3,
+      "unique_ratio": 0.0938,
+      "sample_values": [
+        2020,
+        2021,
+        2022
+      ],
+      "min": 2020,
+      "max": 2022,
+      "is_candidate_identifier": false,
+      "is_entity_like": false,
+      "is_useful_for_querying": true,
+      "is_useful_for_joining": true
+    },
+    {
+      "name": "gdp_usd",
+      "raw_dtype": "int64",
+      "semantic_type": "numeric",
+      "null_count": 0,
+      "null_ratio": 0.0,
+      "unique_count": 32,
+      "unique_ratio": 1.0,
+      "sample_values": [
+        20936600000000,
+        22996100000000,
+        25462700000000,
+        3846414000000,
+        4259935000000
+      ],
+      "min": 110347118000,
+      "max": 25462700000000,
+      "mean": 5350541433937.5,
+      "std": 7446724393622.139,
+      "median": 1822441500000.0,
+      "is_candidate_identifier": false,
+      "is_entity_like": false,
+      "is_useful_for_querying": false,
+      "is_useful_for_joining": false
+    },
+    {
+      "name": "gdp_growth_pct",
+      "raw_dtype": "float64",
+      "semantic_type": "numeric",
+      "null_count": 0,
+      "null_ratio": 0.0,
+      "unique_count": 31,
+      "unique_ratio": 0.9688,
+      "sample_values": [
+        2.3,
+        5.7,
+        1.9,
+        -4.6,
+        2.6
+      ],
+      "min": -8.3,
+      "max": 8.7,
+      "mean": 1.8812,
+      "std": 4.3824,
+      "median": 2.75,
+      "is_candidate_identifier": false,
+      "is_entity_like": false,
+      "is_useful_for_querying": false,
+      "is_useful_for_joining": false
+    },
+    {
+      "name": "population",
+      "raw_dtype": "int64",
+      "semantic_type": "numeric",
+      "null_count": 0,
+      "null_ratio": 0.0,
+      "unique_count": 32,
+      "unique_ratio": 1.0,
+      "sample_values": [
+        331002651,
+        332915073,
+        334805269,
+        83783942,
+        83900473
+      ],
+      "min": 25499884,
+      "max": 1412600000,
+      "mean": 377342175.0,
+      "std": 507700452.682,
+      "median": 129597484.5,
+      "is_candidate_identifier": false,
+      "is_entity_like": false,
+      "is_useful_for_querying": false,
+      "is_useful_for_joining": true
+    },
+    {
+      "name": "life_expectancy",
+      "raw_dtype": "float64",
+      "semantic_type": "numeric",
+      "null_count": 0,
+      "null_ratio": 0.0,
+      "unique_count": 29,
+      "unique_ratio": 0.9062,
+      "sample_values": [
+        78.5,
+        77.3,
+        76.4,
+        81.3,
+        80.5
+      ],
+      "min": 54.7,
+      "max": 84.6,
+      "mean": 73.9219,
+      "std": 8.5828,
+      "median": 75.4,
+      "is_candidate_identifier": false,
+      "is_entity_like": false,
+      "is_useful_for_querying": false,
+      "is_useful_for_joining": false
+    },
+    {
+      "name": "infant_mortality_rate",
+      "raw_dtype": "float64",
+      "semantic_type": "numeric",
+      "null_count": 0,
+      "null_ratio": 0.0,
+      "unique_count": 11,
+      "unique_ratio": 0.3438,
+      "sample_values": [
+        5.4,
+        3.1,
+        13.2,
+        28.3,
+        74.2
+      ],
+      "min": 2.0,
+      "max": 74.2,
+      "mean": 18.5312,
+      "std": 20.9147,
+      "median": 12.5,
+      "is_candidate_identifier": false,
+      "is_entity_like": false,
+      "is_useful_for_querying": false,
+      "is_useful_for_joining": false
+    },
+    {
+      "name": "literacy_rate_pct",
+      "raw_dtype": "float64",
+      "semantic_type": "numeric",
+      "null_count": 0,
+      "null_ratio": 0.0,
+      "unique_count": 17,
+      "unique_ratio": 0.5312,
+      "sample_values": [
+        99.0,
+        93.2,
+        93.6,
+        93.9,
+        74.4
+      ],
+      "min": 62.0,
+      "max": 99.0,
+      "mean": 90.2313,
+      "std": 11.8153,
+      "median": 95.6,
+      "is_candidate_identifier": false,
+      "is_entity_like": false,
+      "is_useful_for_querying": false,
+      "is_useful_for_joining": false
+    },
+    {
+      "name": "urban_pop_pct",
+      "raw_dtype": "float64",
+      "semantic_type": "numeric",
+      "null_count": 0,
+      "null_ratio": 0.0,
+      "unique_count": 31,
+      "unique_ratio": 0.9688,
+      "sample_values": [
+        82.7,
+        83.1,
+        83.4,
+        77.5,
+        77.8
+      ],
+      "min": 28.7,
+      "max": 92.0,
+      "mean": 69.9375,
+      "std": 19.8183,
+      "median": 78.0,
+      "is_candidate_identifier": false,
+      "is_entity_like": false,
+      "is_useful_for_querying": false,
+      "is_useful_for_joining": false
+    },
+    {
+      "name": "co2_emissions_kt",
+      "raw_dtype": "int64",
+      "semantic_type": "numeric",
+      "null_count": 0,
+      "null_ratio": 0.0,
+      "unique_count": 30,
+      "unique_ratio": 0.9375,
+      "sample_values": [
+        4712000,
+        5007000,
+        5200000,
+        644000,
+        675000
+      ],
+      "min": 18000,
+      "max": 12013000,
+      "mean": 2122343.75,
+      "std": 3351768.0323,
+      "median": 504500.0,
+      "is_candidate_identifier": false,
+      "is_entity_like": false,
+      "is_useful_for_querying": false,
+      "is_useful_for_joining": false
+    },
+    {
+      "name": "region",
+      "raw_dtype": "str",
+      "semantic_type": "categorical",
+      "null_count": 0,
+      "null_ratio": 0.0,
+      "unique_count": 7,
+      "unique_ratio": 0.2188,
+      "sample_values": [
+        "North America",
+        "Europe",
+        "Latin America",
+        "South Asia",
+        "Sub-Saharan Africa"
+      ],
+      "top_values": {
+        "Sub-Saharan Africa": 8,
+        "Latin America": 6,
+        "East Asia": 6,
+        "North America": 3,
+        "Europe": 3,
+        "South Asia": 3,
+        "Oceania": 3
+      },
+      "is_candidate_identifier": false,
+      "is_entity_like": true,
+      "is_useful_for_querying": true,
+      "is_useful_for_joining": true
+    },
+    {
+      "name": "income_group",
+      "raw_dtype": "str",
+      "semantic_type": "categorical",
+      "null_count": 0,
+      "null_ratio": 0.0,
+      "unique_count": 3,
+      "unique_ratio": 0.0938,
+      "sample_values": [
+        "High income",
+        "Upper middle income",
+        "Lower middle income"
+      ],
+      "top_values": {
+        "High income": 12,
+        "Upper middle income": 12,
+        "Lower middle income": 8
+      },
+      "is_candidate_identifier": false,
+      "is_entity_like": false,
+      "is_useful_for_querying": true,
+      "is_useful_for_joining": true
+    },
+    {
+      "name": "currency_code",
+      "raw_dtype": "str",
+      "semantic_type": "identifier",
+      "null_count": 0,
+      "null_ratio": 0.0,
+      "unique_count": 11,
+      "unique_ratio": 0.3438,
+      "sample_values": [
+        "USD",
+        "EUR",
+        "BRL",
+        "INR",
+        "NGN"
+      ],
+      "is_candidate_identifier": true,
+      "is_entity_like": false,
+      "is_useful_for_querying": true,
+      "is_useful_for_joining": true
+    }
+  ],
+  "candidate_identifiers": [
+    "country_code",
+    "currency_code"
+  ],
+  "candidate_composite_keys": [],
+  "entity_like_columns": [
+    "country_name",
+    "region"
+  ],
+  "important_attributes": [
+    "gdp_usd",
+    "gdp_growth_pct",
+    "population",
+    "life_expectancy",
+    "literacy_rate_pct",
+    "urban_pop_pct",
+    "co2_emissions_kt"
+  ],
+  "quality_profile": {
+    "duplicate_row_count": 0,
+    "high_missingness_columns": [],
+    "outlier_summary": {
+      "gdp_usd": {
+        "outlier_count": 6,
+        "method": "IQR_1.5x"
+      },
+      "gdp_growth_pct": {
+        "outlier_count": 2,
+        "method": "IQR_1.5x"
+      },
+      "population": {
+        "outlier_count": 6,
+        "method": "IQR_1.5x"
+      },
+      "infant_mortality_rate": {
+        "outlier_count": 3,
+        "method": "IQR_1.5x"
+      },
+      "literacy_rate_pct": {
+        "outlier_count": 3,
+        "method": "IQR_1.5x"
+      },
+      "co2_emissions_kt": {
+        "outlier_count": 3,
+        "method": "IQR_1.5x"
+      }
+    }
+  },
+  "salient_column_names": [
+    "country_code",
+    "country_name",
+    "year",
+    "population",
+    "region",
+    "income_group",
+    "currency_code"
+  ],
+  "entity_value_samples": {
+    "country_name": [
+      "United States",
+      "Germany",
+      "Brazil",
+      "India",
+      "Nigeria"
+    ],
+    "region": [
+      "North America",
+      "Europe",
+      "Latin America",
+      "South Asia",
+      "Sub-Saharan Africa"
+    ]
+  },
+  "inferred_concepts": [
+    "demographics",
+    "economic",
+    "education",
+    "environmental",
+    "geospatial",
+    "public_health",
+    "time_series"
+  ]
+}
