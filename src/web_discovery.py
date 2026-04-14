@@ -10,7 +10,7 @@ import argparse
 import json
 import re
 from collections import defaultdict
-from datetime import datetime
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 from urllib.parse import quote_plus, urljoin
@@ -41,12 +41,12 @@ CKAN_PORTALS = [
 
 DCAT_CATALOGS = [
     {
-        "name": "U.S. Project Open Data",
-        "url": "https://catalog.data.gov/data.json",
+        "name": "DOT Open Data Catalog",
+        "url": "https://data.transportation.gov/data.json",
     },
     {
-        "name": "NOAA Data Catalog",
-        "url": "https://data.noaa.gov/data.json",
+        "name": "NASA Open Data Catalog",
+        "url": "https://data.nasa.gov/data.json",
     },
 ]
 
@@ -59,7 +59,7 @@ SCHEMA_SEARCH_ENGINES = [
 
 
 def _utc_now() -> str:
-    return datetime.utcnow().isoformat() + "Z"
+    return datetime.now(UTC).isoformat().replace("+00:00", "Z")
 
 
 def _load_json(path: str | Path) -> dict[str, Any]:
@@ -239,6 +239,8 @@ class DiscoveryClient:
         self.session = requests.Session()
         self.session.headers.update(DEFAULT_HEADERS)
         self._dcat_cache: dict[str, list[dict[str, Any]]] = {}
+        self._dcat_error_cache: dict[str, str] = {}
+        self._reported_dcat_errors: set[str] = set()
 
     def _get_json(self, url: str, params: dict[str, Any] | None = None) -> dict[str, Any]:
         response = self.session.get(url, params=params, timeout=self.timeout)
@@ -319,10 +321,18 @@ class DiscoveryClient:
         return candidates
 
     def _load_dcat_catalog(self, catalog: dict[str, str]) -> list[dict[str, Any]]:
+        if catalog["url"] in self._dcat_error_cache:
+            raise RuntimeError(self._dcat_error_cache[catalog["url"]])
+
         if catalog["url"] in self._dcat_cache:
             return self._dcat_cache[catalog["url"]]
 
-        payload = self._get_json(catalog["url"])
+        try:
+            payload = self._get_json(catalog["url"])
+        except Exception as exc:
+            self._dcat_error_cache[catalog["url"]] = str(exc)
+            raise
+
         datasets = payload.get("dataset") or payload.get("datasets") or []
         if not isinstance(datasets, list):
             datasets = []
@@ -335,17 +345,19 @@ class DiscoveryClient:
             try:
                 datasets = self._load_dcat_catalog(catalog)
             except Exception as exc:
-                ranked.append(
-                    {
-                        "connector": "DCAT",
-                        "source_name": catalog["name"],
-                        "source_url": catalog["url"],
-                        "discovery_error": str(exc),
-                        "query": query_item.get("query"),
-                        "query_id": query_item.get("id"),
-                        "is_error": True,
-                    }
-                )
+                if catalog["url"] not in self._reported_dcat_errors:
+                    ranked.append(
+                        {
+                            "connector": "DCAT",
+                            "source_name": catalog["name"],
+                            "source_url": catalog["url"],
+                            "discovery_error": self._dcat_error_cache.get(catalog["url"], str(exc)),
+                            "query": query_item.get("query"),
+                            "query_id": query_item.get("id"),
+                            "is_error": True,
+                        }
+                    )
+                    self._reported_dcat_errors.add(catalog["url"])
                 continue
 
             for item in datasets:

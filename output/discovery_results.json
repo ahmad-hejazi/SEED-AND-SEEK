@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T12:56:13.750170Z",
+  "generated_at": "2026-04-14T13:12:03.044649Z",
   "seed_dataset": "seed.csv",
   "query_source": "output\\queries.json",
   "signature_source": "output\\seed_signature.json",
@@ -25,8 +25,8 @@
     "Eurostat",
     "OWID"
   ],
-  "total_candidates": 97,
-  "total_errors": 20,
+  "total_candidates": 147,
+  "total_errors": 0,
   "run_plan": [],
   "results": [
     {
@@ -303,6 +303,110 @@
         "population"
       ],
       "years_found": [],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "ivo://nasa.heasarc/ngc6231cx2",
+      "title": "NGC 6231 Chandra X-Ray Point Source Catalog 2",
+      "description": "NGC 6231 is a young cluster (age ~2-7 Myr) dominating the Sco OB1 association (distance ~1.59 kpc) with ~100 O and B stars and a large pre-main-sequence stellar population. The authors combine a reanalysis of archival Chandra X-ray data with multi-epoch near-infrared (NIR) photometry from the VISTA Variables in the Via Lactea (VVV) survey and published optical catalogs to obtain a catalog of 2148 probable cluster members. This catalog is 70% larger than previous censuses of probable cluster members in NGC 6231. It includes many low-mass stars detected in the NIR but not in the optical and some B stars without previously noted X-ray counterparts. In addition, the authors identify 295 NIR variables, about half of which are expected to be pre-main-sequence stars. With the more complete sample, they estimate a total population in the Chandra field of 5700-7500 cluster members down to 0.08 M&lt;sub&gt;sun&lt;/sub&gt; (assuming a universal initial mass function) with a completeness limit at 0.5 M&lt;sub&gt;sun&lt;/sub&gt;. A decrease in stellar X-ray luminosities is noted relative to other younger clusters. However, within the cluster, there is little variation in the distribution of X-ray luminosities for ages less than 5 Myr. The X-ray spectral hardness for B stars may be useful for distinguishing between early-B stars with X-rays generated in stellar winds and B-star systems with X-rays from a pre-main-sequence companion (&gt;35% of B stars). A small fraction of catalog members have unusually high X-ray median energies or reddened NIR colors, which might be explained by absorption from thick or edge-on disks or being background field stars. This work makes use of some basic cluster properties available from the literature. Summaries of older studies are provided by Sana et al. (2006, J/A+A/454/1047), available in &lt;a href=\"/W3Browse/xmm-newton/ngc6231xmm.html\"&gt;NGC6231XMM&lt;/a&gt;, and Reipurth (2008hsf2.book.....R). Expanded catalogs of cluster members have been provided by Sung et al. (2013, J/AJ/145/37) and Damiani et al. 2016, J/A+A/596/A82 (DMS2016), available at &lt;a href=\"/W3Browse/chandra/ngc6231cxo.html\"&gt;NGC6231CXO&lt;/a&gt;. Chandra X-ray observations were made using the imaging array on the Advanced CCD Imaging Spectrometer (ACIS-I; Garmire et al. 2003SPIE.4851...28G). This instrument is an array of four CCD detectors that subtends 17&#39;x17&#39;. The target was observed in 2005 July (Sequence 200307; PI: S. Murray) in two observations (ObsID 5372 and 6291), and the data were retrieved from the Chandra Data Archive. The NIR ZYJHK&lt;sub&gt;s&lt;/sub&gt; data were obtained from the VVV survey (Minniti et al. 2010NewA...15..433M; Saito et al. 2012, Cat. II/337). VVV is a multi-epoch NIR survey that covers both the Galactic bulge and an adjacent Galactic disk region and was carried out using the 4.1 m VISTA telescope on Cerro Paranal. The VVV data were taken with the VISTA Infrared CAMera (VIRCAM; Dalton et al. 2006SPIE.6269E..0XD), a 4x4 array of Raytheon VIRGO 2048x2048 20 micron pixel detectors with a pixel scale of 0.34&quot;. In addition to the VVV photometry, public optical or infrared catalogs are available from surveys and publications. We have included VPHAS+ photometry (Drew et al. 2014, J/MNRAS/440/2036), UBVRI (Johnson-Cousins system) and H-alpha photometry from Sung et al. (2013, J/AJ/145/37), and Spitzer/IRAC photometry from the GLIMPSE survey (Benjamin et al. 2003, Cat. II/293). This table was created by the HEASARC in October 2020 based upon the &lt;a href=\"https://cdsarc.cds.unistra.fr/ftp/cats/J/AJ/154/87\"&gt;CDS Catalog J/AJ/154/87&lt;/a&gt; file table1.dat, table3.dat, and table5.dat. This is a service provided by NASA HEASARC .",
+      "landing_page": "ivo://nasa.heasarc/ngc6231cx2",
+      "keywords": [
+        "__"
+      ],
+      "download_urls": [
+        "https://heasarc.gsfc.nasa.gov/W3Browse/all/ngc6231cx2.html",
+        "https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&table=ngc6231cx2&"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization High Energy Astrophysics Science Archive Research Center",
+        "theme": "Astrophysics",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.6667,
+      "query": "age distribution DCAT catalog 2020 2022",
+      "query_id": 27,
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "relevance_score": 0.6667,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.6281,
+      "joinability_score": 0.3714,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "population",
+        "region"
+      ],
+      "years_found": [
+        2003,
+        2005,
+        2006,
+        2012,
+        2013,
+        2014,
+        2016,
+        2020,
+        2036
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C3104974973-SEDAC",
+      "title": "Low Elevation Coastal Zone (LECZ) Global Delta Urban-Rural Population and Land Area Estimates, Version 1",
+      "description": "The Low Elevation Coastal Zone (LECZ) Global Delta Urban-Rural Population and Land Area Estimates, Version 1 data set provides country-level estimates of urban, quasi-urban, rural, and total population (count), land area (square kilometers), and built-up areas in river delta- and non-delta contexts for 246 statistical areas (countries and other UN-recognized territories) for the years 1990, 2000, 2014 and 2015. The population estimates are disaggregated such that compounding risk factors including elevation, settlement patterns, and delta zones can be cross-examined. The Intergovernmental Panel on Climate Change (IPCC) recently concluded that without significant adaptation and mitigation action, risk to coastal commUnities will increase at least one order of magnitude by 2100, placing people, property, and environmental resources at greater risk. Greater-risk zones were then generated: 1) the global extent of two low-elevation zones contiguous to the coast, one bounded by an upper elevation of 10m (LECZ10), and one by an upper elevation of 5m (LECZ05); 2) the extent of the world's major deltas; 3) the distribution of people and built-up area around the world; 4) the extents of urban centers around the world. The data are layered spatially, along with political and land/water boundaries, allowing the densities and quantities of population and built-up area, as well as levels of urbanization (defined as the share of population living in \"urban centers\") to be estimated for any country or region, both inside and outside the LECZs and deltas, and at two points in time (1990 and 2015). In using such estimates of populations living in 5m and 10m LECZs and outside of LECZs, policymakers can make informed decisions based on perceived exposure and vulnerability to potential damages from sea level rise.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "human-dimensions",
+        "population"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2F4hgr-db70",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/lecz/lecz-delta-urban-rural-population-land-area-estimates-v1/lecz-delta-urban-rural-population-land-area-estimates-v1.jpg",
+        "https://sedac.ciesin.columbia.edu/data/set/lecz-delta-urban-rural-population-land-area-estimates-v1/data-download",
+        "https://sedac.ciesin.columbia.edu/data/set/lecz-delta-urban-rural-population-land-area-estimates-v1/maps",
+        "https://sedac.ciesin.columbia.edu/data/set/lecz-delta-urban-rural-population-land-area-estimates-v1"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "LECZ geospatial",
+        "issued": "2024-06-14",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.6667,
+      "query": "DCAT catalog environmental country panel data",
+      "query_id": 12,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.6667,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.6138,
+      "joinability_score": 0.4071,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "year",
+        "population",
+        "region"
+      ],
+      "years_found": [
+        1990,
+        2000,
+        2014,
+        2015,
+        2100
+      ],
       "has_year_overlap": true
     },
     {
@@ -6295,6 +6399,110 @@
       "has_year_overlap": true
     },
     {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "10.3334/ORNLDAAC/1022",
+      "title": "ISLSCP II EDGAR 3 Gridded Greenhouse and Ozone Precursor Gas Emissions",
+      "description": "The EDGAR (Emission Database for Global Atmospheric Research) database project is a comprehensive task carried out jointly by the National Institute for Public Health (RIVM) and the Netherlands Organization for Applied Scientific Research (TNO) and stores global emission inventories of direct and indirect greenhouse gases from anthropogenic sources including halocarbons and aerosols both on a per country and region basis as well as on a grid (see http://www.rivm.nl/edgar/). For the ISLSCP Initiative II data collection, gridded global annual anthropogenic emissions for the greenhouse gases CO2, CH4, N2O are provided on a 1.0 degree by 1.0 degree grid for the years 1970, 1980, 1990, and 1995 and for the tropospheric ozone precursor gases CO, NOx, NMVOC (Non-Methane Volatile Organic Compounds) and SO2 for the years 1990 and 1995. There are 2 *.zip data files with this data set.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science-air-quality-atmosphere-emissions",
+        "earth-science-atmospheric-chemistry-atmosphere-carbon-and-hydrocarbon-compounds",
+        "earth-science-atmospheric-chemistry-atmosphere-nitrogen-compounds",
+        "earth-science-atmospheric-chemistry-atmosphere-sulfur-compounds"
+      ],
+      "download_urls": [
+        "https://asdc.larc.nasa.gov/project/INTEXA",
+        "https://cloud1.arc.nasa.gov/intex-na/",
+        "https://www-air.larc.nasa.gov/missions/intexna/intexna.htm",
+        "https://doi.org/10.5067/AIRCRAFT/INTEXA/AEROSOL-TRACEGAS",
+        "https://search.earthdata.nasa.gov/search/granules?p=C1000000500-LARC_ASDC",
+        "https://asdc.larc.nasa.gov/citing-data",
+        "https://doi.org/10.5067/ASDCDAAC/INTEXA/0007",
+        "https://espo.nasa.gov/intex-na",
+        "https://cloud1.arc.nasa.gov/docs/intex-na/Singh_INTEX-A_Overview_Paper.pdf",
+        "https://cloud1.arc.nasa.gov/docs/intex-na/white_paper.pdf",
+        "https://www-air.larc.nasa.gov/missions/intex-b/intexb.html",
+        "https://asdc.larc.nasa.gov/data/INTEXA/INTEXA_J31_AIRCRAFT/",
+        "https://opendap.larc.nasa.gov/opendap/INTEXA/INTEXA_J31_AIRCRAFT/contents.html",
+        "https://cmr.earthdata.nasa.gov/search/concepts/C1000000500-LARC_ASDC.iso19115"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization ORNL_DAAC",
+        "theme": "Earth Science",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5714,
+      "query": "DCAT catalog public health country panel data",
+      "query_id": 18,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5714,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.5507,
+      "joinability_score": 0.3714,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "year",
+        "region"
+      ],
+      "years_found": [
+        1970,
+        1980,
+        1990,
+        1995
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "10.5067/GNSS/gnss_daily_displacement_timeseries_001",
+      "title": "MEaSUREs SESES Daily GNSS Geodetic Displacement TIme Series products from NASA CDDIS",
+      "description": "Making Earth System Data Records for Use in Research Environments (MEaSUREs) empowers the research community to participate in developing and generating data products that complement and augment NASA produced and distributed Earth science data products. NASA’s Enhanced Solid Earth Science Earth Science Data Record (ESDR) System (ESESES) continues and extends mature geodetic data product generation and archival as part of the MEaSUREs SESES project providing new, multi-decade, calibrated and validated geodetic-derived ESDRs obtained by the Scripps Institution of Oceanography (SIO) and NASA's Jet Propulsion Laboratory (JPL). These data-derived products include continuous multi-year high-rate GNSS, seismogeodetic, and meteorological time series, a catalog of transient deformation in tectonically active areas known for aseismic motion such as ETS with focus in Cascadia, and continuous estimation and cataloging of total near-surface water content derived from continuous GNSS time series over the continental U.S. These data products are daily geodetic displacement time series (compressed). They are combined, cleaned and filtered, GIPSY-GAMIT long-term time series of Continuous Global Navigation Satellite System (CGNSS) station positions (global and regional) in the latest version of ITRF",
+      "landing_page": null,
+      "keywords": [
+        "earth-science-tectonics-solid-earth-earthquakes-seismic-profile"
+      ],
+      "download_urls": [
+        "https://cddis.nasa.gov/archive/GPS_Explorer",
+        "https://doi.org/10.5067/GNSS/gnss_daily_displacement_timeseries_001",
+        "https://www.earthdata.nasa.gov/data/space-geodesy-techniques/gnss/data-products-holdings",
+        "https://cmr.earthdata.nasa.gov/search/concepts/C1000000081-CDDIS.iso19115"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization CDDIS",
+        "theme": "Earth Science",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5714,
+      "query": "DCAT catalog time series country panel data",
+      "query_id": 21,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5714,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.5507,
+      "joinability_score": 0.3714,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "year",
+        "region"
+      ],
+      "years_found": [],
+      "has_year_overlap": true
+    },
+    {
       "connector": "CKAN",
       "source_name": "U.S. Data Catalog",
       "source_url": "https://catalog.data.gov",
@@ -7122,6 +7330,265 @@
       "has_year_overlap": true
     },
     {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "ivo://nasa.heasarc/xmmstack",
+      "title": "XMM-Newton Serendipitous Source Catalog from Stacked Observations (4XMM-DR14s)",
+      "description": "The stacked catalog 4XMM-DR14s has been compiled from 1,751 groups, comprising 10,336 overlapping XMM-Newton observations. They were selected from the public observations taken between 2000 February 1 and 2023 November 16 which overlap by at least one arcminute in radius. It contains 427,524 unique sources, 329,972 of them multiply observed, with positions and source parameters like fluxes in the XMM-Newton standard energy bands, hardness ratios, quality estimate, and information on inter-observation variability. The parameters are directly derived from the simultaneous fit, and, wherever applicable, additionally calculated for each contributing observation. Exposures that do not qualify for source detection, for example because of a high background level, are used for subsequent PSF photometry: source fluxes and flux-related parameters are derived for them at the source position and extent found during source detection. 4XMM-DR14s lists 1,807,316 individual flux measurements (visits) of the 427,524 unique sources. Stacked source detection aims at exploring the multiply observed sky regions and exploit their survey potential, in particular to study the long-term behavior of X-ray emitting sources. It thus makes use of the long(er) effective exposure time per sky area and offers the opportunity to investigate flux variability directly through the source detection process. The main catalog properties are summarized in the table below, the data processing and the stacked source detection are described in the processing summary. To ensure detection quality, background levels are assessed, and event-based astrometric corrections are applied before running source detection. After source detections, problematic detections and detection parameters are flagged by an automated algorithm. All detections are screened visually, and obviously spurious sources are flagged manually. This table contains the parameters of the 427,524 unique sources (provided in this table) derived simultaneously from all of the observations (provided in the associated table of observations referred to as &lt;a href=\"/W3Browse/xmm-newton/xmmstackob.html\"&gt;XMMSTACKOB&lt;/a&gt;) at the fitted position. The authors referred to the EPIC instruments with the following designations: PN, M1 (MOS1), and M2 (MOS2). The energy bands used in the 4XMM processing were the same as for the 3XMM catalog. The following are the basic energy bands: &lt;pre&gt; 1: 0.2-0.5 keV 2: 0.5-1.0 keV 3: 1.0-2.0 keV 4: 2.0-4.5 keV 5: 4.5-12.0 keV &lt;/pre&gt; All-EPIC values cover the energy range 0.2-12.0 keV. The full catalog documentation can be found at &lt;a href=\"https://xmmssc.aip.de/\"&gt;https://xmmssc.aip.de/&lt;/a&gt;. The following table gives an overview of the statistics of this catalog in comparison with the previous stacked catalogs, 4XMM-DR14s through 3XMM-DR7s: &lt;pre&gt; 4XMM-DR14s 4XMM-DR13s 4XMM-DR12s 4XMM-DR11s 4XMM-DR10s 4XMM-DR9s 3XMM-DR7s Number of stacks 1,751 1,688 1,620 1,475 1,396 1,329 434 Number of observations 10,336 9,796 9,355 8,292 7,803 6,604 789 Time span first to last observation Feb 01, 2000 Feb 01, 2000 Feb 01, 2000 Feb 03, 2000 Feb 03, 2000 Feb 03, 2000 Feb 20, 2000 -- Nov 16,2023 -- Nov 29, 2022 -- Dec 04, 2021 -- Dec 17, 2020 -- Dec 14, 2019 -- Nov 13, 2018 -- Apr 02, 2016 Approximate sky coverage (sq. deg.) 685 650 625 560 540 485 150 Approximate multiply observed sky area(sq. deg) 440 420 400 350 335 300 100 Total number of sources 427,524 401,596 386,043 358,809 335,812 288,191 71,951 Sources with several contributing observations 329,972 310,478 298,626 275,440 256,213 218,283 57,665 Multiply observed sources with flag 0 or 1 276,058 262,842 252,445 233,542 216,999 191,497 55,450 Multiply observed with a total detection 266,129 251,555 241,880 224,178 208,921 181,132 49,935 likelihood of at least six Multiply observed with a total detection 226,219 213,812 205,394 189,556 176,680 153,487 42,077 likelihood of at least ten Total measurements 1,807,316 1,683,264 1,592,263 1,421,966 1,322,299 1,033,264 216,393 Maximum exposures per source 173 170 155 140 140 103 69 Maximum observations per source 77 77 70 65 65 40 23 Maximum on-time per source 2.8 Ms 2.8 Ms 2.8 Ms 2.8 Ms 2.8 Ms 1.9 Ms 1.3 Ms &lt;/pre&gt; This database table was last updated by the HEASARC in July 2024. It contains the 4XMM-DR14s source catalog, released by ESA on 2024-07-09 and obtained from the XMM-Newton Survey Science Center Consortium at &lt;a href=\"https://xmmssc.aip.de/cms/catalogues/4xmm-dr14s/\"&gt;https://xmmssc.aip.de/cms/catalogues/4xmm-dr14s/&lt;/a&gt;. It is &lt;a href=\"https://xmmssc.aip.de/data/xmmstack_v3.2_4xmmdr14s.fits.gz\"&gt;also available as a gzipped FITS file&lt;/a&gt;. This is a service provided by NASA HEASARC .",
+      "landing_page": "ivo://nasa.heasarc/xmmstack",
+      "keywords": [
+        "__"
+      ],
+      "download_urls": [
+        "https://heasarc.gsfc.nasa.gov/W3Browse/all/xmmstack.html",
+        "https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&table=xmmstack&"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization High Energy Astrophysics Science Archive Research Center",
+        "theme": "Astrophysics",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5,
+      "query": "fertility rate DCAT catalog 2020 2022",
+      "query_id": 30,
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.5257,
+      "joinability_score": 0.3357,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "region"
+      ],
+      "years_found": [
+        2000,
+        2016,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "ivo://nasa.heasarc/xmmstackob",
+      "title": "XMM-Newton Serendipitous Source Catalog from Stacked Observations: Obs. Data",
+      "description": "The stacked catalog 4XMM-DR14s (&lt;a href=\"/W3Browse/xmm-newton/xmmstack.html\"&gt;XMMSTACK&lt;/a&gt;) has been compiled from 1,751 groups, comprising 10,336 overlapping XMM-Newton observations. They were selected from the public observations taken between 2000 February 1 and 2023 November 16 which overlap by at least one arcminute in radius. It contains 427,524 unique sources, 329,972 of them multiply observed, with positions and source parameters like fluxes in the XMM-Newton standard energy bands, hardness ratios, quality estimate, and information on inter-observation variability. The parameters are directly derived from the simultaneous fit, and, wherever applicable, additionally calculated for each contributing observation. Exposures that do not qualify for source detection, for example because of a high background level, are used for subsequent PSF photometry: source fluxes and flux-related parameters are derived for them at the source position and extent found during source detection. 4XMM-DR14s lists 1,807,316 individual flux measurements of the 427,524 unique sources. Stacked source detection aims at exploring the multiply observed sky regions and exploit their survey potential, in particular to study the long-term behavior of X-ray emitting sources. It thus makes use of the long(er) effective exposure time per sky area and offers the opportunity to investigate flux variability directly through the source detection process. The main catalog properties are summarized in the table below, the data processing and the stacked source detection are described in the processing summary. To ensure detection quality, background levels are assessed, and event-based astrometric corrections are applied before running source detection. After source detections, problematic detections and detection parameters are flagged by an automated algorithm. All detections are screened visually, and obviously spurious sources are flagged manually. This table contains the source parameters from the individual observations in the stacked catalog, &lt;a href=\"/W3Browse/xmm-newton/xmmstack.html\"&gt;4XMM-DR14s&lt;/a&gt;. The parameters are derived from the simultaneous source-detection fit to all stacked observations at the common source position for each observation that covers a source, amounting to 1,807,316 measurements. The mean source parameters from stacked source detection are provided in the associated main table &lt;a href=\"/W3Browse/xmm-newton/xmmstack.html\"&gt;4XMM-DR14s&lt;/a&gt;, referred to as XMMSTACK. The authors referred to the EPIC instruments with the following designations: PN, M1 (MOS1), and M2 (MOS2). The energy bands used in the 4XMM processing were the same as for the 3XMM catalog. The following are the basic energy bands: &lt;pre&gt; 1: 0.2-0.5 keV 2: 0.5-1.0 keV 3: 1.0-2.0 keV 4: 2.0-4.5 keV 5: 4.5-12.0 keV &lt;/pre&gt; All-EPIC values cover the energy range 0.2-12.0 keV. The full catalog documentation can be found at &lt;a href=\"https://xmmssc.aip.de/\"&gt;https://xmmssc.aip.de/&lt;/a&gt;. The following table gives an overview of the statistics of this catalog in comparison with the previous stacked catalogs, 4XMM-DR14s through 3XMM-DR7s: &lt;pre&gt; 4XMM-DR14s 4XMM-DR13s 4XMM-DR12s 4XMM-DR11s 4XMM-DR10s 4XMM-DR9s 3XMM-DR7s Number of stacks 1,751 1,688 1,620 1,475 1,396 1,329 434 Number of observations 10,336 9,796 9,355 8,292 7,803 6,604 789 Time span first to last observation Feb 01, 2000 Feb 01, 2000 Feb 01, 2000 Feb 03, 2000 Feb 03, 2000 Feb 03, 2000 Feb 20, 2000 -- Nov 16,2023 -- Nov 29, 2022 -- Dec 04, 2021 -- Dec 17, 2020 -- Dec 14, 2019 -- Nov 13, 2018 -- Apr 02, 2016 Approximate sky coverage (sq. deg.) 685 650 625 560 540 485 150 Approximate multiply observed sky area(sq. deg) 440 420 400 350 335 300 100 Total number of sources 427,524 401,596 386,043 358,809 335,812 288,191 71,951 Sources with several contributing observations 329,972 310,478 298,626 275,440 256,213 218,283 57,665 Multiply observed sources with flag 0 or 1 276,058 262,842 252,445 233,542 216,999 191,497 55,450 Multiply observed with a total detection 266,129 251,555 241,880 224,178 208,921 181,132 49,935 likelihood of at least six Multiply observed with a total detection 226,219 213,812 205,394 189,556 176,680 153,487 42,077 likelihood of at least ten Total measurements 1,807,316 1,683,264 1,592,263 1,421,966 1,322,299 1,033,264 216,393 Maximum exposures per source 173 170 155 140 140 103 69 Maximum observations per source 77 77 70 65 65 40 23 Maximum on-time per source 2.8 Ms 2.8 Ms 2.8 Ms 2.8 Ms 2.8 Ms 1.9 Ms 1.3 Ms &lt;/pre&gt; This database table was last updated by the HEASARC in July 2024. It contains the 4XMM-DR14s observations catalog, released by ESA on 2024-07-09 and obtained from the XMM-Newton Survey Science Center Consortium at &lt;a href=\"https://xmmssc.aip.de/cms/catalogues/4xmm-dr14s/\"&gt;https://xmmssc.aip.de/cms/catalogues/4xmm-dr14s/&lt;/a&gt;. It is &lt;a href=\"https://xmmssc.aip.de/data/xmmstack_v3.2_4xmmdr14s.fits.gz\"&gt;also available as a gzipped FITS file&lt;/a&gt;. This is a service provided by NASA HEASARC .",
+      "landing_page": "ivo://nasa.heasarc/xmmstackob",
+      "keywords": [
+        "__"
+      ],
+      "download_urls": [
+        "https://heasarc.gsfc.nasa.gov/W3Browse/all/xmmstackob.html",
+        "https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&table=xmmstackob&"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization High Energy Astrophysics Science Archive Research Center",
+        "theme": "Astrophysics",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5,
+      "query": "fertility rate DCAT catalog 2020 2022",
+      "query_id": 30,
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.5257,
+      "joinability_score": 0.3357,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "region"
+      ],
+      "years_found": [
+        2000,
+        2016,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C3104974973-SEDAC",
+      "title": "Low Elevation Coastal Zone (LECZ) Global Delta Urban-Rural Population and Land Area Estimates, Version 1",
+      "description": "The Low Elevation Coastal Zone (LECZ) Global Delta Urban-Rural Population and Land Area Estimates, Version 1 data set provides country-level estimates of urban, quasi-urban, rural, and total population (count), land area (square kilometers), and built-up areas in river delta- and non-delta contexts for 246 statistical areas (countries and other UN-recognized territories) for the years 1990, 2000, 2014 and 2015. The population estimates are disaggregated such that compounding risk factors including elevation, settlement patterns, and delta zones can be cross-examined. The Intergovernmental Panel on Climate Change (IPCC) recently concluded that without significant adaptation and mitigation action, risk to coastal commUnities will increase at least one order of magnitude by 2100, placing people, property, and environmental resources at greater risk. Greater-risk zones were then generated: 1) the global extent of two low-elevation zones contiguous to the coast, one bounded by an upper elevation of 10m (LECZ10), and one by an upper elevation of 5m (LECZ05); 2) the extent of the world's major deltas; 3) the distribution of people and built-up area around the world; 4) the extents of urban centers around the world. The data are layered spatially, along with political and land/water boundaries, allowing the densities and quantities of population and built-up area, as well as levels of urbanization (defined as the share of population living in \"urban centers\") to be estimated for any country or region, both inside and outside the LECZs and deltas, and at two points in time (1990 and 2015). In using such estimates of populations living in 5m and 10m LECZs and outside of LECZs, policymakers can make informed decisions based on perceived exposure and vulnerability to potential damages from sea level rise.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "human-dimensions",
+        "population"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2F4hgr-db70",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/lecz/lecz-delta-urban-rural-population-land-area-estimates-v1/lecz-delta-urban-rural-population-land-area-estimates-v1.jpg",
+        "https://sedac.ciesin.columbia.edu/data/set/lecz-delta-urban-rural-population-land-area-estimates-v1/data-download",
+        "https://sedac.ciesin.columbia.edu/data/set/lecz-delta-urban-rural-population-land-area-estimates-v1/maps",
+        "https://sedac.ciesin.columbia.edu/data/set/lecz-delta-urban-rural-population-land-area-estimates-v1"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "LECZ geospatial",
+        "issued": "2024-06-14",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog demographics country panel data",
+      "query_id": 3,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.5221,
+      "joinability_score": 0.4071,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "year",
+        "population",
+        "region"
+      ],
+      "years_found": [
+        1990,
+        2000,
+        2014,
+        2015,
+        2100
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C3104974973-SEDAC",
+      "title": "Low Elevation Coastal Zone (LECZ) Global Delta Urban-Rural Population and Land Area Estimates, Version 1",
+      "description": "The Low Elevation Coastal Zone (LECZ) Global Delta Urban-Rural Population and Land Area Estimates, Version 1 data set provides country-level estimates of urban, quasi-urban, rural, and total population (count), land area (square kilometers), and built-up areas in river delta- and non-delta contexts for 246 statistical areas (countries and other UN-recognized territories) for the years 1990, 2000, 2014 and 2015. The population estimates are disaggregated such that compounding risk factors including elevation, settlement patterns, and delta zones can be cross-examined. The Intergovernmental Panel on Climate Change (IPCC) recently concluded that without significant adaptation and mitigation action, risk to coastal commUnities will increase at least one order of magnitude by 2100, placing people, property, and environmental resources at greater risk. Greater-risk zones were then generated: 1) the global extent of two low-elevation zones contiguous to the coast, one bounded by an upper elevation of 10m (LECZ10), and one by an upper elevation of 5m (LECZ05); 2) the extent of the world's major deltas; 3) the distribution of people and built-up area around the world; 4) the extents of urban centers around the world. The data are layered spatially, along with political and land/water boundaries, allowing the densities and quantities of population and built-up area, as well as levels of urbanization (defined as the share of population living in \"urban centers\") to be estimated for any country or region, both inside and outside the LECZs and deltas, and at two points in time (1990 and 2015). In using such estimates of populations living in 5m and 10m LECZs and outside of LECZs, policymakers can make informed decisions based on perceived exposure and vulnerability to potential damages from sea level rise.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "human-dimensions",
+        "population"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2F4hgr-db70",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/lecz/lecz-delta-urban-rural-population-land-area-estimates-v1/lecz-delta-urban-rural-population-land-area-estimates-v1.jpg",
+        "https://sedac.ciesin.columbia.edu/data/set/lecz-delta-urban-rural-population-land-area-estimates-v1/data-download",
+        "https://sedac.ciesin.columbia.edu/data/set/lecz-delta-urban-rural-population-land-area-estimates-v1/maps",
+        "https://sedac.ciesin.columbia.edu/data/set/lecz-delta-urban-rural-population-land-area-estimates-v1"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "LECZ geospatial",
+        "issued": "2024-06-14",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog education country panel data",
+      "query_id": 9,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.5221,
+      "joinability_score": 0.4071,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "year",
+        "population",
+        "region"
+      ],
+      "years_found": [
+        1990,
+        2000,
+        2014,
+        2015,
+        2100
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C3104974973-SEDAC",
+      "title": "Low Elevation Coastal Zone (LECZ) Global Delta Urban-Rural Population and Land Area Estimates, Version 1",
+      "description": "The Low Elevation Coastal Zone (LECZ) Global Delta Urban-Rural Population and Land Area Estimates, Version 1 data set provides country-level estimates of urban, quasi-urban, rural, and total population (count), land area (square kilometers), and built-up areas in river delta- and non-delta contexts for 246 statistical areas (countries and other UN-recognized territories) for the years 1990, 2000, 2014 and 2015. The population estimates are disaggregated such that compounding risk factors including elevation, settlement patterns, and delta zones can be cross-examined. The Intergovernmental Panel on Climate Change (IPCC) recently concluded that without significant adaptation and mitigation action, risk to coastal commUnities will increase at least one order of magnitude by 2100, placing people, property, and environmental resources at greater risk. Greater-risk zones were then generated: 1) the global extent of two low-elevation zones contiguous to the coast, one bounded by an upper elevation of 10m (LECZ10), and one by an upper elevation of 5m (LECZ05); 2) the extent of the world's major deltas; 3) the distribution of people and built-up area around the world; 4) the extents of urban centers around the world. The data are layered spatially, along with political and land/water boundaries, allowing the densities and quantities of population and built-up area, as well as levels of urbanization (defined as the share of population living in \"urban centers\") to be estimated for any country or region, both inside and outside the LECZs and deltas, and at two points in time (1990 and 2015). In using such estimates of populations living in 5m and 10m LECZs and outside of LECZs, policymakers can make informed decisions based on perceived exposure and vulnerability to potential damages from sea level rise.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "human-dimensions",
+        "population"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2F4hgr-db70",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/lecz/lecz-delta-urban-rural-population-land-area-estimates-v1/lecz-delta-urban-rural-population-land-area-estimates-v1.jpg",
+        "https://sedac.ciesin.columbia.edu/data/set/lecz-delta-urban-rural-population-land-area-estimates-v1/data-download",
+        "https://sedac.ciesin.columbia.edu/data/set/lecz-delta-urban-rural-population-land-area-estimates-v1/maps",
+        "https://sedac.ciesin.columbia.edu/data/set/lecz-delta-urban-rural-population-land-area-estimates-v1"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "LECZ geospatial",
+        "issued": "2024-06-14",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog geospatial country panel data",
+      "query_id": 15,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.5221,
+      "joinability_score": 0.4071,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "year",
+        "population",
+        "region"
+      ],
+      "years_found": [
+        1990,
+        2000,
+        2014,
+        2015,
+        2100
+      ],
+      "has_year_overlap": true
+    },
+    {
       "connector": "CKAN",
       "source_name": "Humanitarian Data Exchange",
       "source_url": "https://data.humdata.org",
@@ -7202,6 +7669,242 @@
       "has_year_overlap": true
     },
     {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C2382050573-GHRC_DAAC",
+      "title": "UAlbany Micro Rain Radar 2 (MRR-2) IMPACTS V1",
+      "description": "The UAlbany Micro Rain Radar 2 (MRR-2) IMPACTS dataset consists of reflectivity, Doppler velocity, signal-to-noise ratio, spectral width, droplet size, Liquid Water Content, melting layer, drop size distribution, rain attenuation, rain rate, and radial velocity data collected during the Investigation of Microphysics and Precipitation for Atlantic Coast-Threatening Snowstorms (IMPACTS) field campaign. IMPACTS was a three-year sequence of winter season deployments conducted to study snowstorms over the U.S Atlantic Coast (2020-2023). The campaign aimed to (1) Provide observations critical to understanding the mechanisms of snowband formation, organization, and evolution; (2) Examine how the microphysical characteristics and likely growth mechanisms of snow particles vary across snowbands; and (3) Improve snowfall remote sensing interpretation and modeling to significantly advance prediction capabilities. The MRR-2 instrument was used to collect data for this dataset. The dataset files are available from January 30, 2020 through March 1, 2022 in netCDF-3 and netCDF-4 format.",
+      "landing_page": "https://doi.org/10.5067/IMPACTS/MRR2/DATA101",
+      "keywords": [
+        "atmosphere",
+        "atmospheric-water-vapor",
+        "earth-science",
+        "precipitation",
+        "radar",
+        "spectral-engineering"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.5067%2FIMPACTS%2FMRR2%2FDATA101",
+        "https://search.earthdata.nasa.gov/portal/ghrc/search?q=ualbmrr2impacts&ghrccloud%2Fdata%2F=",
+        "https://metek.de/product/mrr-2/",
+        "https://espo.nasa.gov/impacts/content/IMPACTS",
+        "http://dx.doi.org/10.5067/IMPACTS/DATA101",
+        "https://ghrc.nsstc.nasa.gov/pub/fieldCampaigns/impacts/UALB_MRR2/doc/ualbmrr2impacts_dataset.pdf",
+        "https://doi.org/10.5194/amt-5-2661-2012",
+        "https://doi.org/10.1175/BAMS-D-20-0246.1",
+        "https://doi.org/10.1109/IGARSS46834.2022.9883693",
+        "https://github.com/maahn/IMProToo",
+        "https://ghrc.nsstc.nasa.gov/home/field-campaigns/impacts",
+        "https://ghrc.nsstc.nasa.gov/home/micro-articles/investigation-microphysics-and-precipitation-atlantic-coast-threatening-snowstorms",
+        "https://ghrc.nsstc.nasa.gov/home/about-ghrc/citing-ghrc-daac-data"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization NASA/MSFC/GHRC",
+        "theme": "IMPACTS geospatial",
+        "issued": "2022-08-02",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5714,
+      "query": "population growth rate DCAT catalog 2020 2022",
+      "query_id": 24,
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "relevance_score": 0.5714,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.52,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [],
+      "matched_salient_columns": [
+        "year"
+      ],
+      "years_found": [
+        2020,
+        2022,
+        2023
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C2102858144-GHRC_DAAC",
+      "title": "UAlbany Parsivel IMPACTS V1",
+      "description": "The UAlbany Parsivel IMPACTS dataset consists of precipitation data collected by a Parsivel2 disdrometer in support of the Investigation of Microphysics and Precipitation for Atlantic Coast-Threatening Snowstorms (IMPACTS) field campaign. IMPACTS was a three-year sequence of winter season deployments conducted to study snowstorms over the U.S Atlantic Coast (2020-2023). The campaign aimed to (1) Provide observations critical to understanding the mechanisms of snowband formation, organization, and evolution; (2) Examine how the microphysical characteristics and likely growth mechanisms of snow particles vary across snowbands; and (3) Improve snowfall remote sensing interpretation and modeling to significantly advance prediction capabilities. The Parsivel disdrometer data include particle size distribution, fall speed, radar reflectivity and precipitation rate. The dataset files are available in netCDF-4 format from 30 January 2020 through 28 February 2022.",
+      "landing_page": "https://doi.org/10.5067/IMPACTS/PARSIVEL/DATA201",
+      "keywords": [
+        "atmosphere",
+        "atmospheric-water-vapor",
+        "clouds",
+        "earth-science",
+        "precipitation",
+        "radar",
+        "spectral-engineering"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.5067%2FIMPACTS%2FPARSIVEL%2FDATA201",
+        "https://search.earthdata.nasa.gov/portal/ghrc/search?q=ualbparsimpacts&ghrccloud%2Fdata%2F=",
+        "https://www.ott.com/download/ott-parsivel-white-paper/",
+        "https://gpm.nasa.gov/resources/documents/parsivel-laser-optical-disdrometer",
+        "http://dx.doi.org/10.5067/IMPACTS/DATA101",
+        "https://ghrc.nsstc.nasa.gov/pub/fieldCampaigns/impacts/UALB_Parsivel/doc/ualbparsimpacts_dataset.pdf",
+        "https://doi.org/10.1175/1520-0469(1976)033%3C0851:TVASOC%3E2.0.CO;2",
+        "https://doi.org/10.1175/JTECH-D-12-00254.1",
+        "https://doi.org/10.1175/JTECH-D-13-00174.1",
+        "https://doi.org/10.1175/BAMS-D-20-0246.1",
+        "https://doi.org/10.1109/IGARSS46834.2022.9883693",
+        "https://ghrc.nsstc.nasa.gov/home/field-campaigns/impacts",
+        "https://ghrc.nsstc.nasa.gov/home/micro-articles/investigation-microphysics-and-precipitation-atlantic-coast-threatening-snowstorms",
+        "https://ghrc.nsstc.nasa.gov/home/about-ghrc/citing-ghrc-daac-data"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization NASA/MSFC/GHRC",
+        "theme": "IMPACTS geospatial",
+        "issued": "2022-07-13",
+        "modified": "2025-03-31"
+      },
+      "_catalog_score": 0.5714,
+      "query": "population growth rate DCAT catalog 2020 2022",
+      "query_id": 24,
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "relevance_score": 0.5714,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.52,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [],
+      "matched_salient_columns": [
+        "year"
+      ],
+      "years_found": [
+        2020,
+        2022,
+        2023
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C1995869692-GHRC_DAAC",
+      "title": "SBU Parsivel IMPACTS V1",
+      "description": "The SBU Parsivel IMPACTS dataset consists of precipitation data collected by the Parsivel disdrometer in support of the Investigation of Microphysics and Precipitation for Atlantic Coast-Threatening Snowstorms (IMPACTS) field campaign. IMPACTS was a three-year sequence of winter season deployments conducted to study snowstorms over the U.S Atlantic Coast (2020-2022). The campaign aimed to (1) Provide observations critical to understanding the mechanisms of snowband formation, organization, and evolution; (2) Examine how the microphysical characteristics and likely growth mechanisms of snow particles vary across snowbands; and (3) Improve snowfall remote sensing interpretation and modeling to significantly advance prediction capabilities. The Parsivel disdrometer data include particle size distribution, fall speed, radar reflectivity and precipitation rate. The dataset files are available in netCDF-3 format from January 1 through February 27, 2020.",
+      "landing_page": "https://doi.org/10.5067/IMPACTS/PARSIVEL/DATA101",
+      "keywords": [
+        "atmosphere",
+        "clouds",
+        "earth-science",
+        "precipitation",
+        "radar",
+        "spectral-engineering"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.5067%2FIMPACTS%2FPARSIVEL%2FDATA101",
+        "https://search.earthdata.nasa.gov/search?q=sbuparsimpacts",
+        "http://dx.doi.org/10.5067/IMPACTS/DATA101",
+        "https://doi.org/10.1175/1520-0469(1976)033%3C0851:TVASOC%3E2.0.CO;2",
+        "https://www.ott.com/download/ott-parsivel-white-paper/",
+        "https://gpm.nasa.gov/resources/documents/parsivel-laser-optical-disdrometer",
+        "https://ghrc.nsstc.nasa.gov/pub/fieldCampaigns/impacts/SBU_Parsivel/doc/sbuparsimpacts_dataset.pdf",
+        "https://doi.org/10.1109/IGARSS46834.2022.9883693",
+        "https://doi.org/10.1175/JTECH-D-12-00254.1",
+        "https://doi.org/10.1175/JTECH-D-13-00174.1",
+        "https://doi.org/10.1175/BAMS-D-20-0246.1",
+        "https://ghrc.nsstc.nasa.gov/home/field-campaigns/impacts",
+        "https://ghrc.nsstc.nasa.gov/home/micro-articles/investigation-microphysics-and-precipitation-atlantic-coast-threatening-snowstorms",
+        "https://ghrc.nsstc.nasa.gov/home/about-ghrc/citing-ghrc-daac-data"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization NASA/MSFC/GHRC",
+        "theme": "IMPACTS geospatial",
+        "issued": "2022-03-23",
+        "modified": "2025-03-31"
+      },
+      "_catalog_score": 0.5714,
+      "query": "population growth rate DCAT catalog 2020 2022",
+      "query_id": 24,
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "relevance_score": 0.5714,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.52,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [],
+      "matched_salient_columns": [
+        "year"
+      ],
+      "years_found": [
+        2020,
+        2022
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C1995869658-GHRC_DAAC",
+      "title": "SBU Micro Rain Radar 2 (MRR2) IMPACTS V1",
+      "description": "The SBU Micro Rain Radar 2 (MRR-2) IMPACTS dataset consists of reflectivity, Doppler velocity, signal-to-noise ratio, spectral width, droplet size, Liquid Water Content, melting layer, drop size distribution, rain attenuation, rain rate, and radial velocity data collected during the Investigation of Microphysics and Precipitation for Atlantic Coast-Threatening Snowstorms (IMPACTS) field campaign. IMPACTS was a three-year sequence of winter season deployments conducted to study snowstorms over the U.S. Atlantic Coast (2020-2022). The campaign aimed to (1) Provide observations critical to understanding the mechanisms of snowband formation, organization, and evolution; (2) Examine how the microphysical characteristics and likely growth mechanisms of snow particles vary across snowbands; and (3) Improve snowfall remote sensing interpretation and modeling to significantly advance prediction capabilities. Both the MRR-2 and the MRR-PRO instruments were used to collect data for this dataset. The dataset files are available from January 1 through February 28, 2020 in netCDF-3 and netCDF-4/CF formats.",
+      "landing_page": "https://doi.org/10.5067/IMPACTS/MRR/DATA101",
+      "keywords": [
+        "atmosphere",
+        "atmospheric-radiation",
+        "atmospheric-water-vapor",
+        "clouds",
+        "earth-science",
+        "precipitation",
+        "radar",
+        "spectral-engineering"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.5067%2FIMPACTS%2FMRR%2FDATA101",
+        "https://search.earthdata.nasa.gov/search?q=sbumrr2impacts",
+        "http://dx.doi.org/10.5067/IMPACTS/DATA101",
+        "https://metek.de/wp-content/uploads/2014/05/Datasheet_MRR-2.pdf",
+        "https://metek.de/product/mrr-2/",
+        "https://metek.de/product/mrr-pro/",
+        "https://metek.de/wp-content/uploads/2016/12/20180206_Datenblatt_MRR-PRO.pdf",
+        "https://espo.nasa.gov/impacts/content/IMPACTS",
+        "https://ghrc.nsstc.nasa.gov/pub/fieldCampaigns/impacts/SBU_MRR2/doc/sbumrr2impacts_dataset.pdf",
+        "https://doi.org/10.1109/IGARSS46834.2022.9883693",
+        "https://doi.org/10.1175/BAMS-D-20-0246.1",
+        "https://ghrc.nsstc.nasa.gov/home/field-campaigns/impacts",
+        "https://ghrc.nsstc.nasa.gov/home/micro-articles/investigation-microphysics-and-precipitation-atlantic-coast-threatening-snowstorms",
+        "https://ghrc.nsstc.nasa.gov/home/about-ghrc/citing-ghrc-daac-data"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization NASA/MSFC/GHRC",
+        "theme": "IMPACTS geospatial",
+        "issued": "2022-03-23",
+        "modified": "2025-03-31"
+      },
+      "_catalog_score": 0.5714,
+      "query": "population growth rate DCAT catalog 2020 2022",
+      "query_id": 24,
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "relevance_score": 0.5714,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.52,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [],
+      "matched_salient_columns": [
+        "year"
+      ],
+      "years_found": [
+        2020,
+        2022
+      ],
+      "has_year_overlap": true
+    },
+    {
       "connector": "CKAN",
       "source_name": "Humanitarian Data Exchange",
       "source_url": "https://data.humdata.org",
@@ -7268,6 +7971,401 @@
       "joinability_score": 0.0,
       "matched_join_fields": [],
       "matched_salient_columns": [],
+      "years_found": [],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "10.3334/ORNLDAAC/2032",
+      "title": "ABoVE: Modeled Top Cover by Plant Functional Type over Alaska and Yukon, 1985-2020",
+      "description": "This dataset contains data files of modeled top cover estimates by plant functional type (PFT) for the Arctic and Boreal Alaska and Yukon regions. Estimates are presented for single years at 5-year intervals from 1985 to 2020. Also included are root mean square error (RMSE) and source year, which indicate the specific year from which pixels in the top cover maps were derived. Plant functional types include conifer trees, broadleaf trees, deciduous shrubs, evergreen shrubs, graminoids, forbs, and light macrolichens. Estimates were derived through the combination of two stochastic gradient-boosting models that used environmental and spectral covariates. Environmental covariates represented topographic, climatic, permafrost, hydrographic, and phenological gradients, and spectral covariates were based on Landsat Thematic Mapper (TM), Enhanced Thematic Mapper Plus (ETM+), and Operational Land Imager (OLI) data collected between 1984-2020. These maps catalog widespread changes in the distribution of PFTs occurring in the Arctic and boreal forest ecosystems, such as tundra shrub expansion, due to the intensification of disturbances such as fire and climate-driven vegetation dynamics.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "nasa",
+        "remote-sensing"
+      ],
+      "download_urls": [
+        "https://cmr.earthdata.nasa.gov/search/concepts/C2262496056-ORNL_CLOUD.iso19115"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization ORNL_DAAC",
+        "theme": "Earth Science",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog environmental country panel data",
+      "query_id": 12,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.5114,
+      "joinability_score": 0.3714,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "year",
+        "region"
+      ],
+      "years_found": [
+        1984,
+        1985,
+        2020
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "10.3334/ORNLDAAC/2032",
+      "title": "ABoVE: Modeled Top Cover by Plant Functional Type over Alaska and Yukon, 1985-2020",
+      "description": "This dataset contains data files of modeled top cover estimates by plant functional type (PFT) for the Arctic and Boreal Alaska and Yukon regions. Estimates are presented for single years at 5-year intervals from 1985 to 2020. Also included are root mean square error (RMSE) and source year, which indicate the specific year from which pixels in the top cover maps were derived. Plant functional types include conifer trees, broadleaf trees, deciduous shrubs, evergreen shrubs, graminoids, forbs, and light macrolichens. Estimates were derived through the combination of two stochastic gradient-boosting models that used environmental and spectral covariates. Environmental covariates represented topographic, climatic, permafrost, hydrographic, and phenological gradients, and spectral covariates were based on Landsat Thematic Mapper (TM), Enhanced Thematic Mapper Plus (ETM+), and Operational Land Imager (OLI) data collected between 1984-2020. These maps catalog widespread changes in the distribution of PFTs occurring in the Arctic and boreal forest ecosystems, such as tundra shrub expansion, due to the intensification of disturbances such as fire and climate-driven vegetation dynamics.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "nasa",
+        "remote-sensing"
+      ],
+      "download_urls": [
+        "https://cmr.earthdata.nasa.gov/search/concepts/C2262496056-ORNL_CLOUD.iso19115"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization ORNL_DAAC",
+        "theme": "Earth Science",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5,
+      "query": "age distribution DCAT catalog 2020 2022",
+      "query_id": 27,
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.5114,
+      "joinability_score": 0.3714,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "year",
+        "region"
+      ],
+      "years_found": [
+        1984,
+        1985,
+        2020
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "10.5067/ASDCDAAC/NARSTO/0020",
+      "title": "NARSTO_EPA_SS_ST_LOUIS Air Chemistry, Particulate Matter, Met Data",
+      "description": "The NARSTO_EPA_SS_ST_LOUIS_AIR_CHEM_PM_MET_DATA were obtained between April 11, 2001 and July 21, 2003 during the St. Louis - Midwest Supersite program.The overall goal of the St. Louis - Midwest Supersite was to conduct aerosol physical and chemical measurements needed by the health effects community, the atmospheric science community and the regulatory community to properly assess the impact of particulate matter exposure on human health and to develop control strategies to mitigate these effects. Metropolitan St. Louis is a major population center well isolated from other urban centers of even moderate size, and is impacted by both distant and local sources. Local industry includes manufacturing,refining, and chemical plants. St. Louis is climatologically representative of the country's eastern interior, affected by a wide range of synoptic weather patterns and free of localized influences from the Great Lakes, Ocean, Gulf, and mountains. It accordingly provides an ideal environment for studying the sources, transport, and properties of ambient particles.The initial data types included:1) 5-minute PM 2.5 black carbon (880 nm) and uv-absorbing carbon (370 nm) measured by a Magee Scientific Aethalometer (Model AE-21).2) 1-hour PM 2.5 elemental carbon and blank-corrected organic carbon from semicontinuous thermo-optical analysis by the ACE-ASIA method.3) 24-hour PM 2.5 elemental carbon and organic carbon (both blank-corrected) from integrated filter with offline thermo-optical analysis by the ACE-ASIA method.4) 30-minute PM 2.5 metal composition from samples collected with a Semicontinuous Elements in Aerosol Sampler (SEAS) II.5) 5-minute meteorological data (wind, temperature, RH, solar radiation, atmospheric pressure, and precipitation) measured with a Climatronics anemometer, wind vane, thermocouple, lithium chloride sensor, pyranometer, barometer, and tipping bucket.6) 24-hour PM 1.0 filter mass concentration measured by sharp cut cyclone and gravimetric analysis.7) 1-hour PM 2.5 mass measured by an Andersen Continuous Ambient Mass Monitoring System (CAMMS).8) 24-hour PM 2.5 and PM 10 filter mass by Harvard Impactors and laboratory gravimetric analysis.The U.S. EPA Particulate Matter (PM) Supersites Program was an ambient air monitoring research program designed to provide information of value to the atmospheric sciences, and human health and exposure research communities. Eight geographically diverse projects were chosen to specifically address these EPA research priorities: (1) to characterize PM, its constituents, precursors, co-pollutants, atmospheric transport, and its source categories that affect the PM in any region; (2) to address the research questions and scientific uncertainties about PM source-receptor and exposure-health effects relationships; and (3) to compare and evaluate different methods of characterizing PM including testing new and emerging measurement methods. NARSTO (formerly North American Research Strategy for Tropospheric Ozone) is a public/private partnership, whose membership spans government, the utilities, industry, and academe throughout Mexico, the United States, and Canada. The primary mission is to coordinate and enhance policy-relevant scientific research and assessment of tropospheric pollution behavior; activities provide input for science-based decision-making and determination of workable, efficient, and effective strategies for local and regional air-pollution management. Data products from local, regional, and international monitoring and research programs are available.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science-aerosols-atmosphere-carbonaceous-aerosols",
+        "earth-science-air-quality-atmosphere-particulates",
+        "earth-science-atmospheric-chemistry-atmosphere-trace-elements-trace-metals",
+        "earth-science-atmospheric-pressure-atmosphere-surface-pressure",
+        "earth-science-atmospheric-radiation-atmosphere-solar-radiation",
+        "earth-science-atmospheric-temperature-atmosphere-surface-temperature",
+        "earth-science-atmospheric-winds-atmosphere-surface-winds",
+        "earth-science-precipitation-atmosphere-precipitation-amount"
+      ],
+      "download_urls": [
+        "https://asdc.larc.nasa.gov/project/NARSTO",
+        "https://www.narsto.org/",
+        "https://cdiac.ess-dive.lbl.gov/programs/NARSTO/",
+        "https://search.earthdata.nasa.gov/search/granules?p=C4211373-LARC_ASDC",
+        "https://doi.org/10.5067/ASDCDAAC/NARSTO/0020",
+        "https://asdc.larc.nasa.gov/citing-data",
+        "https://asdc.larc.nasa.gov/documents/narsto/guide/narsto_epa_ss_st_louis_air_chem_pm_met_data.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/readme/stlprop.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/readme/stlqapp.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/readme/STL_Supersite_QAFR_v1.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/readme/STL-SS_FinalReport_Rev02_March2007.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/readme/Intro_1_2.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/readme/Section_3.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/readme/Section_4.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/readme/Sect_5_6.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/narsto_texas_final_report.pdf",
+        "https://asdc.larc.nasa.gov/data/NARSTO/EPA_SS_ST_LOUIS_AIR_CHEM_PM_MET_DATA_1/",
+        "https://cmr.earthdata.nasa.gov/search/concepts/C4211373-LARC_ASDC.iso19115"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization NASA/LARC/SD/ASDC",
+        "theme": "Earth Science",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5714,
+      "query": "DCAT catalog public health country panel data",
+      "query_id": 18,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5714,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.5057,
+      "joinability_score": 0.2214,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "population",
+        "region"
+      ],
+      "years_found": [
+        2001,
+        2003
+      ],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C1000000460-SEDAC",
+      "title": "Population Exposure Estimates in Proximity to Nuclear Power Plants, Country-Level Aggregates",
+      "description": "The Population Exposure Estimates in Proximity to Nuclear Power Plants, Country-Level Aggregates data set consists of country-level estimates of total, urban, and rural populations and land area, country-wide, that are in proximity to a nuclear power plant. This data set was created using a global data set of point locations of nuclear power plants, with buffer zones at 30km, 75km, 150km, 300km, 600km, and 1200km, and the Global Population Count Grid Time Series Estimates, Version 1 to estimate the population within each buffer zone for the years 1990, 2000, and 2010. Global Rural-Urban Mapping Project, Version 1 (GRUMPv1) Land and Geographic Unit Area Grids were used to estimate land area within each buffer zone. The GRUMPv1 Urban Extents Grid was used to further delineate population and land area estimates within urban and rural areas. All grids used for population, land area, and urban mask were of 1 km (30 arc-second) resolution.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "environmental-impacts",
+        "human-dimensions",
+        "population",
+        "public-health"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2FH41834D6",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/energy/energy-pop-exposure-nuclear-plants-country/sedac-logo.jpg"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "ENERGY geospatial",
+        "issued": "2015-01-21",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5714,
+      "query": "DCAT catalog public health country panel data",
+      "query_id": 18,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5714,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.5057,
+      "joinability_score": 0.2214,
+      "matched_join_fields": [],
+      "matched_salient_columns": [
+        "year",
+        "population"
+      ],
+      "years_found": [
+        1990,
+        2000,
+        2010
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "10.5067/ASDCDAAC/NARSTO/0011",
+      "title": "NARSTO PAC2001 Langley Site Gaseous, Particle, and Meteorological Data",
+      "description": "NARSTO_PAC2001_LANGLEY_GAS_PM_MET_DATA was obtained between August 8 and September 2, 2001 during the Pacific 2001 Air Quality Study (PAC2001).The Langley Ecole Lochiel (LEL) site was at 49.0289 N and -122.6025 W and at 90m above sea level (a.s.l). The site was surrounded by hobby farms and by relatively few country roads that are lined with both coniferous and deciduous trees, with little change in terrain heights within a radius of 15 km. Nontraditional agricultural practices, such as mushroom and chicken farming and small orchards, are common within this radius of the site. The nearest small urban center, Langley, is about 6 km north of the site. The site was approximately 10 km to the major expressways of Highway 1 in Canada and I-5 in the US and was approximately 6km to Highway 1A in Canada. Particle sampling was done in the center of an unobstructed field of approximately 30-50m2 about 2.5m from ground. On-site measurements were conducted from five temporary labs with inlets about 5m above ground. Measurements at this site, from August 13th to 31st, were intended to address the unknowns related to particles and ozone, with an emphasis on the transition from the urban mix to a suburban/rural setting, particularly the impact of agricultural sources on the particulate matter formation and evolution. Similar to the instrumentation package at Slocan Park site, the instrumentation package includes measurements in five categories.1) Measurements related to the precursors of fine PM and the oxidation environment in which the fine PM is formed. 2) Measurements related to the characterization of fine PM and the evolution process of PM.3) Measurements related to the emission of fine PM and its precursors in the valley.4) Measurements related to the mapping of fine PM horizontal and vertical distribution in the valley.5) Measurements of meteorological parameters in the valley. Measurements included detailed gas phase measurements of NOx=NOy (total and speciated), CO, O3, SO2, VOCs, OVOCs, carbonyls, NH3, HOx, and NH3 intended for a detailed understanding of the oxidation environment and chemical processes in which both O3 and secondary particulate matter are formed. Detailed measurements were made on size distributed inorganic ionic components, organic carbon, elemental carbon, and mass from 0.05 to 18 mm AD twice a day. High-time resolution measurements using a second AMS were made, measuring the size distribution of inorganic species and homologues of organic species from 0.06 to 0.7 mm. Detailed organic carbon speciation measurements, carbon isotope characterization, sulfur isotope characterization, and amorphous carbon were made for particles 2.5 mm on 10-h day samples collected twice daily. The gas-particle partitioning of semi-volatile organic compounds was studied using a Hi-cap denuder sampling system and detailed lab organic analyses. Continuous mass measurements for particles 2.5 mm were made using a tapered element oscillating microbalance (TEOM) with a diffusion dryer on the inlet. Particle number size distributions were measured from 0.01 to 3 mm using a DMA and an optical probe. Hygroscopic properties of particles were measured at two particle sizes using two DMAs in tandem. For NH3, HNO2, HNO3, HCHO, and PM 2.5 mm mass measurements and the particle chemical size distributions, more than one technique were deployed at this site. The multiple measurements of these species provided a test of the performance and validation of the different techniques and ensure that instrument biases were corrected. They also provide complementing data of different characteristics, such as better sensitivities versus time resolution. The diurnal evolution of the boundary layer height was studied using a scanning LIDAR that scanned the north, east and west quadrants. Radiation measurements, both UV and visible, were done using an Eppley and a CIMEL sun photometer. Vertical distribution of certain parameters, such as O3 and meteorological parameters, in the lower part of the atmosphere were also assessed from tethered balloons at Langley Poppy High School, 7.9km northeast of the Langley Ecole Lochiel site. Number size distribution between 0.25 and 10 mm were done from ground the Langley Ecole Lochiel site. This was further aided by a scanning lidar that based at the Langley Ecole Lochiel site. The Pacific 2001 Air Quality Study (PAC2001) was conducted from 1 August to 31 September 2001 in the Lower Fraser Valley (LFV), British Columbia, Canada. The study consisted of individual research projects organized to address several issues on ambient particulate matter and ozone that are important to policy makers. A special issue of Atmospheric Environment [Vol. 38(34), Nov 2004] described specific study objectives (Li, 2004) and presented a series of results papers from the field study. The ground sampling sites during the study were (1) Cassiar Tunnel, (2) Slocan Park, (3) Langley Ecole Lochiel, (4) Sumas Eagle Ridge, and (5) Golden Ears Provincial Park. Aloft measurements were taken from a Convair 580 and a Cessna 188. Selected measurement data were compiled for each site and aircraft and are archived as site-specific data sets. North American Research Strategy for Tropospheric Ozone (NARSTO), which has since disbanded, was a public/private partnership, whose membership spanned across government, utilities, industry, and academe throughout Mexico, the United States, and Canada. The primary mission was to coordinate and enhance policy-relevant scientific research and assessment of tropospheric pollution behavior; activities provide input for science-based decision-making and determination of workable, efficient, and effective strategies for local and regional air-pollution management. Data products from local, regional, and international monitoring and research programs are still available.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science-aerosols-atmosphere-aerosol-particle-properties",
+        "earth-science-aerosols-atmosphere-carbonaceous-aerosols",
+        "earth-science-aerosols-atmosphere-nitrate-particles",
+        "earth-science-atmospheric-chemistry-atmosphere-carbon-and-hydrocarbon-compounds-atmospheric-car",
+        "earth-science-atmospheric-chemistry-atmosphere-carbon-and-hydrocarbon-compounds-non-methane-hyd",
+        "earth-science-atmospheric-chemistry-atmosphere-nitrogen-compounds-nitrogen-oxides",
+        "earth-science-atmospheric-chemistry-atmosphere-oxygen-compounds-atmospheric-ozone",
+        "earth-science-atmospheric-chemistry-atmosphere-sulfur-compounds-sulfur-dioxide",
+        "earth-science-atmospheric-pressure-atmosphere-atmospheric-pressure-measurements",
+        "earth-science-atmospheric-temperature-atmosphere-surface-temperature-air-temperature",
+        "earth-science-atmospheric-water-vapor-atmosphere-water-vapor-indicators-humidity",
+        "earth-science-atmospheric-water-vapor-atmosphere-water-vapor-indicators-water-vapor",
+        "earth-science-atmospheric-winds-atmosphere-surface-winds"
+      ],
+      "download_urls": [
+        "https://asdc.larc.nasa.gov/project/NARSTO",
+        "https://cdiac.ess-dive.lbl.gov/programs/NARSTO/",
+        "https://search.earthdata.nasa.gov/search/granules?p=C2338660129-LARC_ASDC",
+        "https://doi.org/10.5067/ASDCDAAC/NARSTO/0011",
+        "https://asdc.larc.nasa.gov/citing-data",
+        "https://asdc.larc.nasa.gov/documents/narsto/guide/narsto_pac2001_langley_gas_pm_met_data.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/readme/NARSTO_PAC2001_LANGLEY_VERTICAL_PROFILES.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/readme/PAC2001_qa_plans.zip",
+        "https://asdc.larc.nasa.gov/documents/narsto/readme/Pacific_2001_project_plan.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/readme/Intro_1_2.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/readme/Section_3.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/readme/Section_4.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/readme/Sect_5_6.pdf",
+        "https://asdc.larc.nasa.gov/documents/narsto/narsto_texas_final_report.pdf",
+        "https://asdc.larc.nasa.gov/data/NARSTO/PAC2001_LANGLEY_GAS_PM_MET_DATA_1/",
+        "https://cmr.earthdata.nasa.gov/search/concepts/C2338660129-LARC_ASDC.iso19115"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization NASA/LARC/SD/ASDC",
+        "theme": "Earth Science",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5714,
+      "query": "DCAT catalog time series country panel data",
+      "query_id": 21,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5714,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.495,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "region"
+      ],
+      "years_found": [
+        2001,
+        2004
+      ],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "10.3334/ORNLDAAC/929",
+      "title": "ISLSCP II Ecosystem Rooting Depths",
+      "description": "The goal of this study was to predict the global distribution of plant rooting depths based on data about global aboveground vegetation structure and climate. Vertical root distributions influence the fluxes of water, carbon, and soil nutrients and the distribution and activities of soil fauna. Roots transport nutrients and water upwards, but they are also pathways for carbon and nutrient transport into deeper soil layers and for deep water infiltration. Roots also affect the weathering rates of soil minerals. For calculating such processes on a global scale, data on vertical root distributions are needed as inputs to global biogeochemistry and vegetation models. In the Project for Intercomparison of Land Surface Parameterization Schemes (PILPS), rooting depth and vertical soil characteristics were the most important factors explaining scatter for simulated transpiration among 14 land-surface models. Recently, the Terrestrial Observation Panel for Climate of the Global Climate Observation System (GCOS) identified the 95% rooting depth as a key variable needed to quantify the interactions between the climate, soil, and plants, stating that the main challenge was to find the correlation between rooting depth and soil and climate features (GCOS/GTOS Terrestrial Observation Panel for Climate 1997). In response to this challenge, a data set of vertical rooting depths was collected from the literature in order to construct maps of global ecosystem rooting depths. The parameters included in these data sets are estimates for the soil depths containing 50% and 95% of all roots, termed 50% and 95% rooting depths (D50 and D95, respectively). Together, these variables can be used to calculate estimates for vertical root distributions, using a logistic equation provided in this documentation. The data represent mean ecosystem rooting depths for 1 by 1 degree grid cells. Related data sets:Â The ORNL DAAC offers related data sets by Jackson et al. (2003), Gordon and Jackson (2003), Schenk and Jackson (2003), and Gill and Jackson (2003). This data set is one of the products of the International Satellite Land-Surface Climatology Project, Initiative II (ISLSCP II) data collection which contains 50 global time series data sets for the ten-year period 1986 to 1995. Selected data sets span even longer periods. ISLSCP II is a consistent collection of data sets that were compiled from existing data sources and algorithms, and were designed to satisfy the needs of modelers and investigators of the global carbon, water and energy cycle. The data were acquired from a number of U.S. and international agencies, universities, and institutions. The global data sets were mapped at consistent spatial (1, 0.5 and 0.25 degrees) and temporal (monthly, with meteorological data at finer (e.g., 3-hour)) resolutions and reformatted into a common ASCII format. The data and documentation have undergone two peer reviews. ISLSCP is one of several projects of Global Energy and Water Cycle Experiment (GEWEX) [http://www.gewex.org/] and has the lead role in addressing land-atmosphere interactions -- process modeling, data retrieval algorithms, field experiment design and execution, and the development of global data sets.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science-atmospheric-radiation-atmosphere-albedo",
+        "earth-science-land-use-land-cover-land-surface-land-use-land-cover-classification",
+        "earth-science-surface-radiative-properties-land-surface-reflectance",
+        "earth-science-vegetation-biosphere-canopy-characteristics",
+        "earth-science-vegetation-biosphere-leaf-characteristics",
+        "earth-science-vegetation-biosphere-plant-characteristics",
+        "earth-science-vegetation-biosphere-vegetation-cover",
+        "earth-science-vegetation-biosphere-vegetation-index"
+      ],
+      "download_urls": [
+        "https://search.earthdata.nasa.gov/search?q=ecosystem_roots_1deg_929&ac=true",
+        "https://doi.org/10.3334/ORNLDAAC/929",
+        "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/ecosystem_roots_1deg_929.zip",
+        "https://daac.ornl.gov/graphics/browse/sdat-tds/929_1_fit.png",
+        "https://data.ornldaac.earthdata.nasa.gov/public/islscp_ii/vegetation/ecosystem_roots_1deg/comp/0_ecosystem_roots_readme.txt",
+        "https://data.ornldaac.earthdata.nasa.gov/public/islscp_ii/vegetation/ecosystem_roots_1deg/comp/1_ecosystem_roots_doc.pdf",
+        "https://cmr.earthdata.nasa.gov/search/concepts/C2784847849-ORNL_CLOUD.iso19115"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization ORNL_DAAC",
+        "theme": "Earth Science",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5714,
+      "query": "DCAT catalog time series country panel data",
+      "query_id": 21,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5714,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.495,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [],
+      "matched_salient_columns": [
+        "year"
+      ],
+      "years_found": [
+        1986,
+        1995,
+        1997,
+        2003
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "10.5067/GNSS/GDGPS_daily_POD_orbits_gps_001",
+      "title": "Ground-Based GNSS-based Upper Atmospheric Realtime Disaster Information and Alert Network (GUARDIAN) GPS daily accumulated real-time Precise Orbit Determination (POD) orbits (60-second sampling, 24-hour files) from NASA CDDIS",
+      "description": "This product contains a time series of position and velocity components for healthy satellites in the GPS constellation that are accumulated every minute throughout the day. In addition, formal 1-sigma uncertainties for the positions and velocities are provided. The product is generated at JPL's Global Differential GPS Operations Centers in real-time. The data in this product can be concatenated with other daily products to provide larger coverage in time.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science-geodetics-solid-earth-coordinate-reference-system-country-regional-coordinate-ref",
+        "earth-science-geodetics-solid-earth-coordinate-reference-system-global-coordinate-reference-sys",
+        "earth-science-geodetics-solid-earth-ellipsoid-characteristics",
+        "earth-science-geodetics-solid-earth-geoid-characteristics",
+        "earth-science-gravity-gravitational-field-solid-earth-crustal-motion-isostatic-adjustments",
+        "earth-science-gravity-gravitational-field-solid-earth-gravitational-field",
+        "earth-science-gravity-gravitational-field-solid-earth-gravity",
+        "earth-science-gravity-gravitational-field-solid-earth-gravity-anomalies",
+        "earth-science-gravity-gravitational-field-solid-earth-polar-motion-annual-elliptical-component",
+        "earth-science-gravity-gravitational-field-solid-earth-polar-motion-chandler-circular-component",
+        "earth-science-gravity-gravitational-field-solid-earth-rotational-motion-variations-rotational-r",
+        "earth-science-gravity-gravitational-field-solid-earth-satellite-orbits-revolution-angle-of-elev",
+        "earth-science-gravity-gravitational-field-solid-earth-satellite-orbits-revolution-angle-of-incl",
+        "earth-science-gravity-gravitational-field-solid-earth-satellite-orbits-revolution-orbit-type",
+        "earth-science-gravity-gravitational-field-solid-earth-satellite-orbits-revolution-orbit-velocit",
+        "earth-science-gravity-gravitational-field-solid-earth-satellite-orbits-revolution-orbital-posit",
+        "earth-science-tectonics-solid-earth-core-processes",
+        "earth-science-tectonics-solid-earth-earthquakes-earthquake-magnitude-intensity",
+        "earth-science-tectonics-solid-earth-earthquakes-earthquake-occurrences",
+        "earth-science-tectonics-solid-earth-earthquakes-earthquake-predictions",
+        "earth-science-tectonics-solid-earth-earthquakes-seismic-profile-seismic-body-waves",
+        "earth-science-tectonics-solid-earth-earthquakes-seismic-profile-seismic-surface-waves",
+        "earth-science-tectonics-solid-earth-plate-tectonics-crustal-motion-crustal-motion-direction",
+        "earth-science-tectonics-solid-earth-plate-tectonics-crustal-motion-crustal-motion-rate"
+      ],
+      "download_urls": [
+        "https://doi.org/10.5067/GNSS/GDGPS_daily_POD_orbits_gps_001",
+        "https://cddis.nasa.gov/archive/gnss/products/realtime/jpl_gps/",
+        "https://www.earthdata.nasa.gov/data/space-geodesy-techniques/gnss/data-products-holdings",
+        "https://cmr.earthdata.nasa.gov/search/concepts/C2761716853-CDDIS.iso19115"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization CDDIS",
+        "theme": "Earth Science",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5714,
+      "query": "DCAT catalog time series country panel data",
+      "query_id": 21,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5714,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.495,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "region"
+      ],
       "years_found": [],
       "has_year_overlap": false
     },
@@ -7354,6 +8452,226 @@
       ],
       "years_found": [],
       "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "10.5067/SeaBASS/ClearLake_WQ/DATA001",
+      "title": "Water Quality (WQ) monitoring program for Clear Lake, CA",
+      "description": "Clear Lake is a large, shallow, hypereutrophic lake in Northern California, USA. Clear Lake is an important water resource for the surrounding community offering many cultural and recreational opportunities and provides drinking water for more than half of the region's population. Despite these many ecosystem services, Clear Lake suffers from Harmful Algal Blooms (HABs) of cyanobacteria. This project aims to understand the lake and watershed processes contributing to the negative impacts on the lake water quality and ecosystem health with a goal of rehabilitating the lake. The UC Davis Tahoe Environmental Research Center conducted a 5-year (2019-2023) water quality monitoring program collecting monitoring data to better understand the physical, chemical, and biological processes affecting lake quality. Data from this monitoring program are publicly available here (DOI of EDI data repository to be provided when available). This project is funded by the California Department of Fish and Wildlife through California State Assembly Bill 707 (2017), the California Natural Resources Agency, and the UC Davis Tahoe Environmental Research Center. In addition to this overarching project, we completed additional biological and optical measurements over a shorter 1.5-year time period (Jul 2021 - Oct 2022) with the goal of supporting Phytoplankton Community Composition (PCC) and Cyanobacteria genera differentiation algorithm development from remotely sensed hyperspectral measurements. Three of these sampling events were completed coincident to whole-lake hyperspectral images collected by the DESIS sensor. These additional data included High-Performance Liquid Chromatography (HPLC) phytoplankton pigment data and above-water spectroradiometry (SVC HR-1024i) measurements. This additional work was supported by a NASA Office of STEM Engagement (OSE) graduate student fellowship awarded to Samantha Sharp in 2020 (Grant Number 80NSSC20K1458).",
+      "landing_page": null,
+      "keywords": [
+        "earth-science-ocean-chemistry-oceans",
+        "earth-science-ocean-optics-oceans",
+        "earth-science-ocean-temperature-oceans",
+        "earth-science-salinity-density-oceans"
+      ],
+      "download_urls": [
+        "https://seabass.gsfc.nasa.gov/experiment/ClearLake_WQ/",
+        "https://cmr.earthdata.nasa.gov/search/concepts/C3457514542-OB_DAAC.iso19115"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization NASA/GSFC/SED/ESD/GCDC/OB.DAAC;NASA/GSFC/SED/ESD/GCDC/SeaBASS",
+        "theme": "Earth Science",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.4286,
+      "query": "population growth rate DCAT catalog 2020 2022",
+      "query_id": 24,
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "relevance_score": 0.4286,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4829,
+      "joinability_score": 0.4071,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "year",
+        "population",
+        "region"
+      ],
+      "years_found": [
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "ivo://nasa.heasarc/rosatlog",
+      "title": "ROSAT Observation Log",
+      "description": "The ROSATLOG database table has been created for the purpose of providing a complete, accurate, and easily accessible record of ROSAT observations. ROSATLOG is made by cross-correlating ROSAT observation records with the short-term timeline and contains information about all pointings executed by the satellite during the performance verification (PV) and AO phases. For each observation, details are given concerning target name and coordinates, pointing start and stop times, PI name and country, ROSAT Observation Request sequence number, and more. ROSATLOG is based on the short-term timelines and observation records generated at the German ROSAT Science Data Center at the Max Planck Institute for Extraterrestrial Physics (MPE) and sent to the ROSAT Guest Observer Facility at Goddard Space Flight Center (GSFC). Many duplicate entries were removed from the HEASARC implementation of this catalog in June 2019. This is a service provided by NASA HEASARC .",
+      "landing_page": "ivo://nasa.heasarc/rosatlog",
+      "keywords": [
+        "__"
+      ],
+      "download_urls": [
+        "https://heasarc.gsfc.nasa.gov/W3Browse/all/rosatlog.html",
+        "https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&table=rosatlog&"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization High Energy Astrophysics Science Archive Research Center",
+        "theme": "Astrophysics",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog demographics country panel data",
+      "query_id": 3,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.4807,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [
+        "country_name"
+      ],
+      "matched_salient_columns": [
+        "country_name"
+      ],
+      "years_found": [
+        2019
+      ],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "ivo://nasa.heasarc/rosatlog",
+      "title": "ROSAT Observation Log",
+      "description": "The ROSATLOG database table has been created for the purpose of providing a complete, accurate, and easily accessible record of ROSAT observations. ROSATLOG is made by cross-correlating ROSAT observation records with the short-term timeline and contains information about all pointings executed by the satellite during the performance verification (PV) and AO phases. For each observation, details are given concerning target name and coordinates, pointing start and stop times, PI name and country, ROSAT Observation Request sequence number, and more. ROSATLOG is based on the short-term timelines and observation records generated at the German ROSAT Science Data Center at the Max Planck Institute for Extraterrestrial Physics (MPE) and sent to the ROSAT Guest Observer Facility at Goddard Space Flight Center (GSFC). Many duplicate entries were removed from the HEASARC implementation of this catalog in June 2019. This is a service provided by NASA HEASARC .",
+      "landing_page": "ivo://nasa.heasarc/rosatlog",
+      "keywords": [
+        "__"
+      ],
+      "download_urls": [
+        "https://heasarc.gsfc.nasa.gov/W3Browse/all/rosatlog.html",
+        "https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&table=rosatlog&"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization High Energy Astrophysics Science Archive Research Center",
+        "theme": "Astrophysics",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog economic country panel data",
+      "query_id": 6,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.4807,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [
+        "country_name"
+      ],
+      "matched_salient_columns": [
+        "country_name"
+      ],
+      "years_found": [
+        2019
+      ],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "ivo://nasa.heasarc/rosatlog",
+      "title": "ROSAT Observation Log",
+      "description": "The ROSATLOG database table has been created for the purpose of providing a complete, accurate, and easily accessible record of ROSAT observations. ROSATLOG is made by cross-correlating ROSAT observation records with the short-term timeline and contains information about all pointings executed by the satellite during the performance verification (PV) and AO phases. For each observation, details are given concerning target name and coordinates, pointing start and stop times, PI name and country, ROSAT Observation Request sequence number, and more. ROSATLOG is based on the short-term timelines and observation records generated at the German ROSAT Science Data Center at the Max Planck Institute for Extraterrestrial Physics (MPE) and sent to the ROSAT Guest Observer Facility at Goddard Space Flight Center (GSFC). Many duplicate entries were removed from the HEASARC implementation of this catalog in June 2019. This is a service provided by NASA HEASARC .",
+      "landing_page": "ivo://nasa.heasarc/rosatlog",
+      "keywords": [
+        "__"
+      ],
+      "download_urls": [
+        "https://heasarc.gsfc.nasa.gov/W3Browse/all/rosatlog.html",
+        "https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&table=rosatlog&"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization High Energy Astrophysics Science Archive Research Center",
+        "theme": "Astrophysics",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog education country panel data",
+      "query_id": 9,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.4807,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [
+        "country_name"
+      ],
+      "matched_salient_columns": [
+        "country_name"
+      ],
+      "years_found": [
+        2019
+      ],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "ivo://nasa.heasarc/rosatlog",
+      "title": "ROSAT Observation Log",
+      "description": "The ROSATLOG database table has been created for the purpose of providing a complete, accurate, and easily accessible record of ROSAT observations. ROSATLOG is made by cross-correlating ROSAT observation records with the short-term timeline and contains information about all pointings executed by the satellite during the performance verification (PV) and AO phases. For each observation, details are given concerning target name and coordinates, pointing start and stop times, PI name and country, ROSAT Observation Request sequence number, and more. ROSATLOG is based on the short-term timelines and observation records generated at the German ROSAT Science Data Center at the Max Planck Institute for Extraterrestrial Physics (MPE) and sent to the ROSAT Guest Observer Facility at Goddard Space Flight Center (GSFC). Many duplicate entries were removed from the HEASARC implementation of this catalog in June 2019. This is a service provided by NASA HEASARC .",
+      "landing_page": "ivo://nasa.heasarc/rosatlog",
+      "keywords": [
+        "__"
+      ],
+      "download_urls": [
+        "https://heasarc.gsfc.nasa.gov/W3Browse/all/rosatlog.html",
+        "https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&table=rosatlog&"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization High Energy Astrophysics Science Archive Research Center",
+        "theme": "Astrophysics",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog geospatial country panel data",
+      "query_id": 15,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.4807,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [
+        "country_name"
+      ],
+      "matched_salient_columns": [
+        "country_name"
+      ],
+      "years_found": [
+        2019
+      ],
+      "has_year_overlap": false
     },
     {
       "connector": "CKAN",
@@ -7528,6 +8846,157 @@
       "has_year_overlap": true
     },
     {
+      "connector": "DCAT",
+      "source_name": "DOT Open Data Catalog",
+      "source_url": "https://data.transportation.gov/data.json",
+      "dataset_id": "https://data.transportation.gov/api/views/6abt-uhgq",
+      "title": "2022 - 2024 NTD Annual Data - Vehicles (Age Distribution)",
+      "description": "This dataset details vehicle types and ages for each transit agency reporting to the NTD in the 2022, 2023, and 2024 report years. Non-dedicated fleets do not report Year of Manufacture and are thus excluded from the Age Distribution table.\n\nAgencies do not report Useful Life Benchmark for non-dedicated fleets or fleets for which the agency does not have capital replacement responsibility. These fleets are excluded from calculations of the percentage of vehicles meeting or exceeding their useful life.\n\nIn versions of the data tables from before 2014, you can find data on vehicles in the file called \"Age Distribution of Active Vehicle Inventory.\"\n\nIn years 2014-2021, you can find this data in the \"Vehicles\" data table on NTD Program website, at https://transit.dot.gov/ntd/ntd-data.\n\nIf you have any other questions about this table, please contact the NTD Help Desk at NTDHelp@dot.gov.",
+      "landing_page": "https://data.transportation.gov/d/6abt-uhgq",
+      "keywords": [
+        "transit vehicles",
+        "vehicle age",
+        "age by decade"
+      ],
+      "download_urls": [
+        "https://data.transportation.gov/api/views/6abt-uhgq/rows.csv?accessType=DOWNLOAD",
+        "https://data.transportation.gov/api/views/6abt-uhgq/rows.rdf?accessType=DOWNLOAD",
+        "https://data.transportation.gov/api/views/6abt-uhgq/rows.json?accessType=DOWNLOAD",
+        "https://data.transportation.gov/api/views/6abt-uhgq/rows.xml?accessType=DOWNLOAD"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization Federal Transit Administration",
+        "theme": "Public Transit",
+        "issued": "2024-09-06",
+        "modified": "2025-10-17"
+      },
+      "_catalog_score": 0.5,
+      "query": "age distribution DCAT catalog 2020 2022",
+      "query_id": 27,
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.4807,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [],
+      "matched_salient_columns": [
+        "year"
+      ],
+      "years_found": [
+        2014,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "DOT Open Data Catalog",
+      "source_url": "https://data.transportation.gov/data.json",
+      "dataset_id": "https://data.transportation.gov/api/views/j9q7-53ae",
+      "title": "2022 - 2024 NTD Annual Data - Track & Roadway (Guideway Age Distribution)",
+      "description": "This dataset details the ages of guideway elements for each applicable agency reporting to the National Transit Database in the 2022, 2023, and 2024 report years. Guideway elements include elements, structures, or facilities dedicated specifically to transit use, such as track, subway structures, tunnels, bridges, and propulsion power systems. \n\nNTD Data Tables organize and summarize data from the 2022 - 2024 National Transit Database in a manner that is more useful for quick reference and summary analysis. This dataset is based on the 2022 - 2024 Transit Way Mileage database files.\n\nIn years 2015-2021, you can find this data in the \"Track and Roadway\" data table on NTD Program website, at https://transit.dot.gov/ntd/ntd-data.\n\nIn versions of the data tables from before 2015, you can find data on vehicles in the file called \"Transit Way Mileage - Rail Modes.\"\n\nThis dataset's 2024 data comes from the NTD as of September 4, 2025.\n\nIf you have any other questions about this table, please contact the NTD Help Desk at NTDHelp@dot.gov.",
+      "landing_page": "https://data.transportation.gov/d/j9q7-53ae",
+      "keywords": [
+        "railway age",
+        "track",
+        "transit track age"
+      ],
+      "download_urls": [
+        "https://data.transportation.gov/api/views/j9q7-53ae/rows.csv?accessType=DOWNLOAD",
+        "https://data.transportation.gov/api/views/j9q7-53ae/rows.rdf?accessType=DOWNLOAD",
+        "https://data.transportation.gov/api/views/j9q7-53ae/rows.json?accessType=DOWNLOAD",
+        "https://data.transportation.gov/api/views/j9q7-53ae/rows.xml?accessType=DOWNLOAD"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization Federal Transit Administration",
+        "theme": "Public Transit",
+        "issued": "2024-09-10",
+        "modified": "2025-10-17"
+      },
+      "_catalog_score": 0.5,
+      "query": "age distribution DCAT catalog 2020 2022",
+      "query_id": 27,
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.4807,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [],
+      "matched_salient_columns": [
+        "year"
+      ],
+      "years_found": [
+        2015,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "ivo://nasa.heasarc/swift2sxps",
+      "title": "Swift-XRT Point Source Catalog (2SXPS)",
+      "description": "This table contains the second Swift X-ray Point Source (2SXPS) catalog of detections by the Swift X-ray Telescope (XRT) used in Photon Counting (PC) mode in the 0.3-10 keV energy range. Swift is a NASA mission with international participation dedicated to the gamma-ray burst study. It carries three instruments. The BAT is the large field-of-view instrument and operates in the 10-300 keV energy band; and two narrow field instruments, XRT and UVOT, that operate in the X-ray and UV/optical regime, respectively. The overall 2SXPS catalog characteristics are as follows: &lt;pre&gt; Data included 2005 Jan 01 - 2018 August 01 Sky coverage 3,790 square degrees Typical Sensitivity (0.3-10 keV) 2x10&lt;sup&gt;-13&lt;/sup&gt; erg cm&lt;sup&gt;-2&lt;/sup&gt; s&lt;sup&gt;-1&lt;/sup&gt; (observations) 4x10&lt;sup&gt;-14&lt;/sup&gt; erg cm&lt;sup&gt;-2&lt;/sup&gt; s&lt;sup&gt;-1&lt;/sup&gt; (stacked images) Typical position error 5.6&quot; (90% confidence radius, including systematics) Detections 1,091,058 Unique sources 206,335 Variable sources 82,324 Uncatalogued sources 78,100 False positive rate Flag=Good 0.3% Flag=Good/Reasonable 1% Flag=Good/Reasonable/Poor &lt;10% &lt;/pre&gt; This catalog enhances the 1SXPS catalogue (Evans, P. A., et al. 2014, ApJS, 210, 8) in different ways. The 2SXPS catalog uses an improved Point Spread Function (PSF) and pile-up models, a better source detection pipeline that includes a technique to model the effects of stray light, and tests to automatically avoid diffuse emission and ~six years more data. The results are that the 2SXPS catalog contains 50% more temporal coverage than 1SXPS, a sky coverage of 3790 square deg almost double compare to the 1SXPS (1905 square Degree) and ~30% more sources compared to the 1SXPS. The Swift XRT observations were filtered to remove times when: a) data were contaminated by scattered light from the daylight side of the Earth; b) the on-board astrometry derived from the images obtained by the Swift UV/Optical telescope was unreliable; and c) observations with less than 100s of PC mode. The 127519 observations included in the catalog provide a total usable exposure is 266.5 Ms. A Swift observation is a collection of snapshots and the source detection algorithm was run on individual observation as well as on stacked images. The latter were generated on a grid of 2,300x2,300 pixels (~ 90&#39;x90&#39;) to ensure that every overlap between observations is in at least one stacked image. A total of 14628 stacked images were generated. Each record corresponds to a unique source which characteristics are described with 230 parameters. The catalog reports for each source rates in four energy band (0.3-10.keV, 0.3-1. keV, 1-2 keV and 3-10 keV), background rates, variability for each energy band, two hardness ratio, peak rate and several spectral parameters. The hardness ratios are defined as follows: &lt;pre&gt; HR1 = (M-S)/(M+S) where M and S are the medium (1-2 keV) and soft (0.3-1 keV) band count rates HR2 = (H-M)/(H+M) where H and M are the hard (2-10 keV) and medium (1-2 keV) band count rates &lt;/pre&gt; and they are calculated using all observations. The peak rate is determined using three different timescale: the count rate considering all the observations (see parameters rates in this database), the count rate in each observation (not reported in this database) and the count rate in each snapshot (not reported in this database). The peak rate is the rate +/- error from the timescale which has the highest 1-sigma lower-limit on the count rate. Spectral parameters and source flux are estimated using three different methods for two spectral models, a power-law and APEC (see Smith et al., 2001, ApJL, 556, L91). Not all sources have values for all three methods. The parameters starting with &quot;fix&quot; are defined for every source and uses fixed spectral model parameters: a photon index of 1.7 for a power-law model, a temperature of kT=1keV for the APEC model and for both models uses the Galactic absorption listed in the parameter &quot;nh&quot;. The parameters starting &quot;intr&quot; have been inferred from the hardness ratio. Look-up tables containing (HR1, HR2, NH, photon index) and (HR1, HR2, NH, kT) are pre-calculated for the power-law and APEC models. If the source HR1 and HR2 are close to the values in the table, spectral parameters are derived by interpolating the HR1 and HR2 in the look-up tables that are close to the HR1 and HR2 of the source. The parameters starting with &quot;fit&quot; have been derived from fitting an actual source spectrum in XSPEC and they are only available for the brightest sources (&gt;50 net counts, and at least one detection in a single observation). The parameters fields starting with &quot;pow&quot; and &quot;apec&quot; report the values from the &#39;best&#39; of these methods. The parameters &quot;which_pow&quot; and &quot;which_apec&quot; indicates which of the three methods are reported. The catalog also includes flags derived from the cross-correlated with other source catalogs. The catalogs and their reference sources are as follows: &lt;pre&gt; * AllWISE: &lt;a href=\"https://wise2.ipac.caltech.edu/docs/release/allwise/\"&gt;https://wise2.ipac.caltech.edu/docs/release/allwise/&lt;/a&gt; * ROSAT HRI: &lt;a href=\"https://heasarc.gsfc.nasa.gov/docs/rosat/rra/RRA.html\"&gt;https://heasarc.gsfc.nasa.gov/docs/rosat/rra/RRA.html&lt;/a&gt; * SDSS Quasar Catalog DR14: Paris et al., 2018, A&amp;A, 613, 51 (&lt;a href=\"https://www.sdss.org/dr14/algorithms/qso_catalog/\"&gt;https://www.sdss.org/dr14/algorithms/qso_catalog/&lt;/a&gt;) * 2MASS: Skrutskie et al., 2006, AJ, 131, 1163 * 2CSC: accessed via the CSCView Tool at &lt;a href=\"https://cxc.harvard.edu/csc/about.html\"&gt;https://cxc.harvard.edu/csc/about.html&lt;/a&gt; (1CSC paper: Evans et al., 2010, ApJS, 189, 37) * 1SWXRT: Evans et al., 2014, ApJS, 210,8 * 1SXPS: D&#39;Elia et al., 2013, A&amp;A, 551, 142 * 2RXS: Boller et al., 2016, A&amp;A, 588, 103 * 3XMM-DR8: &lt;a href=\"http://xmmssc.irap.omp.eu/Catalogue/3XMM-DR8/3XMM_DR8.html\"&gt;http://xmmssc.irap.omp.eu/Catalogue/3XMM-DR8/3XMM_DR8.html&lt;/a&gt; (3XMM paper: Rosen, Webb, Watson et al., 2016, A&amp;A, 590, 1) * 3XMM Stack: Traulsen et al., 2019, A&amp;A, 642, 77 * SwiftFT: Puccetti et al. 2011, A&amp;A,528, A122 * XMM SL2: Saxton et al., 2008, A&amp;A 480, 611 * XRTGRB: Evans et al, 2009, MNRAS, 397, 1177 (&lt;a href=\"https://www.swift.ac.uk/xrt_positions\"&gt;https://www.swift.ac.uk/xrt_positions&lt;/a&gt;) * USNOB1: Monet et al., 2003, AJ, 125, 984 &lt;/pre&gt; The 2SXPS paper (Evans et al. 2020 ApJS, 247,54) describes in detail the methodology of stacking images, background modeling, point spread function mapping, stray light detection and corrections, data filtering techniques and processing. The 2SXPS catalog has a dedicated website at &lt;a href=\"https://www.swift.ac.uk/2SXPS\"&gt;https://www.swift.ac.uk/2SXPS&lt;/a&gt;. This database table was created by the HEASARC in November 20201 based on the electronic version delivered to the HEASARC by the Leicester University. The catalog has a dedicated website at &lt;a href=\"https://www.swift.ac.uk/2SXPS\"&gt;https://www.swift.ac.uk/2SXPS&lt;/a&gt;. The version available from the HEASARC corresponds to the catalog designated as &quot;All&quot; on the Leicester website. This is a service provided by NASA HEASARC .",
+      "landing_page": "ivo://nasa.heasarc/swift2sxps",
+      "keywords": [
+        "__"
+      ],
+      "download_urls": [
+        "https://heasarc.gsfc.nasa.gov/W3Browse/all/swift2sxps.html",
+        "https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&table=swift2sxps&"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization High Energy Astrophysics Science Archive Research Center",
+        "theme": "Astrophysics",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5,
+      "query": "fertility rate DCAT catalog 2020 2022",
+      "query_id": 30,
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.4807,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [],
+      "matched_salient_columns": [
+        "year"
+      ],
+      "years_found": [
+        1905,
+        2001,
+        2003,
+        2005,
+        2006,
+        2008,
+        2009,
+        2010,
+        2011,
+        2013,
+        2014,
+        2016,
+        2018,
+        2019,
+        2020
+      ],
+      "has_year_overlap": true
+    },
+    {
       "connector": "CKAN",
       "source_name": "Humanitarian Data Exchange",
       "source_url": "https://data.humdata.org",
@@ -7667,6 +9136,112 @@
       "has_year_overlap": true
     },
     {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C179001918-SEDAC",
+      "title": "Country-Level Population and Downscaled Projections Based on the SRES A1, B1, and  A2 Scenarios, 1990-2100",
+      "description": "The Country-Level Population and Downscaled Projections Based on Special Report on Emissions Scenarios (SRES) A1, B1, and A2 Scenarios, 1990-2100, were adopted in 2000 from population projections realized at the International Institute for Applied Systems Analysis (IIASA) in 1996. The Intergovernmental Panel on Climate Change (IPCC) SRES A1 and B1 scenarios both used the same IIASA \"rapid\" fertility transition projection, which assumes low fertility and low mortality rates. The SRES A2 scenario used a corresponding IIASA \"slow\" fertility transition projection (high fertility and high mortality rates). Both IIASA low and high projections are performed for 13 world regions including North Africa, Sub-Saharan Africa, China and Centrally Planned Asia, Pacific Asia, Pacific OECD, Central Asia, Middle East, South Asia, Eastern Europe, European part of the former Soviet Union, Western Europe, Latin America, and North America. This data set is produced and distributed by the Columbia University Center for International Earth Science Information Network (CIESIN).",
+      "landing_page": null,
+      "keywords": [
+        "air-quality",
+        "atmosphere",
+        "earth-science",
+        "human-dimensions",
+        "population"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2FH4T43R01",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/sdp/sdp-downscaled-population-a1b1a2-1990-2100/sedac-logo.jpg",
+        "https://sedac.ciesin.columbia.edu/data/set/sdp-downscaled-population-a1b1a2-1990-2100/data-download",
+        "http://sedac.ciesin.columbia.edu/data/set/sdp-downscaled-population-a1b1a2-1990-2100/docs",
+        "https://sedac.ciesin.columbia.edu/data/set/sdp-downscaled-population-a1b1a2-1990-2100"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "SDP geospatial",
+        "issued": "2002-07-31",
+        "modified": "2025-07-14"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog demographics country panel data",
+      "query_id": 3,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4664,
+      "joinability_score": 0.2214,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "population",
+        "region"
+      ],
+      "years_found": [
+        1990,
+        1996,
+        2000,
+        2100
+      ],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C179001918-SEDAC",
+      "title": "Country-Level Population and Downscaled Projections Based on the SRES A1, B1, and  A2 Scenarios, 1990-2100",
+      "description": "The Country-Level Population and Downscaled Projections Based on Special Report on Emissions Scenarios (SRES) A1, B1, and A2 Scenarios, 1990-2100, were adopted in 2000 from population projections realized at the International Institute for Applied Systems Analysis (IIASA) in 1996. The Intergovernmental Panel on Climate Change (IPCC) SRES A1 and B1 scenarios both used the same IIASA \"rapid\" fertility transition projection, which assumes low fertility and low mortality rates. The SRES A2 scenario used a corresponding IIASA \"slow\" fertility transition projection (high fertility and high mortality rates). Both IIASA low and high projections are performed for 13 world regions including North Africa, Sub-Saharan Africa, China and Centrally Planned Asia, Pacific Asia, Pacific OECD, Central Asia, Middle East, South Asia, Eastern Europe, European part of the former Soviet Union, Western Europe, Latin America, and North America. This data set is produced and distributed by the Columbia University Center for International Earth Science Information Network (CIESIN).",
+      "landing_page": null,
+      "keywords": [
+        "air-quality",
+        "atmosphere",
+        "earth-science",
+        "human-dimensions",
+        "population"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2FH4T43R01",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/sdp/sdp-downscaled-population-a1b1a2-1990-2100/sedac-logo.jpg",
+        "https://sedac.ciesin.columbia.edu/data/set/sdp-downscaled-population-a1b1a2-1990-2100/data-download",
+        "http://sedac.ciesin.columbia.edu/data/set/sdp-downscaled-population-a1b1a2-1990-2100/docs",
+        "https://sedac.ciesin.columbia.edu/data/set/sdp-downscaled-population-a1b1a2-1990-2100"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "SDP geospatial",
+        "issued": "2002-07-31",
+        "modified": "2025-07-14"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog education country panel data",
+      "query_id": 9,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4664,
+      "joinability_score": 0.2214,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "population",
+        "region"
+      ],
+      "years_found": [
+        1990,
+        1996,
+        2000,
+        2100
+      ],
+      "has_year_overlap": false
+    },
+    {
       "connector": "CKAN",
       "source_name": "Humanitarian Data Exchange",
       "source_url": "https://data.humdata.org",
@@ -7705,6 +9280,480 @@
         2022
       ],
       "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C1418651576-SEDAC",
+      "title": "Effects of Climate Change on Global Food Production from SRES Emissions and Socioeconomic Scenarios",
+      "description": "The Effects of Climate Change on Global Food Production from SRES Emissions and Socioeconomic Scenarios is an update to a major crop modeling study by the NASA Goddard Institute for Space Studies (GISS). The initial study was published in 1997, based on output of HadCM2 model forced with greenhouse gas concentration from the IS95 emission scenarios in 1997. Results of the initial study are presented at SEDAC's Potential Impacts of Climate Change on World Food Supply: Data Sets from a Major Crop Modeling Study, released in 2001. The co-authors developed and tested a method for investigating the spatial implications of climate change on crop production. The Decision Support System for Agrotechnology Transfer (DSSAT) dynamic process crop growth models, are specified and validated for one hundred and twenty seven sites in the major world agricultural regions. Results from the crop models, calibrated and validated in the major crop-growing regions, are then used to test functional forms describing the response of yield changes in the climate and environmental conditions. This updated version is based on HadCM3 model output along with GHG concentrations from the Special Report on Emissions Scenarios (SRES). The crop yield estimates incorporate some major improvements: 1) consistent crop simulation methodology and climate change scenarios; 2) weighting of model site results by contribution to regional and national, and rainfed and irrigated production; 3) quantitative foundation for estimation of physiological CO2 effects on crop yields; 4) Adaptation is explicitly considered; and 5) results are reported by country rather than by Basic Linked System region. The data are produced by A. Iglesias and C. Rosenzweig and the maps are produced by the Columbia University Center for International Earth Science Information Network (CIESIN).",
+      "landing_page": null,
+      "keywords": [
+        "air-quality",
+        "atmosphere",
+        "earth-science",
+        "economic-resources",
+        "human-dimensions",
+        "socioeconomics"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2FH4JM27JZ",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/crop-climate/crop-climate-effects-climate-global-food-production/maize-a1fi-2020-thumbnail.jpg",
+        "http://sedac.ciesin.columbia.edu/data/set/crop-climate-effects-climate-global-food-production/docs"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "CROPCLIM geospatial",
+        "issued": "2009-12-31",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog economic country panel data",
+      "query_id": 6,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4557,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "region"
+      ],
+      "years_found": [
+        1997,
+        2001
+      ],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C1604900383-SEDAC",
+      "title": "2018 Environmental Performance Index (EPI)",
+      "description": "The 2018 Environmental Performance Index (EPI) ranks 180 countries on 24 performance indicators in the following 10 issue categories: air quality, water and sanitation, heavy metals, biodiversity and habitat, forests, fisheries, climate and energy, air pollution, water resources, and agriculture. These categories track performance and progress on two broad policy objectives, environmental health and ecosystem vitality. The EPI's proximity-to-target methodology facilitates cross-country comparisons among economic and regional peer groups. The data set includes the 2018 EPI, component scores, and time-series source data. The 2018 EPI was formally released in Davos, Switzerland, at the annual meeting of the World Economic Forum in January 2018. It is the result of collaboration of the Yale Center for Environmental Law and Policy (YCELP), Yale University, Columbia University Center for International Earth Science Information Network (CIESIN), and the World Economic Forum (WEF). The Interactive Website for the 2018 EPI is at https://epi.envirocenter.yale.edu/.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "human-dimensions",
+        "sustainability"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2FH4X928CF",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/epi/epi-environmental-performance-index-2018/epi2018-thumbnail.jpg",
+        "https://sedac.ciesin.columbia.edu/data/set/epi-environmental-performance-index-2018/data-download"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "EPI geospatial",
+        "issued": "2018-10-04",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog economic country panel data",
+      "query_id": 6,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4557,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "region"
+      ],
+      "years_found": [
+        2018
+      ],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "10.3334/ORNLDAAC/1615",
+      "title": "Soil Organic Carbon Stock Estimates with Uncertainty across Latin America",
+      "description": "This dataset provides 5 x 5 km gridded estimates of soil organic carbon (SOC) across Latin America that were derived from existing point soil characterization data and compiled environmental prediction factors for SOC. This dataset is representative for the period between 1980 to 2000s corresponding with the highest density of observations available in the WoSIS system and the covariates used as prediction factors for soil organic carbon across Latin America. SOC stocks (kg/m2) were estimated for the SOC and bulk density point measurements and a spatially explicit measure of the SOC estimation error was also calculated. A modeling ensemble, using a linear combination of five statistical methods (regression Kriging, random forest, kernel weighted nearest neighbors, partial least squared regression and support vector machines) was applied to the SOC stock data at (1) country-specific and (2) regional scales to develop gridded SOC estimates (kg/m2) for all of Latin America. Uncertainty estimates are provided for the two model predictions based on independent model residuals and their full conditional response to the SOC prediction factors.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science-soils-land-surface-carbon",
+        "earth-science-soils-land-surface-organic-matter",
+        "earth-science-soils-land-surface-soil-bulk-density",
+        "earth-science-soils-land-surface-soil-texture"
+      ],
+      "download_urls": [
+        "https://search.earthdata.nasa.gov/search?q=Country_SOC_Latin_America_1615&ac=true",
+        "https://doi.org/10.3334/ORNLDAAC/1615",
+        "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/Country_SOC_Latin_America_1615.zip",
+        "https://daac.ornl.gov/CMS/guides/Country_SOC_Latin_America_Fig1.png",
+        "https://data.ornldaac.earthdata.nasa.gov/public/cms/Country_SOC_Latin_America/comp/background_variables_description.csv",
+        "https://data.ornldaac.earthdata.nasa.gov/public/cms/Country_SOC_Latin_America/comp/background_variables.tif",
+        "https://data.ornldaac.earthdata.nasa.gov/public/cms/Country_SOC_Latin_America/comp/SOC_estimates_LatinAmerica.zip",
+        "https://data.ornldaac.earthdata.nasa.gov/public/cms/Country_SOC_Latin_America/comp/SOC_estimates_LatinAmerica.kmz",
+        "https://data.ornldaac.earthdata.nasa.gov/public/cms/Country_SOC_Latin_America/comp/Country_SOC_Latin_America.pdf",
+        "https://cmr.earthdata.nasa.gov/search/concepts/C2389081666-ORNL_CLOUD.iso19115"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization ORNL_DAAC",
+        "theme": "Earth Science",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog environmental country panel data",
+      "query_id": 12,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4557,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [
+        "region"
+      ],
+      "matched_salient_columns": [
+        "region"
+      ],
+      "years_found": [
+        1980
+      ],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "10.5067/IMPACTS/PROBES/DATA101",
+      "title": "NCAR Particle Probes IMPACTS",
+      "description": "The NCAR Particle Probes IMPACTS dataset consists of data collected from six instruments on the NASA P-3 aircraft, the SPEC Hawkeye Cloud Particle Imager (CPI), the Hawkeye Fast Cloud Droplet Probe (FastCDP), the Hawkeye Two-Dimensional Stereo Probe (Hawkeye2D-S), the SPEC Two-Dimensional Stereo probe (2D-S), and two SPEC High Volume Precipitation Spectrometers (HVPS3). The 2D-S and HVPS3 are two-dimensional optical array probes that record images of particles that travel through their sampling area. The recorded images are then analyzed to produce particle size distributions from 20 microns to 3 centimeters in diameter. The FastCDP is a forward scattering instrument designed to measure the size and concentration of cloud droplets between 2 and 50 microns in diameter. The CPI is a high-resolution imager with a 256-level color depth. No particle concentration estimates have been attempted with the CPI. These data were collected during the Investigation of Microphysics and Precipitation for Atlantic Coast-Threatening Snowstorms (IMPACTS) field campaign, a three-year sequence of winter season deployments conducted to study snowstorms over the U.S. Atlantic coast. IMPACTS aimed to (1) Provide observations critical to understanding the mechanisms of snowband formation, organization, and evolution; (2) Examine how the microphysical characteristics and likely growth mechanisms of snow particles vary across snowbands; and (3) Improve snowfall remote sensing interpretation and modeling to advance prediction capabilities significantly. Data files are available in netCDF-4 format, as well as browse imagery available in PNG format, from January 18, 2020, through February 26, 2020, and January 14, 2022 through February 28, 2023.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science-clouds-atmosphere-cloud-microphysics",
+        "earth-science-clouds-atmosphere-cloud-microphysics-cloud-droplet-concentration-size",
+        "earth-science-clouds-atmosphere-cloud-microphysics-cloud-liquid-water-ice",
+        "earth-science-clouds-atmosphere-cloud-microphysics-particle-size-distribution"
+      ],
+      "download_urls": [
+        "https://search.earthdata.nasa.gov/portal/ghrc/search?q=parprbimpacts",
+        "https://ghrc.earthdata.nasa.gov/browseui/#pub/parprbimpacts__1/browse/IMPACTS_2DSV-P3_20220213-124200_images_v01.png",
+        "http://dx.doi.org/10.5067/IMPACTS/DATA101",
+        "https://ghrc.earthdata.nasa.gov/browseui/#pub/parprbimpacts__1/docs/parprbimpacts_dataset.pdf",
+        "https://doi.org/10.1175/JTECH1922.1",
+        "https://doi.org/10.1175/1520-0469%282004%29061%3C0982%3AEIPDDF%3E2.0.CO",
+        "https://doi.org/10.1175/JTECH1927.1",
+        "https://doi.org/10.1175/BAMS-D-20-0246.1",
+        "https://doi.org/10.1109/IGARSS46834.2022.9883693",
+        "https://ghrc.nsstc.nasa.gov/home/field-campaigns/impacts",
+        "https://ghrc.nsstc.nasa.gov/home/micro-articles/investigation-microphysics-and-precipitation-atlantic-coast-threatening-snowstorms",
+        "https://ghrc.nsstc.nasa.gov/home/about-ghrc/citing-ghrc-daac-data",
+        "https://www.eol.ucar.edu/node/15190/publications?_ga=2.3619568.1372455051.1699281084-281825729.1615488478",
+        "https://cmr.earthdata.nasa.gov/search/concepts/C1995868627-GHRC_DAAC.iso19115"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization NASA/MSFC/GHRC",
+        "theme": "Earth Science",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5,
+      "query": "age distribution DCAT catalog 2020 2022",
+      "query_id": 27,
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4557,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [],
+      "matched_salient_columns": [
+        "year"
+      ],
+      "years_found": [
+        2020,
+        2022,
+        2023
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "10.5067/JGAV2VDLRY9G",
+      "title": "MERRA-2 statM_2d_pct_Nx: 2d, Single-Level, Monthly Percentiles V1 (M2SMNXPCT) at GES DISC",
+      "description": "M2SMNXPCT (or statM_2d_pct_Nx) is a 2-dimensional monthly data collection for percentile statistics derived from monthly Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2) datasets. V1, the original version of this percentile data collection, is computed based on the 1981-2010 climatology, covering the period from January 1980 to December 2022. In contrast, V2, the second version, is calculated based on a 30-year climatology (1991-2020), covering the period from January 1980 to the present. This collection consists of percentiles used to identify or characterize extreme weather events associated with temperature (maximum, mean, and minimum 2-m air temperature), as well as with precipitation (total precipitation). MERRA-2 is the latest version of global atmospheric reanalysis for the satellite era produced by the NASA Global Modeling and Assimilation Office (GMAO) using the Goddard Earth Observing System Model (GEOS) version 5.12.4. The dataset covers the period of 1980-present, with a latency of ~3 weeks after the end of the previous month. Data Reprocessing: Please check “Records of MERRA-2 Data Reprocessing and Service Changes”, linked from the “Documentation” tab on this page. Note that a reprocessed data filename is different from the original filename. MERRA-2 Mailing List: Sign up to receive information on reprocessing of data, changes to tools and services, as well as data announcements from GMAO. Contact the GES DISC Help Desk (gsfc-dl-help-disc@mail.nasa.gov) to be added to the list. Questions: If you have a question, please read the \"MERRA-2 File Specification Document'', “MERRA-2 Data Access – Quick Start Guide”, and FAQs linked from the ”Documentation” tab on this page for more information. If these documents do not answer your question, you may post your question to the NASA Earthdata Forum (forum.earthdata.nasa.gov) or email the GES DISC Help Desk (gsfc-dl-help-disc@mail.nasa.gov).",
+      "landing_page": null,
+      "keywords": [
+        "earth-science-atmospheric-ocean-indicators-climate-indicators-extreme-weather-extreme-drought",
+        "earth-science-atmospheric-ocean-indicators-climate-indicators-extreme-weather-extreme-precipita",
+        "earth-science-atmospheric-ocean-indicators-climate-indicators-extreme-weather-heat-cold-wave-fr",
+        "earth-science-atmospheric-temperature-atmosphere-surface-temperature-air-temperature",
+        "earth-science-atmospheric-temperature-atmosphere-surface-temperature-maximum-minimum-temperatur",
+        "earth-science-precipitation-atmosphere-precipitation-rate"
+      ],
+      "download_urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/M2SMNXPCT_1.png",
+        "https://disc.gsfc.nasa.gov/information/howto?tags=MERRA",
+        "https://gmao.gsfc.nasa.gov/media/publications/zbly36ziNFDFbmYmvhQeVqPhUo/Collow1341.pdf",
+        "https://disc.gsfc.nasa.gov/datacollection/M2SMNXPCT_1.html",
+        "https://goldsmr4.gesdisc.eosdis.nasa.gov/data/MERRA2_CLIM/M2SMNXPCT.1/",
+        "https://search.earthdata.nasa.gov/search?q=M2SMNXPCT",
+        "https://goldsmr4.gesdisc.eosdis.nasa.gov/opendap/MERRA2_CLIM/M2SMNXPCT.1/contents.html",
+        "https://gmao.gsfc.nasa.gov/gmao-products/merra-2/documentation_merra-2/",
+        "https://goldsmr4.gesdisc.eosdis.nasa.gov/data/MERRA2_CLIM/M2SMNXEDI.1/doc/README_MERRA2_CLIMSTAT.pdf",
+        "https://disc.gsfc.nasa.gov/information/mission-project?title=MERRA-2",
+        "https://disc.gsfc.nasa.gov/information/documents?title=Records%2520of%2520MERRA-2%2520Data%2520Reprocessing%2520and%2520Service%2520Changes",
+        "https://disc.gsfc.nasa.gov/information/faqs?keywords=MERRA-2&page=1",
+        "https://goldsmr4.gesdisc.eosdis.nasa.gov/dods/M2SMNXPCT.info",
+        "https://cmr.earthdata.nasa.gov/search/concepts/C1949649171-GES_DISC.iso19115"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization NASA/GSFC/SED/ESD/TISL/GESDISC",
+        "theme": "Earth Science",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5,
+      "query": "fertility rate DCAT catalog 2020 2022",
+      "query_id": 30,
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4557,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [],
+      "matched_salient_columns": [
+        "year"
+      ],
+      "years_found": [
+        1980,
+        1981,
+        1991,
+        2010,
+        2020,
+        2022
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "10.5067/QFJ13GEGDI99",
+      "title": "MERRA-2 statM_2d_edi_Nx: 2d, Single-Level, Monthly Extremes Detection Indices V1 (M2SMNXEDI) at GES DISC",
+      "description": "M2SMNXEDI (or statM_2d_edi_Nx) is a 2-dimensional monthly data collection for extreme detection indices derived from daily Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2) datasets within each month. V1, the original version of this extreme detection indices data collection, is computed based on the 1981-2010 climatology, covering the period from January 1980 to December 2022. In contrast, V2, the second version, is calculated based on a 30-year climatology (1991-2020), covering the period from January 1980 to the present. This collection consists of indices used to identify or characterize extreme weather events associated with temperature, such as heatwaves and cold spells (e.g., their frequency, duration, and intensity), as well as events associated with precipitation, such as dry days and wet days (e.g., their frequency, duration, and intensity). MERRA-2 is the latest version of global atmospheric reanalysis for the satellite era produced by the NASA Global Modeling and Assimilation Office (GMAO) using the Goddard Earth Observing System Model (GEOS) version 5.12.4. The dataset covers the period of 1980-present, with a latency of ~3 weeks after the end of the previous month. Data Reprocessing: Please check “Records of MERRA-2 Data Reprocessing and Service Changes”, linked from the “Documentation” tab on this page. Note that a reprocessed data filename is different from the original filename. MERRA-2 Mailing List: Sign up to receive information on reprocessing of data, changes to tools and services, as well as data announcements from GMAO. Contact the GES DISC Help Desk (gsfc-dl-help-disc@mail.nasa.gov) to be added to the list. Questions: If you have a question, please read the \"MERRA-2 File Specification Document'', “MERRA-2 Data Access – Quick Start Guide”, and FAQs linked from the ”Documentation” tab on this page for more information. If these documents do not answer your question, you may post your question to the NASA Earthdata Forum (forum.earthdata.nasa.gov) or email the GES DISC Help Desk (gsfc-dl-help-disc@mail.nasa.gov).",
+      "landing_page": null,
+      "keywords": [
+        "earth-science-atmospheric-ocean-indicators-climate-indicators-extreme-weather-extreme-drought",
+        "earth-science-atmospheric-ocean-indicators-climate-indicators-extreme-weather-extreme-precipita",
+        "earth-science-atmospheric-ocean-indicators-climate-indicators-extreme-weather-heat-cold-wave-fr",
+        "earth-science-atmospheric-temperature-atmosphere-surface-temperature-air-temperature",
+        "earth-science-precipitation-atmosphere-precipitation-rate"
+      ],
+      "download_urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/M2SMNXEDI_1.png",
+        "https://disc.gsfc.nasa.gov/information/howto?tags=MERRA",
+        "https://gmao.gsfc.nasa.gov/media/publications/zbly36ziNFDFbmYmvhQeVqPhUo/Collow1341.pdf",
+        "https://disc.gsfc.nasa.gov/datacollection/M2SMNXEDI_1.html",
+        "https://goldsmr4.gesdisc.eosdis.nasa.gov/data/MERRA2_CLIM/M2SMNXEDI.1/",
+        "https://search.earthdata.nasa.gov/search?q=M2SMNXEDI",
+        "https://goldsmr4.gesdisc.eosdis.nasa.gov/opendap/MERRA2_CLIM/M2SMNXEDI.1/contents.html",
+        "https://gmao.gsfc.nasa.gov/gmao-products/merra-2/documentation_merra-2/",
+        "https://goldsmr4.gesdisc.eosdis.nasa.gov/data/MERRA2_CLIM/M2SMNXEDI.1/doc/README_MERRA2_CLIMSTAT.pdf",
+        "https://disc.gsfc.nasa.gov/information/mission-project?title=MERRA-2",
+        "https://disc.gsfc.nasa.gov/information/documents?title=Records%2520of%2520MERRA-2%2520Data%2520Reprocessing%2520and%2520Service%2520Changes",
+        "https://disc.gsfc.nasa.gov/information/faqs?keywords=MERRA-2&page=1",
+        "https://goldsmr4.gesdisc.eosdis.nasa.gov/dods/M2SMNXEDI.info",
+        "https://cmr.earthdata.nasa.gov/search/concepts/C1949649168-GES_DISC.iso19115"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization NASA/GSFC/SED/ESD/TISL/GESDISC",
+        "theme": "Earth Science",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5,
+      "query": "fertility rate DCAT catalog 2020 2022",
+      "query_id": 30,
+      "strategy": "concept_x_source",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4557,
+      "joinability_score": 0.1857,
+      "matched_join_fields": [],
+      "matched_salient_columns": [
+        "year"
+      ],
+      "years_found": [
+        1980,
+        1981,
+        1991,
+        2010,
+        2020,
+        2022
+      ],
+      "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "doi:10.5067/FY616726UXSR",
+      "title": "MERRA-2 avgM_2d_pm25_admin0, 2d, Single-Level, Country-Level Surface PM2.5 Monthly Mean Products V1 (M2_TMAX_PM25) at GES DISC",
+      "description": "M2_TMAX_PM25 is a value-added product derived from the MERRA-2 aerosol monthly product M2TMNXAER_5.12.4 (or tavgM_2d_aer_Nx). The surface concentration of fine particulate matter (PM2.5) is calculated as the sum of individual aerosol components (organic carbon, black carbon, sulfate, sea salt, and dust) (Buchard et al., 2017) and is recast from the native MERRA-2 model grid. This data collection includes separate files for country-level (and territories) PM2.5 concentrations with and without population weighting applied. MERRA-2 Mailing List: Sign up to receive information on reprocessing of data, changing of tools and services, as well as data announcements from GMAO. Contact the GES DISC Help Desk (gsfc-dl-help-disc@mail.nasa.gov) to be added to the list. Questions: If you have a question, please read \"MERRA-2 File Specification Document\", “MERRA-2 Data Access – Quick Start Guide”, and FAQs linked from the ”Documentation” tab on this page. If that does not answer your question, you may post your question to the NASA Earthdata Forum (forum.earthdata.nasa.gov) or email the GES DISC Help Desk (gsfc-dl-help-disc@mail.nasa.gov).",
+      "landing_page": null,
+      "keywords": [
+        "earth-science-aerosols-atmosphere-dust-ash-smoke",
+        "earth-science-aerosols-atmosphere-particulate-matter",
+        "earth-science-air-quality-atmosphere",
+        "earth-science-air-quality-atmosphere-particulates",
+        "earth-science-public-health-human-dimensions-environmental-health-factors-particulate-matter-co"
+      ],
+      "download_urls": [
+        "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/M2_TMAX_PM25_1.png",
+        "https://goldsmr4.gesdisc.eosdis.nasa.gov/data/MERRA2_CLIM/M2_TMAX_PM25.1/doc/README_M2PM25.pdf",
+        "https://gmao.gsfc.nasa.gov/media/publications/zbly36ziNFDFbmYmvhQeVqPhUo/Keller1487.pdf",
+        "https://disc.gsfc.nasa.gov/datacollection/M2_TMAX_PM25_1.html",
+        "https://goldsmr4.gesdisc.eosdis.nasa.gov/data/MERRA2_CLIM/M2_TMAX_PM25.1/",
+        "https://search.earthdata.nasa.gov/search?q=M2_TMAX_PM25",
+        "https://gmao.gsfc.nasa.gov/gmao-products/merra-2/documentation_merra-2/",
+        "https://disc.gsfc.nasa.gov/information/documents?title=Records%2520of%2520MERRA-2%2520Data%2520Reprocessing%2520and%2520Service%2520Changes",
+        "https://disc.gsfc.nasa.gov/information/howto?title=How%2520to%2520remotely%2520access%2520MERRA-2%2520with%2520Python3%2520and%2520calculate%2520monthly%2520average%2520surface%2520PM2.5%2520for%2520world%2520countries",
+        "https://cmr.earthdata.nasa.gov/search/concepts/C2184005745-GES_DISC.iso19115"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization NASA/GSFC/SED/ESD/TISL/GESDISC",
+        "theme": "Earth Science",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5714,
+      "query": "DCAT catalog public health country panel data",
+      "query_id": 18,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5714,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.45,
+      "joinability_score": 0.0357,
+      "matched_join_fields": [],
+      "matched_salient_columns": [
+        "population"
+      ],
+      "years_found": [
+        2017
+      ],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C1577523198-SEDAC",
+      "title": "West Africa Coastal Vulnerability Mapping: Demographic and Health Survey Data Sets",
+      "description": "The West Africa Coastal Vulnerability Mapping: Demographic and Health Survey Data Sets present grids of maternal education levels and household wealth based on Demographic and Health Survey (DHS) cluster level data for ten West African countries. While the maternal education levels are comparable across countries, owing to different underlying indicators, the household wealth index is not. Education can directly influence risk perception, skills and knowledge and indirectly reduce poverty, improve health, and promote access to information and resources. When facing natural hazards or climate risks, educated individuals, households, and societies are assumed to be more empowered and more adaptive in their response to, preparation for, and recovery from disasters. Education is a key background indicator that helps contextualize a country's health and development situation. The household wealth index is a composite measure of a household's cumulative living standard. The wealth index is calculated using easy-to-collect data on a household's ownership of selected assets, such as televisions and bicycles, materials used for housing construction, and types of water access and sanitation facilities. Bayesian spatial interpolation methods were employed to create country level grids based on DHS cluster point data for each country. Data are from the following dates by country: Benin (2006), Cameroon (2011), Cote d'Ivoire (2012), Ghana (2008), Guinea (2012), Liberia (2011), Nigeria (2010), Sierra Leone (2008), and Togo (1998).",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "human-dimensions",
+        "public-health",
+        "socioeconomics"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2FH45T3HFZ",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/wacvm/wacvm-demographic-health-survey/sedac-logo.jpg"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "WACVM geospatial",
+        "issued": "2018-12-06",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5714,
+      "query": "DCAT catalog public health country panel data",
+      "query_id": 18,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5714,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4393,
+      "joinability_score": 0.0,
+      "matched_join_fields": [],
+      "matched_salient_columns": [],
+      "years_found": [
+        1998,
+        2006,
+        2008,
+        2010,
+        2011,
+        2012
+      ],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "10.5067/Community/LGRIP/LGRIP30.001",
+      "title": "Landsat-Derived Global Rainfed and Irrigated-Cropland Product 30 m V001",
+      "description": "The Landsat-Derived Global Rainfed and Irrigated-Cropland Product (LGRIP) provides high resolution, global cropland data to assist and address food and water security issues of the twenty-first century. As an extension of the Global Food Security-support Analysis Data ([GFSAD](https://www.usgs.gov/centers/western-geographic-science-center/science/global-food-and-water-security-support-analysis)) project, LGRIP maps the world’s agricultural lands by dividing them into irrigated and rainfed croplands and calculates irrigated and rainfed areas for every country in the world. LGRIP data are produced using Landsat 8 time-series satellite sensor data for the 2014-2017 time period to create a nominal 2015 product. Each LGRIP 30 meter resolution GeoTIFF file contains a contains a layer that identifies areas of rainfed cropland (cropland areas that are purely dependent on direct precipitation), irrigated cropland (cropland that had at least one irrigation during the crop growing period), non-cropland, and water bodies over a 10° by 10° area, as well as an accuracy assessment of the product. A low-resolution browse image is also available.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science-agricultural-plant-science-agriculture-crop-plant-yields",
+        "earth-science-ecosystems-biosphere-anthropogenic-human-influenced-ecosystems-agricultural-lands",
+        "earth-science-landscape-land-surface-landscape-patterns"
+      ],
+      "download_urls": [
+        "https://doi.org/10.5067/Community/LGRIP/LGRIP30.001",
+        "https://search.earthdata.nasa.gov/search?q=C3281868752-LPDAAC_ECS",
+        "https://e4ftl01.cr.usgs.gov/COMMUNITY/LGRIP30.001/",
+        "https://www.earthdata.nasa.gov/centers/lp-daac",
+        "https://www.usgs.gov/centers/western-geographic-science-center/science/global-food-security-support-analysis-data-30-m",
+        "https://lpdaac.usgs.gov/documents/1618/LGRIP30_ATBD_v1.pdf",
+        "https://lpdaac.usgs.gov/documents/1619/LGRIP30_User_Guide_v1.pdf",
+        "https://e4ftl01.cr.usgs.gov//WORKING/BRWS/Browse.001/2023.02.23/LGRIP30_2015_N40E40_001_2023014175240.1.png",
+        "https://cmr.earthdata.nasa.gov/search/concepts/C3281868752-LPDAAC_ECS.iso19115"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization LP DAAC;DOI/USGS/WGSC",
+        "theme": "Earth Science",
+        "issued": null,
+        "modified": "2026-04-13"
+      },
+      "_catalog_score": 0.5714,
+      "query": "DCAT catalog time series country panel data",
+      "query_id": 21,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5714,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4393,
+      "joinability_score": 0.0,
+      "matched_join_fields": [],
+      "matched_salient_columns": [],
+      "years_found": [
+        2014,
+        2015,
+        2017
+      ],
+      "has_year_overlap": false
     },
     {
       "connector": "CKAN",
@@ -8240,6 +10289,88 @@
       "has_year_overlap": true
     },
     {
+      "connector": "DCAT",
+      "source_name": "DOT Open Data Catalog",
+      "source_url": "https://data.transportation.gov/data.json",
+      "dataset_id": "2068.2",
+      "title": "Weather Data Environment - Data Catalog",
+      "description": "The Weather Data Environment (WxDE) collects and shares transportation-related weather data with a particular focus on weather data related to connected vehicle applications. The WxDE collects data in real time from both fixed environmental sensor stations and mobile sources. The WxDE computes value-added enhancements to this data, such as checking the quality of observed data and inferring weather parameters from vehicle data (e.g., inferring precipitation based on windshield wiper activation). The WxDE archives both collected and computed data. The WxDE supports subscriptions for access to real-time data in near real time generated by individual weather-related connected vehicle projects.",
+      "landing_page": "https://data.transportation.gov/d/jhdh-ixke",
+      "keywords": [
+        "clarus",
+        "connected vehicle",
+        "ess",
+        "road weather",
+        "rwis",
+        "weather",
+        "wxde"
+      ],
+      "download_urls": [
+        "https://wxde.fhwa.dot.gov "
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization Federal Highway Administration",
+        "theme": "[ 'Transportation' ]",
+        "issued": "2013-01-01",
+        "modified": "2024-05-08"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog environmental country panel data",
+      "query_id": 12,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.425,
+      "joinability_score": 0.0,
+      "matched_join_fields": [],
+      "matched_salient_columns": [],
+      "years_found": [],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "DOT Open Data Catalog",
+      "source_url": "https://data.transportation.gov/data.json",
+      "dataset_id": "2068.1",
+      "title": "Weather Data Environment - Data Catalog",
+      "description": "The Weather Data Environment (WxDE) collects and shares transportation-related weather data with a particular focus on weather data related to connected vehicle applications. The WxDE collects data in real time from both fixed environmental sensor stations and mobile sources. The WxDE computes value-added enhancements to this data, such as checking the quality of observed data and inferring weather parameters from vehicle data (e.g., inferring precipitation based on windshield wiper activation). The WxDE archives both collected and computed data. The WxDE supports subscriptions for access to real-time data in near real time generated by individual weather-related connected vehicle projects.",
+      "landing_page": "https://data.transportation.gov/d/kqqy-zb6p",
+      "keywords": [
+        "clarus",
+        "ess",
+        "road weather",
+        "rwis",
+        "weather",
+        "wxde",
+        "connected vehicle"
+      ],
+      "download_urls": [
+        "https://wxde.fhwa.dot.gov "
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization Federal Highway Administration",
+        "theme": "[ 'Transportation' ]",
+        "issued": "2013-01-01",
+        "modified": "2024-05-08"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog environmental country panel data",
+      "query_id": 12,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 1.0,
+      "overall_score": 0.425,
+      "joinability_score": 0.0,
+      "matched_join_fields": [],
+      "matched_salient_columns": [],
+      "years_found": [],
+      "has_year_overlap": false
+    },
+    {
       "connector": "CKAN",
       "source_name": "Humanitarian Data Exchange",
       "source_url": "https://data.humdata.org",
@@ -8389,6 +10520,387 @@
         2022
       ],
       "has_year_overlap": true
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C2038014399-SEDAC",
+      "title": "Annual PM2.5 Concentrations for Countries and Urban Areas, 1998-2016",
+      "description": "The Annual PM2.5 Concentrations for Countries and Urban Areas, 1998-2016, consists of mean concentrations of particulate matter (PM2.5) for countries and urban areas. The PM2.5 data are from the Global Annual PM2.5 Grids from MODIS, MISR and SeaWiFS Aerosol Optical Depth (AOD) with GWR, 1998-2016. The urban areas are from the Global Rural-Urban Mapping Project, Version 1 (GRUMPv1): Urban Extent Polygons, Revision 02, and its time series runs from 1998 to 2016. The country averages are population-weighted such that concentrations in populated areas count more toward the country average than concentrations in less populated areas, and its time series runs from 2008 to 2015.",
+      "landing_page": null,
+      "keywords": [
+        "aerosols",
+        "air-quality",
+        "atmosphere",
+        "earth-science",
+        "national-geospatial-data-asset",
+        "ngda"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2Frja8-8h89",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/sdei/sdei-annual-pm2-5-concentrations-countries-urban-areas-v1-1998-2016/sedac-logo.jpg",
+        "https://sedac.ciesin.columbia.edu/data/set/sdei-annual-pm2-5-concentrations-urban-areas-v1-1998-2016/data-download",
+        "https://sedac.ciesin.columbia.edu/data/set/sdei-annual-pm2-5-concentrations-countries-urban-areas-v1-1998-2016"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "SDEI geospatial",
+        "issued": "2021-04-06",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog geospatial country panel data",
+      "query_id": 15,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4107,
+      "joinability_score": 0.0357,
+      "matched_join_fields": [],
+      "matched_salient_columns": [
+        "population"
+      ],
+      "years_found": [
+        1998,
+        2008,
+        2015,
+        2016
+      ],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C179001925-SEDAC",
+      "title": "Global 15 x 15 Minute Grids of the Downscaled Population Based on the SRES B2 Scenario, 1990 and 2025",
+      "description": "The Global 15x15 Minute Grids of the Downscaled Population Based on the Special Report on Emissions Scenarios (SRES) B2 Scenario, 1990 and 2025, are geospatial distributions of the downscaled population per Unit area (population densities). These global grids were generated using the Country-level Population and Downscaled Projections Based on the SRES B2 Scenario, 1990-2100 data set, and CIESIN's Gridded Population of World, Version 2 (GPWv2) data set as the base map. The 1990 GPW was used as the base distribution and the country-level downscaled projections were used to replace population estimates of 1990 in GPW and 2025. The fractional distribution of the population at each grid cell is the same as the 1990 GPW, sub-nationally. This data set is produced  and distributed by the Columbia University Center for International Earth Science Information Network (CIESIN).",
+      "landing_page": null,
+      "keywords": [
+        "air-quality",
+        "atmosphere",
+        "earth-science",
+        "human-dimensions",
+        "population"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2FH4HQ3WTH",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/sdp/sdp-downscaled-gdp-grid-b2-1990-2025/gridded-gdp-1990-2025-global-thumbnail.jpg",
+        "https://sedac.ciesin.columbia.edu/data/set/sdp-downscaled-population-grid-b2-1990-2025/data-download",
+        "https://sedac.ciesin.columbia.edu/data/set/sdp-downscaled-population-grid-b2-1990-2025"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "SDP geospatial",
+        "issued": "2004-04-30",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog geospatial country panel data",
+      "query_id": 15,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4107,
+      "joinability_score": 0.0357,
+      "matched_join_fields": [],
+      "matched_salient_columns": [
+        "population"
+      ],
+      "years_found": [
+        1990,
+        2025,
+        2100
+      ],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C179001946-SEDAC",
+      "title": "Poverty Mapping Project: Small Area Estimates of Poverty and Inequality",
+      "description": "The Poverty Mapping Project: Small Area Estimates of Poverty and Inequality data set consists of consumption-based poverty, inequality and related measures for subnational administrative Units in approximately twenty countries throughout Africa, Asia, Europe, North America, and South America. These measures are derived on a country-level basis from a combination of census and survey data using small area estimates techniques. The collection of data have been compiled, integrated and standardized from the original data providers into a unified spatially referenced and globally consistent data set. The data products include shapefiles (vector data), tabular data sets (csv format), and centroids (csv file with latitude and longitude of a geographic Unit and associated poverty estimates). Additionally, a data catalog (xls format) containing detailed information and documentation is provided. This data set is produced by the Columbia University Center for International Earth Science Information Network (CIESIN) in collaboration with a number of external data providers.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "human-dimensions",
+        "socioeconomics"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2FH49P2ZKM",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/povmap/povmap-small-area-estimates-poverty-inequality/alb-adm2-ge-0-primary-thumbnail.jpg",
+        "https://sedac.ciesin.columbia.edu/data/set/povmap-small-area-estimates-poverty-inequality/data-download"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "PMP geospatial",
+        "issued": "2005-12-31",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog demographics country panel data",
+      "query_id": 3,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4,
+      "joinability_score": 0.0,
+      "matched_join_fields": [],
+      "matched_salient_columns": [],
+      "years_found": [],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C179001945-SEDAC",
+      "title": "Poverty Mapping Project: Poverty and Food Security Case Studies",
+      "description": "The Poverty Mapping Project: Poverty and Food Security Case Studies data set consists of small area estimates of poverty, inequality, food security and related measures for subnational administrative Units in Mexico, Ecuador, Kenya, Malawi, Bangladesh, Sri Lanka, Nigeria and Vietnam. These data come from country level cases studies that examine poverty and food security from a spatial analysis perspective. The data products include shapefiles (vector data) and tabular data sets (csv format). Additionally, a data catalog (xls format) containing detailed information and documentation is provided. This data set is produced by the Columbia University Center for International Earth Science Information Network (CIESIN) and Centro Internacional de Agricultura Tropical (CIAT). The data set was originally produced by CIAT, International Maize and Wheat Improvement Center (CIMMYT), International Livestock Research Institute (ILRI), International Food Policy Research Institute (IFPRI), International Rice Research Institute (IRRI), International Water Management Institute (IWMI), and International Institute for Tropical Agriculture (IITA).",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "human-dimensions",
+        "socioeconomics"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2FH4FF3Q9B",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/povmap/povmap-poverty-food-security-case-studies/sedac-logo.jpg",
+        "https://sedac.ciesin.columbia.edu/data/set/povmap-poverty-food-security-case-studies/data-download",
+        "https://sedac.ciesin.columbia.edu/data/set/povmap-poverty-food-security-case-studies"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "PMP geospatial",
+        "issued": "2005-12-31",
+        "modified": "2025-07-14"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog demographics country panel data",
+      "query_id": 3,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4,
+      "joinability_score": 0.0,
+      "matched_join_fields": [],
+      "matched_salient_columns": [],
+      "years_found": [],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C179001946-SEDAC",
+      "title": "Poverty Mapping Project: Small Area Estimates of Poverty and Inequality",
+      "description": "The Poverty Mapping Project: Small Area Estimates of Poverty and Inequality data set consists of consumption-based poverty, inequality and related measures for subnational administrative Units in approximately twenty countries throughout Africa, Asia, Europe, North America, and South America. These measures are derived on a country-level basis from a combination of census and survey data using small area estimates techniques. The collection of data have been compiled, integrated and standardized from the original data providers into a unified spatially referenced and globally consistent data set. The data products include shapefiles (vector data), tabular data sets (csv format), and centroids (csv file with latitude and longitude of a geographic Unit and associated poverty estimates). Additionally, a data catalog (xls format) containing detailed information and documentation is provided. This data set is produced by the Columbia University Center for International Earth Science Information Network (CIESIN) in collaboration with a number of external data providers.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "human-dimensions",
+        "socioeconomics"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2FH49P2ZKM",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/povmap/povmap-small-area-estimates-poverty-inequality/alb-adm2-ge-0-primary-thumbnail.jpg",
+        "https://sedac.ciesin.columbia.edu/data/set/povmap-small-area-estimates-poverty-inequality/data-download"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "PMP geospatial",
+        "issued": "2005-12-31",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog economic country panel data",
+      "query_id": 6,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4,
+      "joinability_score": 0.0,
+      "matched_join_fields": [],
+      "matched_salient_columns": [],
+      "years_found": [],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C179002087-SEDAC",
+      "title": "Indicators of Coastal Water Quality: Ancillary Data",
+      "description": "The Ancillary Data component of the Indicators of Coastal Water Quality Collection includes a 5 arc-minute (approximately 9 x 9 km at the equator) sequence grid, grid cell centroids that relate to the grid cells in the tabular \"Indicators of Coastal Water Quality: Change in Chlorophyll-a Concentration 1998-2007\" data set, and a country buffer data set that is divided by exclusive economic zones (EEZ). The data are produced by the Columbia University Center for International Earth Science Information Network (CIESIN).",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "ocean-chemistry",
+        "oceans"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2FH4J96490",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/icwq/icwq-ancillary-data/sedac-logo.jpg"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "ICWQ geospatial",
+        "issued": "2009-12-31",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog economic country panel data",
+      "query_id": 6,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4,
+      "joinability_score": 0.0,
+      "matched_join_fields": [],
+      "matched_salient_columns": [],
+      "years_found": [
+        1998,
+        2007
+      ],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C179001946-SEDAC",
+      "title": "Poverty Mapping Project: Small Area Estimates of Poverty and Inequality",
+      "description": "The Poverty Mapping Project: Small Area Estimates of Poverty and Inequality data set consists of consumption-based poverty, inequality and related measures for subnational administrative Units in approximately twenty countries throughout Africa, Asia, Europe, North America, and South America. These measures are derived on a country-level basis from a combination of census and survey data using small area estimates techniques. The collection of data have been compiled, integrated and standardized from the original data providers into a unified spatially referenced and globally consistent data set. The data products include shapefiles (vector data), tabular data sets (csv format), and centroids (csv file with latitude and longitude of a geographic Unit and associated poverty estimates). Additionally, a data catalog (xls format) containing detailed information and documentation is provided. This data set is produced by the Columbia University Center for International Earth Science Information Network (CIESIN) in collaboration with a number of external data providers.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "human-dimensions",
+        "socioeconomics"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2FH49P2ZKM",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/povmap/povmap-small-area-estimates-poverty-inequality/alb-adm2-ge-0-primary-thumbnail.jpg",
+        "https://sedac.ciesin.columbia.edu/data/set/povmap-small-area-estimates-poverty-inequality/data-download"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "PMP geospatial",
+        "issued": "2005-12-31",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog education country panel data",
+      "query_id": 9,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4,
+      "joinability_score": 0.0,
+      "matched_join_fields": [],
+      "matched_salient_columns": [],
+      "years_found": [],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C1577523198-SEDAC",
+      "title": "West Africa Coastal Vulnerability Mapping: Demographic and Health Survey Data Sets",
+      "description": "The West Africa Coastal Vulnerability Mapping: Demographic and Health Survey Data Sets present grids of maternal education levels and household wealth based on Demographic and Health Survey (DHS) cluster level data for ten West African countries. While the maternal education levels are comparable across countries, owing to different underlying indicators, the household wealth index is not. Education can directly influence risk perception, skills and knowledge and indirectly reduce poverty, improve health, and promote access to information and resources. When facing natural hazards or climate risks, educated individuals, households, and societies are assumed to be more empowered and more adaptive in their response to, preparation for, and recovery from disasters. Education is a key background indicator that helps contextualize a country's health and development situation. The household wealth index is a composite measure of a household's cumulative living standard. The wealth index is calculated using easy-to-collect data on a household's ownership of selected assets, such as televisions and bicycles, materials used for housing construction, and types of water access and sanitation facilities. Bayesian spatial interpolation methods were employed to create country level grids based on DHS cluster point data for each country. Data are from the following dates by country: Benin (2006), Cameroon (2011), Cote d'Ivoire (2012), Ghana (2008), Guinea (2012), Liberia (2011), Nigeria (2010), Sierra Leone (2008), and Togo (1998).",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "human-dimensions",
+        "public-health",
+        "socioeconomics"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2FH45T3HFZ",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/wacvm/wacvm-demographic-health-survey/sedac-logo.jpg"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "WACVM geospatial",
+        "issued": "2018-12-06",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog education country panel data",
+      "query_id": 9,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4,
+      "joinability_score": 0.0,
+      "matched_join_fields": [],
+      "matched_salient_columns": [],
+      "years_found": [
+        1998,
+        2006,
+        2008,
+        2010,
+        2011,
+        2012
+      ],
+      "has_year_overlap": false
+    },
+    {
+      "connector": "DCAT",
+      "source_name": "NASA Open Data Catalog",
+      "source_url": "https://data.nasa.gov/data.json",
+      "dataset_id": "C179001946-SEDAC",
+      "title": "Poverty Mapping Project: Small Area Estimates of Poverty and Inequality",
+      "description": "The Poverty Mapping Project: Small Area Estimates of Poverty and Inequality data set consists of consumption-based poverty, inequality and related measures for subnational administrative Units in approximately twenty countries throughout Africa, Asia, Europe, North America, and South America. These measures are derived on a country-level basis from a combination of census and survey data using small area estimates techniques. The collection of data have been compiled, integrated and standardized from the original data providers into a unified spatially referenced and globally consistent data set. The data products include shapefiles (vector data), tabular data sets (csv format), and centroids (csv file with latitude and longitude of a geographic Unit and associated poverty estimates). Additionally, a data catalog (xls format) containing detailed information and documentation is provided. This data set is produced by the Columbia University Center for International Earth Science Information Network (CIESIN) in collaboration with a number of external data providers.",
+      "landing_page": null,
+      "keywords": [
+        "earth-science",
+        "human-dimensions",
+        "socioeconomics"
+      ],
+      "download_urls": [
+        "https://scholar.google.com/scholar?q=10.7927%2FH49P2ZKM",
+        "https://sedac.ciesin.columbia.edu/downloads/maps/povmap/povmap-small-area-estimates-poverty-inequality/alb-adm2-ge-0-primary-thumbnail.jpg",
+        "https://sedac.ciesin.columbia.edu/data/set/povmap-small-area-estimates-poverty-inequality/data-download"
+      ],
+      "field_names": [],
+      "raw_metadata": {
+        "publisher": "org:Organization SEDAC",
+        "theme": "PMP geospatial",
+        "issued": "2005-12-31",
+        "modified": "2025-07-17"
+      },
+      "_catalog_score": 0.5,
+      "query": "DCAT catalog geospatial country panel data",
+      "query_id": 15,
+      "strategy": "direct_platform",
+      "priority": 1,
+      "relevance_score": 0.5,
+      "metadata_completeness_score": 0.8333,
+      "overall_score": 0.4,
+      "joinability_score": 0.0,
+      "matched_join_fields": [],
+      "matched_salient_columns": [],
+      "years_found": [],
+      "has_year_overlap": false
     },
     {
       "connector": "CKAN",
@@ -10005,186 +12517,5 @@
       "has_year_overlap": false
     }
   ],
-  "errors": [
-    {
-      "connector": "DCAT",
-      "source_name": "U.S. Project Open Data",
-      "source_url": "https://catalog.data.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://catalog.data.gov/data.json",
-      "query": "DCAT catalog demographics country panel data",
-      "query_id": 3,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "NOAA Data Catalog",
-      "source_url": "https://data.noaa.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://data.noaa.gov/data.json",
-      "query": "DCAT catalog demographics country panel data",
-      "query_id": 3,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "U.S. Project Open Data",
-      "source_url": "https://catalog.data.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://catalog.data.gov/data.json",
-      "query": "DCAT catalog economic country panel data",
-      "query_id": 6,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "NOAA Data Catalog",
-      "source_url": "https://data.noaa.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://data.noaa.gov/data.json",
-      "query": "DCAT catalog economic country panel data",
-      "query_id": 6,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "U.S. Project Open Data",
-      "source_url": "https://catalog.data.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://catalog.data.gov/data.json",
-      "query": "DCAT catalog education country panel data",
-      "query_id": 9,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "NOAA Data Catalog",
-      "source_url": "https://data.noaa.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://data.noaa.gov/data.json",
-      "query": "DCAT catalog education country panel data",
-      "query_id": 9,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "U.S. Project Open Data",
-      "source_url": "https://catalog.data.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://catalog.data.gov/data.json",
-      "query": "DCAT catalog environmental country panel data",
-      "query_id": 12,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "NOAA Data Catalog",
-      "source_url": "https://data.noaa.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://data.noaa.gov/data.json",
-      "query": "DCAT catalog environmental country panel data",
-      "query_id": 12,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "U.S. Project Open Data",
-      "source_url": "https://catalog.data.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://catalog.data.gov/data.json",
-      "query": "DCAT catalog geospatial country panel data",
-      "query_id": 15,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "NOAA Data Catalog",
-      "source_url": "https://data.noaa.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://data.noaa.gov/data.json",
-      "query": "DCAT catalog geospatial country panel data",
-      "query_id": 15,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "U.S. Project Open Data",
-      "source_url": "https://catalog.data.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://catalog.data.gov/data.json",
-      "query": "DCAT catalog public health country panel data",
-      "query_id": 18,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "NOAA Data Catalog",
-      "source_url": "https://data.noaa.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://data.noaa.gov/data.json",
-      "query": "DCAT catalog public health country panel data",
-      "query_id": 18,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "U.S. Project Open Data",
-      "source_url": "https://catalog.data.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://catalog.data.gov/data.json",
-      "query": "DCAT catalog time series country panel data",
-      "query_id": 21,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "NOAA Data Catalog",
-      "source_url": "https://data.noaa.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://data.noaa.gov/data.json",
-      "query": "DCAT catalog time series country panel data",
-      "query_id": 21,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "U.S. Project Open Data",
-      "source_url": "https://catalog.data.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://catalog.data.gov/data.json",
-      "query": "population growth rate DCAT catalog 2020 2022",
-      "query_id": 24,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "NOAA Data Catalog",
-      "source_url": "https://data.noaa.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://data.noaa.gov/data.json",
-      "query": "population growth rate DCAT catalog 2020 2022",
-      "query_id": 24,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "U.S. Project Open Data",
-      "source_url": "https://catalog.data.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://catalog.data.gov/data.json",
-      "query": "age distribution DCAT catalog 2020 2022",
-      "query_id": 27,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "NOAA Data Catalog",
-      "source_url": "https://data.noaa.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://data.noaa.gov/data.json",
-      "query": "age distribution DCAT catalog 2020 2022",
-      "query_id": 27,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "U.S. Project Open Data",
-      "source_url": "https://catalog.data.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://catalog.data.gov/data.json",
-      "query": "fertility rate DCAT catalog 2020 2022",
-      "query_id": 30,
-      "is_error": true
-    },
-    {
-      "connector": "DCAT",
-      "source_name": "NOAA Data Catalog",
-      "source_url": "https://data.noaa.gov/data.json",
-      "discovery_error": "404 Client Error: Not Found for url: https://data.noaa.gov/data.json",
-      "query": "fertility rate DCAT catalog 2020 2022",
-      "query_id": 30,
-      "is_error": true
-    }
-  ]
+  "errors": []
 }
