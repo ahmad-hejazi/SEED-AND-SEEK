@@ -1,11 +1,22 @@
 """
 profiler.py
 -----------
-Seed Profiler: ingests a structured CSV and produces a machine-readable
+Seed Profiler: ingests any structured dataset and produces a machine-readable
 seed_signature.json for downstream query generation and dataset discovery.
 
+Supported input formats:
+    .csv          — comma-separated values
+    .tsv          — tab-separated values
+    .json         — array-of-objects or records-oriented JSON
+    .xlsx / .xls  — Excel workbooks (first sheet by default)
+    .parquet      — columnar format (requires pyarrow)
+    .db / .sqlite / .sqlite3 — SQLite databases (first table by default)
+
 Usage (standalone):
-    python src/profiler.py --input data/seed.csv --output output/seed_signature.json
+    python src/profiler.py --input data/seed.csv   --output output/seed_signature.json
+    python src/profiler.py --input data/seed.json  --output output/seed_signature.json
+    python src/profiler.py --input data/seed.xlsx  --output output/seed_signature.json
+    python src/profiler.py --input data/seed.db    --output output/seed_signature.json
 """
 
 import json
@@ -17,6 +28,97 @@ from datetime import datetime
 
 import numpy as np
 import pandas as pd
+
+
+# ---------------------------------------------------------------------------
+# Multi-format loader
+# ---------------------------------------------------------------------------
+
+SUPPORTED_FORMATS = {
+    ".csv":     "CSV",
+    ".tsv":     "TSV",
+    ".json":    "JSON",
+    ".xlsx":    "Excel",
+    ".xls":     "Excel",
+    ".parquet": "Parquet",
+    ".db":      "SQLite",
+    ".sqlite":  "SQLite",
+    ".sqlite3": "SQLite",
+}
+
+
+def _load(path: Path) -> tuple[pd.DataFrame, str]:
+    """
+    Load a structured dataset into a DataFrame.
+
+    Returns
+    -------
+    (df, format_label) — the DataFrame and a human-readable format string.
+    """
+    ext = path.suffix.lower()
+
+    if ext not in SUPPORTED_FORMATS:
+        supported = ", ".join(SUPPORTED_FORMATS.keys())
+        raise ValueError(
+            f"Unsupported file type '{ext}'. Supported: {supported}"
+        )
+
+    fmt = SUPPORTED_FORMATS[ext]
+
+    if ext == ".csv":
+        return pd.read_csv(path), fmt
+
+    elif ext == ".tsv":
+        return pd.read_csv(path, sep="\t"), fmt
+
+    elif ext == ".json":
+        try:
+            df = pd.read_json(path)
+        except ValueError:
+            # Fallback: load as list of dicts
+            with open(path, encoding="utf-8") as f:
+                raw = json.load(f)
+            if isinstance(raw, list):
+                df = pd.DataFrame(raw)
+            elif isinstance(raw, dict):
+                # Try to find the first list value (common API response shape)
+                for v in raw.values():
+                    if isinstance(v, list):
+                        df = pd.DataFrame(v)
+                        break
+                else:
+                    df = pd.DataFrame([raw])
+            else:
+                raise ValueError("JSON structure not recognised. Expected array-of-objects.")
+        return df, fmt
+
+    elif ext in (".xlsx", ".xls"):
+        try:
+            import openpyxl  # noqa: F401
+        except ImportError:
+            raise ImportError("openpyxl is required for Excel files. Run: pip install openpyxl")
+        return pd.read_excel(path), fmt
+
+    elif ext == ".parquet":
+        try:
+            import pyarrow  # noqa: F401
+        except ImportError:
+            raise ImportError("pyarrow is required for Parquet files. Run: pip install pyarrow")
+        return pd.read_parquet(path), fmt
+
+    elif ext in (".db", ".sqlite", ".sqlite3"):
+        import sqlite3
+        con = sqlite3.connect(path)
+        tables = pd.read_sql(
+            "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name", con
+        )
+        if tables.empty:
+            raise ValueError(f"No tables found in SQLite database: {path}")
+        first_table = tables.iloc[0, 0]
+        df = pd.read_sql(f"SELECT * FROM [{first_table}]", con)
+        con.close()
+        print(f"[profiler] SQLite: loaded table '{first_table}' ({len(df)} rows)")
+        return df, f"SQLite:{first_table}"
 
 
 # ---------------------------------------------------------------------------
@@ -238,10 +340,12 @@ def _quality_profile(df: pd.DataFrame) -> dict:
 
 def profile(path) -> dict:
     """
-    Profile a CSV file and return a seed_signature dict.
+    Profile any supported structured dataset and return a seed_signature dict.
+
+    Supported formats: CSV, TSV, JSON, Excel (.xlsx/.xls), Parquet, SQLite.
     """
     path = Path(path)
-    df   = pd.read_csv(path)
+    df, fmt = _load(path)
     n_rows, n_cols = df.shape
 
     col_profiles = [_profile_column(col, df[col], n_rows) for col in df.columns]
@@ -268,7 +372,7 @@ def profile(path) -> dict:
         "dataset_name":             path.name,
         "file_path":                str(path),
         "file_size_bytes":          path.stat().st_size,
-        "file_format":              path.suffix.lstrip(".").upper(),
+        "file_format":              fmt,
         "profiled_at":              datetime.utcnow().isoformat() + "Z",
         "n_rows":                   n_rows,
         "n_columns":                n_cols,
@@ -299,8 +403,8 @@ def save_signature(signature: dict, output_path) -> None:
 # ---------------------------------------------------------------------------
 
 def _cli():
-    parser = argparse.ArgumentParser(description="Seed Profiler")
-    parser.add_argument("--input",  default="data/seed.csv",              help="Path to seed CSV")
+    parser = argparse.ArgumentParser(description="Seed Profiler — supports CSV, TSV, JSON, Excel, Parquet, SQLite")
+    parser.add_argument("--input",  default="data/seed.csv",              help="Path to seed dataset (csv/tsv/json/xlsx/parquet/db)")
     parser.add_argument("--output", default="output/seed_signature.json", help="Output JSON path")
     args = parser.parse_args()
 
