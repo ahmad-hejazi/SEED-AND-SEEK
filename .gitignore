@@ -1,4 +1,14 @@
 .venv/
 .idea/
+.vscode/
 __pycache__/
-*.pyc 
+*.pyc
+*.pyo
+*.pyd
+*.sqlite
+*.sqlite3
+*.db
+output/
+*.json
+*.log
+.DS_Store

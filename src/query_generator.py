@@ -27,7 +27,7 @@ import json
 import argparse
 from pathlib import Path
 from itertools import product
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 # ---------------------------------------------------------------------------
@@ -563,7 +563,7 @@ def generate_fallback(signature_path: str, feedback_path: str) -> dict:
         q["id"] = i + 1
 
     output = {
-        "generated_at":      datetime.utcnow().isoformat() + "Z",
+        "generated_at":      datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "mode":              "fallback",
         "relaxation_level":  sufficiency["relaxation_level"],
         "failed_checks":     sufficiency["failed_checks"],
@@ -628,7 +628,7 @@ def generate(signature_path: str) -> dict:
         q["id"] = i + 1
 
     output = {
-        "generated_at":      datetime.utcnow().isoformat() + "Z",
+        "generated_at":      datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "mode":              "normal",
         "seed_dataset":      sig.get("dataset_name"),
         "year_range":        [year_min, year_max],

@@ -24,7 +24,7 @@ import os
 import re
 import argparse
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 import numpy as np
 import pandas as pd
@@ -373,7 +373,7 @@ def profile(path) -> dict:
         "file_path":                str(path),
         "file_size_bytes":          path.stat().st_size,
         "file_format":              fmt,
-        "profiled_at":              datetime.utcnow().isoformat() + "Z",
+        "profiled_at":              datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "n_rows":                   n_rows,
         "n_columns":                n_cols,
         "columns":                  col_profiles,

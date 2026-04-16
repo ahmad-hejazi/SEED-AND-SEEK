@@ -497,7 +497,7 @@ class DiscoveryClient:
             page_urls = []
             for anchor in soup.select("a[href]"):
                 href = anchor.get("href", "")
-                if not href.startswith("http"):
+                if not isinstance(href, str) or not href.startswith("http"):
                     continue
                 if href in seen_urls:
                     continue
