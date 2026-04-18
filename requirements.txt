@@ -4,3 +4,5 @@ requests>=2.33.1
 beautifulsoup4>=4.14.3
 openpyxl>=3.0.0
 pyarrow>=10.0.0
+rapidfuzz>=3.0.0
+chardet>=5.0.0

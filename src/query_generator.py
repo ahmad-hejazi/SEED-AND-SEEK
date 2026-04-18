@@ -135,6 +135,9 @@ DATASET_SOURCES = [
     "CKAN",
     "Schema.org dataset",
     "DCAT catalog",
+    "Socrata",
+    "ArcGIS Hub",
+    "DataCite",
 ]
 
 # Extended sources used in fallback tier 2 and tier 3
@@ -152,6 +155,9 @@ SOURCE_CONNECTOR = {
     "CKAN":                   "CKAN",
     "Schema.org dataset":     "Schema.org",
     "DCAT catalog":           "DCAT",
+    "Socrata":                "Socrata",
+    "ArcGIS Hub":             "ArcGIS",
+    "DataCite":               "DataCite",
     "Hugging Face datasets":  "HuggingFace",
     "Kaggle dataset":         "Kaggle",
     "World Bank Open Data":   "WorldBank",
