@@ -24,7 +24,7 @@ import os
 import re
 import argparse
 from pathlib import Path
-from datetime import datetime, timezone
+from datetime import datetime
 
 import numpy as np
 import pandas as pd
@@ -373,7 +373,7 @@ def profile(path) -> dict:
         "file_path":                str(path),
         "file_size_bytes":          path.stat().st_size,
         "file_format":              fmt,
-        "profiled_at":              datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "profiled_at":              datetime.utcnow().isoformat() + "Z",
         "n_rows":                   n_rows,
         "n_columns":                n_cols,
         "columns":                  col_profiles,
@@ -402,14 +402,37 @@ def save_signature(signature: dict, output_path) -> None:
 # CLI
 # ---------------------------------------------------------------------------
 
+def _find_seed_file(data_dir: Path) -> Path:
+    """Auto-detect the first supported file in data_dir."""
+    supported = set(SUPPORTED_FORMATS.keys())
+    found = [f for f in sorted(data_dir.iterdir())
+             if f.is_file() and f.suffix.lower() in supported]
+    if not found:
+        raise FileNotFoundError(
+            f"No supported file found in '{data_dir}'. "
+            f"Supported formats: {', '.join(supported)}"
+        )
+    if len(found) > 1:
+        print(f"[profiler] Multiple files found — using: {found[0].name}")
+        for f in found[1:]:
+            print(f"[profiler]   skipping: {f.name}")
+    return found[0]
+
+
 def _cli():
     parser = argparse.ArgumentParser(description="Seed Profiler — supports CSV, TSV, JSON, Excel, Parquet, SQLite")
-    parser.add_argument("--input",  default="data/seed.csv",              help="Path to seed dataset (csv/tsv/json/xlsx/parquet/db)")
+    parser.add_argument("--input",  default=None,                         help="Path to seed dataset (csv/tsv/json/xlsx/parquet/db). Auto-detected from data/ if not provided.")
     parser.add_argument("--output", default="output/seed_signature.json", help="Output JSON path")
     args = parser.parse_args()
 
-    print(f"[profiler] Profiling: {args.input}")
-    sig = profile(args.input)
+    if args.input is None:
+        seed_path = _find_seed_file(Path("data"))
+        print(f"[profiler] Auto-detected: {seed_path}")
+    else:
+        seed_path = Path(args.input)
+        print(f"[profiler] Profiling: {seed_path}")
+
+    sig = profile(seed_path)
     save_signature(sig, args.output)
     print(f"[profiler] Done. {sig['n_rows']} rows x {sig['n_columns']} columns")
     print(f"[profiler] Concepts inferred: {sig['inferred_concepts']}")
