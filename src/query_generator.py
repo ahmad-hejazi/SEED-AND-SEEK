@@ -142,13 +142,12 @@ DATASET_SOURCES = [
 
 # Extended sources used in fallback tier 2 and tier 3
 EXTENDED_SOURCES = [
-    "Hugging Face datasets",
-    "Kaggle dataset",
-    "World Bank Open Data",
-    "UN Data",
-    "Eurostat",
-    "Our World in Data",
+    "CKAN",
+    "Schema.org dataset",
+    "DCAT catalog",
+    "Socrata",
 ]
+
 
 # Connector mapping — which source maps to which discovery connector
 SOURCE_CONNECTOR = {
