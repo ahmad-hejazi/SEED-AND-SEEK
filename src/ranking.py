@@ -79,7 +79,7 @@ def _cli() -> None:
     )
     parser.add_argument(
         "--output",
-        default="output/rankeddiscovery.json",
+        default="output/ranked_results.json",
         help="Output path for filtered and ranked results JSON",
     )
     args = parser.parse_args()
