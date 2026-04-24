@@ -1,267 +1,197 @@
 # Seed-and-Seek
 
-Dataset Discovery Pipeline — Stages 1 & 2.
+**Universal Web Dataset Discovery and Augmentation from a Seed Dataset**
 
-## Purpose
+Seed-and-Seek is a domain-agnostic pipeline that takes any structured dataset as input, automatically discovers relevant datasets on the web, integrates them, and produces an augmented dataset with a full audit trail.
 
-Given any structured CSV (country indicators, company records, product catalogs, etc.),
-the pipeline automatically discovers additional joinable datasets on the web
-and generates ranked search queries to drive that discovery.
+It works across domains — public health indicators, company records, product catalogs, regional statistics, education data, and more — without any domain-specific rules.
+
+---
+
+## Team
+
+Ahmad Hijazi · Eddy El Kallaye · Yesmine Kallel · Amartya Chandragupta Dudhe
+
+---
+
+## Pipeline Overview
+
+```
+Seed Dataset
+     ↓
+1. Seed Profiling       → output/seed_signature.json
+     ↓
+2. Query Generation     → output/queries.json
+     ↓
+3. Web Discovery        → output/discovery_results.json
+     ↓
+4. Ranking              → output/ranked_results.json
+     ↓
+5. Integration          → output/augmented_dataset.json
+                          output/integration_report.json
+     ↓
+6. Evaluation           → output/evaluation_report.json
+```
+
+---
 
 ## Project Structure
 
 ```
-Seed-and-Seek/
+SEED-AND-SEEK/
 ├── data/
-│   └── seed.csv
+│   └── seed.json               ← your input dataset (any supported format)
 ├── notebooks/
-│   ├── seed_profiling.ipynb
-│   └── query_generation.ipynb
+│   ├── seed_profiling.ipynb    ← interactive profiling notebook
+│   └── query_generation.ipynb ← interactive query generation notebook
 ├── src/
-│   ├── profiler.py                ← Stage 1: profiling engine
-│   └── query_generator.py         ← Stage 2: query generation engine
-├── output/
-│   ├── seed_signature.json        ← Stage 1 output
-│   ├── queries.json               ← Stage 2 output (normal mode)
-│   ├── queries_fallback.json      ← Stage 2 output (fallback mode, if triggered)
-│   └── discovery_feedback.json    ← Stage 3 input → Stage 2 fallback trigger
+│   ├── profiler.py             ← Stage 1: seed dataset profiling
+│   ├── query_generator.py      ← Stage 2: discovery query generation
+│   ├── web_discovery.py        ← Stage 3: web crawling across 6 connectors
+│   ├── ranking.py              ← Stage 4: candidate ranking and filtering
+│   ├── integration.py          ← Stage 5: schema matching, join, augmentation
+│   ├── evaluate.py             ← Stage 6: IR and augmentation metrics
+│   └── main.py                 ← FastAPI server (runs full pipeline via API)
+├── output/                     ← auto-created on first run
 ├── requirements.txt
 └── README.md
 ```
 
-## Quick Start
+---
 
-### Jupyter (local)
+## Supported Input Formats
+
+The pipeline accepts any of the following seed dataset formats:
+
+| Format | Extension |
+|---|---|
+| CSV | `.csv` |
+| TSV | `.tab-separated` |
+| JSON | `.json` |
+| Excel | `.xlsx`, `.xls` |
+| Parquet | `.parquet` |
+| SQLite | `.db`, `.sqlite`, `.sqlite3` |
+
+Drop your file into `data/` — the pipeline auto-detects the format.
+
+---
+
+## Discovery Connectors
+
+Seed-and-Seek crawls the following dataset ecosystems:
+
+| Connector | Source | Type |
+|---|---|---|
+| CKAN | Humanitarian Data Exchange, Open Canada, London Datastore, HealthData.gov, Africa Open Data | Open data portals |
+| DCAT | DOT Open Data, NASA, data.gov.au, data.gov.uk | W3C catalog standard |
+| Schema.org | Web-wide dataset pages | JSON-LD metadata |
+| Socrata | All Socrata portals globally | Discovery API |
+| ArcGIS Hub | ArcGIS Hub open datasets | Hub search API |
+| DataCite | DOI-registered research datasets | REST API |
+
+---
+
+## Installation
+
+**Requirements:** Python 3.10+
+
 ```bash
 pip install -r requirements.txt
-jupyter notebook notebooks/seed_profiling.ipynb
-jupyter notebook notebooks/query_generation.ipynb
 ```
 
-### Google Colab
-1. Upload this folder (or clone from your repo)
-2. Open the notebooks in order: `seed_profiling.ipynb` → `query_generation.ipynb`
-3. Run all cells — the first cell installs dependencies automatically
+---
 
-### CLI (no notebook)
+## Running the Project
+
+### Option A — FastAPI (recommended)
+
+Start the server:
+
 ```bash
-# Stage 1 — profile the seed dataset
-python src/profiler.py --input data/seed.csv --output output/seed_signature.json
+python src/main.py
+```
 
-# Stage 2 — generate queries (normal mode)
-python src/query_generator.py --input output/seed_signature.json --output output/queries.json
+Open the interactive API docs at:
 
-# Stage 2 — generate fallback queries (after Stage 3 reports insufficient results)
-python src/query_generator.py \
-    --input    output/seed_signature.json \
-    --output   output/queries_fallback.json \
-    --mode     fallback \
-    --feedback output/discovery_feedback.json
+```
+http://localhost:8000/docs
+```
+
+Use the `POST /pipeline/run` endpoint to upload your seed file. The full pipeline runs automatically and returns a `job_id`. Use that ID to:
+
+- `GET /pipeline/{job_id}` — check status
+- `GET /pipeline/{job_id}/metrics` — view evaluation metrics
+- `GET /pipeline/{job_id}/download` — download augmented dataset as CSV
+- `GET /pipeline/{job_id}/logs` — view step-by-step logs
+
+Each job is stored independently under `output/jobs/<job_id>/`.
+
+---
+
+### Option B — Manual step by step
+
+```bash
+python src/profiler.py
+python src/query_generator.py
+python src/web_discovery.py
+python src/ranking.py
+python src/integration.py
+python src/evaluate.py
+```
+
+All scripts auto-detect the seed file from `data/` and use default output paths. No arguments required for a standard run.
+
+#### Optional CLI arguments
+
+```bash
+# Use a specific input file
+python src/profiler.py --input data/myfile.xlsx
+
+# Adjust integration behaviour
+python src/integration.py --top-k 50 --score-threshold 0.05 --join-threshold 60
+
+# Adjust evaluation K values
+python src/evaluate.py --k 5 10 20
 ```
 
 ---
 
-## Stage 1 — Seed Profiling
+## Output Files
 
-### Purpose
-Analyzes the input CSV and writes a machine-readable **seed signature** —
-the input to Stage 2.
-
-### What the Profiler Does
-
-For each column it computes:
-
-| Field | Description |
+| File | Description |
 |---|---|
-| `semantic_type` | `numeric`, `datetime`, `categorical`, `identifier`, `entity`, `free_text` |
-| `null_ratio` | fraction of missing values |
-| `unique_ratio` | cardinality relative to row count |
-| `sample_values` | up to 5 representative values |
-| `min / max / mean / std` | numeric and datetime ranges |
-| `top_values` | most frequent values for categorical/entity columns |
-| `is_candidate_identifier` | likely a join key (ID, code, etc.) |
-| `is_entity_like` | proper-noun strings useful for querying |
-| `is_useful_for_querying` | recommended for WHERE / filter clauses |
-| `is_useful_for_joining` | recommended for JOIN / merge keys |
-
-At dataset level it also extracts:
-- `candidate_identifiers` — columns suitable as primary keys
-- `candidate_composite_keys` — column pairs whose combination is unique
-- `entity_like_columns` — columns containing named entities
-- `important_attributes` — high-variance numeric columns
-- `quality_profile` — duplicates, missingness, outliers
-- `salient_column_names` — columns most relevant for discovery queries
-- `entity_value_samples` — example values for entity columns
-- `inferred_concepts` — dataset-level tags (time_series, geospatial, economic, …)
-
-### Output Format
-
-```json
-{
-  "dataset_name": "seed.csv",
-  "n_rows": 32,
-  "n_columns": 14,
-  "columns": [...],
-  "candidate_identifiers": ["country_code", "currency_code"],
-  "candidate_composite_keys": [],
-  "entity_like_columns": ["country_name", "region"],
-  "important_attributes": ["gdp_usd", "population", ...],
-  "quality_profile": { "duplicate_row_count": 0, ... },
-  "salient_column_names": [...],
-  "entity_value_samples": { "country_name": ["United States", ...] },
-  "inferred_concepts": ["economic", "geospatial", "time_series", ...]
-}
-```
-
-### Replacing the Sample Data
-Drop your own CSV into `data/` and update the path in the notebook cell
-that sets `SEED_PATH`, or pass `--input your_file.csv` on the CLI.
-No other changes needed.
+| `seed_signature.json` | Column profiles, inferred types, join keys, quality metrics, inferred concepts |
+| `queries.json` | Generated discovery queries with connector routing |
+| `discovery_results.json` | Raw candidates from all connectors |
+| `ranked_results.json` | Filtered and ranked candidates by relevance + joinability |
+| `augmented_dataset.json` | Seed dataset enriched with new columns from integrated sources |
+| `integration_report.json` | Audit trail: every candidate attempted, join decisions, provenance |
+| `evaluation_report.json` | Precision@K, MAP, nDCG, join rate, coverage gain, completeness gain |
 
 ---
 
-## Stage 2 — Query Generation
+## Evaluation Metrics
 
-### Purpose
-Reads `output/seed_signature.json` and generates a ranked list of search queries
-targeting structured dataset ecosystems. Used by Stage 3 (Crawler) to discover
-joinable datasets.
+**Retrieval quality** (from `ranked_results.json`):
+- Precision@K, nDCG@K (K = 5, 10, 20 by default)
+- MAP (Mean Average Precision)
 
-### Target Ecosystems
+**Integration quality** (from `integration_report.json`):
+- Download success rate
+- Join success rate
+- Skip reason breakdown by category
 
-**Primary (normal mode)**
-- **CKAN** — open data portal software (data.gov, open.canada.ca, etc.)
-- **Schema.org** — structured metadata embedded in web pages (Google Dataset Search)
-- **DCAT** — standard format for describing datasets in catalogs
-
-**Extended (fallback mode only)**
-- Hugging Face Datasets, Kaggle, World Bank Open Data, UN Data, Eurostat, Our World in Data
-
-### Query Strategies
-
-**Normal mode — 5 strategies:**
-
-| Strategy | Description | Priority |
-|---|---|---|
-| `direct_platform` | Targets CKAN portals, Schema.org datasets, DCAT catalogs | 1 |
-| `concept_x_source` | Combines inferred concepts with known data sources | 1 |
-| `joinability` | Anchored on candidate identifiers (e.g. `country_code`) | 2 |
-| `synonym` | Alternative terminology for existing seed columns | 2 |
-| `augmentation` | Targets columns *not* already in the seed dataset | 3 |
-
-**Fallback mode — tiered relaxation:**
-
-| Strategy | Description | Tier | Priority |
-|---|---|---|---|
-| `fallback_tier1_no_year` | Year range dropped, all topics expanded | 1 | 4 |
-| `fallback_tier1_join_no_year` | Joinability queries without year constraint | 1 | 4 |
-| `fallback_tier2_extended_sources` | Bare topic queries on extended sources | 2 | 5 |
-| `fallback_tier2_synonym_extended` | Synonym queries on extended sources | 2 | 5 |
-| `fallback_tier2_join_extended` | Joinability queries on extended sources | 2 | 5 |
-
-### Sufficiency Thresholds
-
-Before triggering fallback, the query generator checks whether Stage 3's
-results meet these minimum thresholds:
-
-| Threshold | Default | Description |
-|---|---|---|
-| `min_candidates` | 5 | Minimum number of candidate datasets returned |
-| `min_joinable_ratio` | 0.4 | Minimum fraction of candidates with a usable join key |
-| `min_avg_relevance` | 0.3 | Minimum average relevance score (0–1) |
-
-If one threshold fails → **relaxation level 1** (tier 1 only).  
-If two or more fail → **relaxation level 2** (tier 1 + tier 2).
-
-### Discovery Feedback Schema
-
-Stage 3 must write `output/discovery_feedback.json` with this structure
-for the fallback to work:
-
-```json
-{
-  "total_candidates":  10,
-  "joinable_count":    4,
-  "avg_relevance":     0.35,
-  "connectors_tried":  ["CKAN", "Schema.org", "DCAT"],
-  "failed_connectors": ["DCAT"]
-}
-```
-
-### Output Format
-
-```json
-{
-  "generated_at": "2026-04-11T08:48:14Z",
-  "mode": "normal",
-  "seed_dataset": "seed.csv",
-  "year_range": [2020, 2022],
-  "concepts": ["economic", "geospatial", "time_series", "..."],
-  "identifiers": ["country_code", "currency_code"],
-  "target_connectors": ["CKAN", "Schema.org", "DCAT"],
-  "total_queries": 346,
-  "queries": [
-    {
-      "id": 1,
-      "query": "CKAN economic country year dataset",
-      "concept": "economic",
-      "target_connector": "CKAN",
-      "strategy": "direct_platform",
-      "priority": 1
-    }
-  ]
-}
-```
-
-Fallback output adds these fields at the top level:
-
-```json
-{
-  "mode": "fallback",
-  "relaxation_level": 1,
-  "failed_checks": ["too_few_candidates: got 2, need 5"]
-}
-```
-
-And each fallback query also includes:
-
-```json
-{
-  "fallback_tier": 1
-}
-```
+**Augmentation quality** (from `integration_report.json`):
+- Coverage gain — new columns added relative to original column count
+- Completeness gain — change in average column completeness after augmentation
+- Conflict rate — frequency of contradictory values across sources
 
 ---
 
-## Pipeline Flow
+## Notes
 
-```
-seed.csv
-   │
-   ▼
-[Stage 1] profiler.py
-   │
-   ▼
-seed_signature.json
-   │
-   ▼
-[Stage 2] query_generator.py  (normal mode)
-   │
-   ▼
-queries.json
-   │
-   ▼
-[Stage 3] Crawler  ──── discovery_feedback.json ────►  [Stage 2] query_generator.py (fallback mode)
-   │                                                         │
-   ▼                                                         ▼
-candidates.json                                     queries_fallback.json
-   │
-   ▼
-[Stage 4] Ranking → ranked_candidates.json
-   │
-   ▼
-[Stage 5] Integration → augmented_dataset.csv
-   │
-   ▼
-[Stage 6] Evaluation → eval_report.json
-```
+- The `output/` folder is created automatically on first run — no manual setup needed.
+- All pipeline steps respect `robots.txt` conventions and apply rate limiting.
+- Downloaded files over 10 MB are skipped to avoid excessive load on data sources.
+- Every new column added to the augmented dataset is tagged with a provenance field (`column__source`) recording the originating URL.
+- The pipeline is reproducible — every run produces a dated snapshot with source list and configuration.
