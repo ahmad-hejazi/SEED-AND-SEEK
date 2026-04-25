@@ -768,13 +768,13 @@ def integrate(
 
     # Save augmented dataset
     _save_json(augmented_df.to_dict(orient="records"), Path(output_data_path))
-    print(f"\n[integration] Augmented dataset → {output_data_path}")
+    print(f"\n[integration] Augmented dataset -> {output_data_path}")
     print(f"[integration]   {augmented_df.shape[0]} rows x {augmented_df.shape[1]} columns")
     print(f"[integration]   {coverage_gain} new attribute columns added")
 
     # Save report
     _save_json(report, Path(output_report_path))
-    print(f"[integration] Integration report → {output_report_path}")
+    print(f"[integration] Integration report -> {output_report_path}")
     print(f"[integration]   integrated={integrated_count}  skipped={skipped_count}  no_join={no_join_count}  failed={failed_count}")
 
     return report
