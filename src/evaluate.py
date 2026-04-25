@@ -279,13 +279,13 @@ def evaluate(ranked_path: str, report_path: str, output_path: str, k_values: lis
     print(f"  Download rate : {integration['download_success_rate']:.0%}")
     print(f"  Join rate     : {integration['join_success_rate']:.0%}")
     print(f"  Coverage gain : {augmentation['coverage_gain']:.0%}")
-    print(f"  Completeness  : {augmentation['avg_completeness_before']} → {augmentation['avg_completeness_after']}")
+    print(f"  Completeness  : {augmentation['avg_completeness_before']} -> {augmentation['avg_completeness_after']}")
     print(f"\n[evaluate] Findings:")
     for f_ in interpretation["findings"]:
         print(f"  • {f_}")
     print(f"\n[evaluate] Recommendations:")
     for r in interpretation["recommendations"]:
-        print(f"  → {r}")
+        print(f"  -> {r}")
     print(f"\n[evaluate] Report written to {output_path}")
 
     return output
