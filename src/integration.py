@@ -767,7 +767,11 @@ def integrate(
     }
 
     # Save augmented dataset
-    _save_json(augmented_df.to_dict(orient="records"), Path(output_data_path))
+    output_data_path = Path(output_data_path)
+    if output_data_path.suffix.lower() == ".csv":
+        augmented_df.to_csv(output_data_path, index=False, encoding="utf-8")
+    else:
+        _save_json(augmented_df.to_dict(orient="records"), output_data_path)
     print(f"\n[integration] Augmented dataset -> {output_data_path}")
     print(f"[integration]   {augmented_df.shape[0]} rows x {augmented_df.shape[1]} columns")
     print(f"[integration]   {coverage_gain} new attribute columns added")
@@ -811,7 +815,7 @@ def _cli() -> None:
                         help="Path to seed_signature.json")
     parser.add_argument("--seed",          default=None,
                         help="Path to seed dataset. Auto-detected from data/ if not provided.")
-    parser.add_argument("--output-data",   default="output/augmented_dataset.json",
+    parser.add_argument("--output-data",   default="output/augmented_dataset.csv",
                         help="Output path for augmented dataset JSON")
     parser.add_argument("--output-report", default="output/integration_report.json",
                         help="Output path for integration report JSON")
