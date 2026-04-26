@@ -373,15 +373,50 @@ def _match_columns(
     return mapping
 
 
+def _value_overlap(
+    seed_series: pd.Series,
+    candidate_series: pd.Series,
+    min_overlap: float = 0.05,
+) -> float:
+    """
+    Compute the fraction of candidate values that appear in the seed values.
+    Returns a float between 0.0 and 1.0.
+    Only applied to non-numeric columns — numeric columns (e.g. year) are
+    checked by range overlap instead.
+    """
+    # For numeric columns, check range overlap instead of value overlap
+    if pd.api.types.is_numeric_dtype(seed_series) and pd.api.types.is_numeric_dtype(candidate_series):
+        seed_min, seed_max = seed_series.min(), seed_series.max()
+        cand_min, cand_max = candidate_series.min(), candidate_series.max()
+        # Overlap exists if ranges intersect
+        if cand_max < seed_min or cand_min > seed_max:
+            return 0.0
+        return 1.0  # ranges overlap
+
+    # For string/categorical columns, check value overlap
+    seed_vals = set(_normalise_value(v) for v in seed_series.dropna().unique())
+    cand_vals  = [_normalise_value(v) for v in candidate_series.dropna().unique()]
+
+    if not seed_vals or not cand_vals:
+        return 0.0
+
+    matched = sum(1 for v in cand_vals if v in seed_vals)
+    return round(matched / len(cand_vals), 4)
+
+
 def _find_join_keys(
     seed_cols: list[str],
     candidate_cols: list[str],
     signature: dict[str, Any],
     threshold: int = DEFAULT_JOIN_THRESHOLD,
+    seed_df: pd.DataFrame | None = None,
+    cand_df: pd.DataFrame | None = None,
+    min_value_overlap: float = 0.05,
 ) -> list[tuple[str, str]]:
     """
     Returns [(candidate_col, seed_col)] pairs that are likely join keys.
     Prioritises candidate_identifiers and salient columns from the signature.
+    Also checks value overlap to reject false schema matches.
     """
     priority_seed_cols = (
         signature.get("candidate_identifiers", [])
@@ -393,8 +428,24 @@ def _find_join_keys(
     priority_seed_cols = [c for c in priority_seed_cols if not (c in seen or seen.add(c))]
 
     mapping = _match_columns(priority_seed_cols, candidate_cols, threshold)
-    # Return as list of (candidate_col, seed_col)
-    return [(cand, seed) for cand, seed in mapping.items()]
+    pairs = [(cand, seed) for cand, seed in mapping.items()]
+
+    # Value overlap check — reject pairs where values don't actually match
+    if seed_df is not None and cand_df is not None:
+        validated = []
+        for cand_col, seed_col in pairs:
+            if cand_col not in cand_df.columns or seed_col not in seed_df.columns:
+                validated.append((cand_col, seed_col))
+                continue
+            overlap = _value_overlap(seed_df[seed_col], cand_df[cand_col], min_value_overlap)
+            if overlap >= min_value_overlap:
+                validated.append((cand_col, seed_col))
+            else:
+                print(f"  rejected join key: {cand_col} -> {seed_col} "
+                      f"(value overlap: {overlap:.0%} < {min_value_overlap:.0%})")
+        return validated
+
+    return pairs
 
 
 # ---------------------------------------------------------------------------
@@ -679,7 +730,8 @@ def integrate(
 
         # Schema matching
         cand_cols = list(cand_df.columns)
-        join_pairs = _find_join_keys(seed_cols, cand_cols, signature, join_threshold)
+        join_pairs = _find_join_keys(seed_cols, cand_cols, signature, join_threshold,
+                                    seed_df=augmented_df, cand_df=cand_df)
         col_mapping = _match_columns(seed_cols, cand_cols, join_threshold)
 
         print(f"  join pairs   : {join_pairs}")
