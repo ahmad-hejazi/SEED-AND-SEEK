@@ -10,7 +10,7 @@ It works across domains — public health indicators, company records, product c
 
 ## Team
 
-Ahmad Hijazi · Eddy El Kallaye · Yesmine Kallel · Amartya Chandragupta Dudhe
+Eddy El Kallaye · Ahmad Hijazi · Yesmine Kallel · Amartya Chandragupta Dudhe
 
 ---
 
